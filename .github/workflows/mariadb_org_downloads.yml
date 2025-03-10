@@ -23,4 +23,5 @@ jobs:
           git pull
           git add mariadborg_downloads.json
           git commit -m "Update MariaDB downloads data"
+          git pull --rebase 
           git push
