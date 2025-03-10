@@ -2,35 +2,28 @@ name: Fetch mariadb.org Downloads
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight UTC
-  workflow_dispatch: # Allows manual triggering
+    - cron: '0 0 * * *'
 
 jobs:
-  fetch-data:
+  update-downloads:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.MARIADB_TOKEN }} # Use the custom token
+        uses: actions/checkout@v2
 
-      - name: Debug token permissions
+      - name: Fetch data from mariadb.org
         run: |
-          echo "Testing token permissions..."
-          curl -H "Authorization: token ${{ secrets.MARIADB_TOKEN }}" \
-               -H "Accept: application/vnd.github.v3+json" \
-               https://api.github.com/repos/robertsilen/mariadb-adoption-index
+          # Your script to fetch data
+          curl -o mariadborg_downloads.json https://downloads.mariadb.org/rest-api/
 
-      - name: Fetch downloads data
+      - name: Commit and push changes
         run: |
-          curl -s "https://downloads.mariadb.org/rest-api/charts-data-by-month/" | \
-          jq -r '.result | group_by(.month) | map({month: .[0].month, total_downloads: (map(.no_dlds | tonumber) | add)})' \
-          > mariadborg_downloads.json
-
-      - name: Commit and push if changed
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add mariadborg_downloads.json
-          git diff --staged --quiet || (git commit -m "Update MariaDB downloads data" && \
-          git push https://${{ secrets.MARIADB_TOKEN }}@github.com/robertsilen/mariadb-adoption-index.git HEAD:main)
+          git commit -m "Update MariaDB downloads data"
+          git push
