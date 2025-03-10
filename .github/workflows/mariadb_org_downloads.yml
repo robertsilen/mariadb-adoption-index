@@ -22,19 +22,19 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+          git fetch origin
+          git rebase origin/main --autostash
+          git push
 
-      - name: Stage changes
+      - name: Stage and commit
         run: |
           git add mariadborg_downloads.json
-
-      - name: Commit changes if there are any
-        run: |
           git diff --quiet || git commit -m 'mariadb.org downloads'
 
       - name: Fetch and rebase from origin/main
         run: |
           git fetch origin
-          git rebase origin/main --autostash
+          git rebase origin/main
           git status
 
       - name: Push changes
