@@ -26,6 +26,7 @@ jobs:
           git rebase origin/main
           git push origin/main
           git add mariadborg_downloads.json
+          git commit -m 'mariadb.org downloads'
           git fetch origin
           git rebase origin/main
           git push origin/main
