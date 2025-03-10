@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # Use the fine-grained token for authentication
 
       - name: Fetch downloads data
         run: |
@@ -23,4 +25,4 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add mariadborg_downloads.json
-          git diff --staged --quiet || (git commit -m "Update MariaDB downloads data" && git push)
+          git diff --staged --quiet || (git commit -m "Update MariaDB downloads data" && git push origin HEAD:main)
