@@ -24,6 +24,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git fetch origin
           git rebase origin/main
+          git push origin/main
           git add mariadborg_downloads.json
           git fetch origin
           git rebase origin/main
