@@ -19,24 +19,28 @@ jobs:
 
       - name: Fetch downloads data
         run: |
-          if ! curl -sf "https://downloads.mariadb.org/rest-api/charts-data-by-month/" > raw_data.json; then
+          if ! curl -sf "https://downloads.mariadb.org/rest-api/charts-data-by-month/" > mariadborg_raw.json; then
             echo "Failed to fetch data from MariaDB downloads API"
             exit 1
           fi
           
-          cat raw_data.json | \
+          cat mariadborg_raw.json | \
           jq -r '.result | group_by(.month) | map({month: .[0].month, total_downloads: (map(.no_dlds | tonumber) | add)})' \
-          | jq 'map({month: (.month | split("-") | .[0] + "-" + .[1]), total_downloads})' > mariadborg_downloads.json
+          | jq 'map({month: (.month | split("-") | .[0] + "-" + .[1]), total_downloads})' > mariadborg_monthly_downloads.json
 
       - name: Set up Git and commit changes
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+          git diff
+          git add mariadborg_raw.json
+          git add mariadborg_mobthly_downloads.json
+          git commit -m "Update Mariadb.org downloads data" 
+          git fetch orig
+          git pull --rebase
+          git push origin main
 
-          git fetch origin
-          git rebase origin/main
 
-          git add mariadborg_downloads.json
 
-          # Commit and push if there are changes
-          git diff --staged --quiet || (git commit -m "Update Mariadb.org downloads data" && git push origin main)
+
+
