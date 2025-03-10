@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Fetch all history for proper pull and rebase operations
 
       - name: Fetch downloads data
         run: |
@@ -22,18 +20,11 @@ jobs:
 
       - name: Stage changes
         run: |
-          git add mariadborg_downloads.json
-
-      - name: Fetch latest changes and rebase
-        run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          # Fetch the latest changes from the remote repository
           git fetch origin
-          # Rebase local changes on top of the remote main branch
           git rebase origin/main
-
-      - name: Commit and push changes
-        run: |
-          # Commit and push if there are changes
-          git diff --staged --quiet || (git commit -m "Update MariaDB downloads data" && git push origin main)
+          git add mariadborg_downloads.json
+          git fetch origin
+          git rebase origin/main
+          git push origin/main
