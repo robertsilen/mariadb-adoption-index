@@ -17,7 +17,7 @@ jobs:
       - name: Fetch Debian Popcon data for mariadb-server
         run: |
           curl -s "https://qa.debian.org/cgi-bin/popcon-data?packages=mariadb-server;from_date=2023-01-01;to_date=2025-03-01" | \
-          jq '.["mariadb-server"] | to_entries | map(.key as $date | {month: ($date | split("-")[0] + "-" + split("-")[1]), count: (.value.no_files + .value.old + .value.recent)}) | group_by(.month) | map({(.[0].month): (map(.count) | add)}) | add' > debian_popcon.json
+          jq '.["mariadb-server"] | to_entries | map(.key as $date | {month: ($date | split("-")[0] + "-" + split("-")[1]), count: (.value.no_files + .value.old + .value.recent)}) | group_by(.month) | map({month: .[0].month, total_downloads: (map(.count) | add)})' > debian_popcon.json
 
       - name: Commit and push if changed
         run: |

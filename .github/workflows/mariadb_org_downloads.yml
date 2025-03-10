@@ -18,7 +18,7 @@ jobs:
         run: |
           curl -s "https://downloads.mariadb.org/rest-api/charts-data-by-month/" | \
           jq -r '.result | group_by(.month) | map({month: .[0].month, total_downloads: (map(.no_dlds | tonumber) | add)})' \
-          > mariadborg_downloads.json
+          | jq 'map({month: (.month | split("-") | .[0] + "-" + .[1]), total_downloads})' > mariadborg_downloads.json
 
       - name: Commit and push if changed
         run: |
