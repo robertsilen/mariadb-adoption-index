@@ -5,6 +5,10 @@ on:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
   workflow_dispatch:  # Allows manual triggering
 
+# Add permissions block
+permissions:
+  contents: write
+
 jobs:
   fetch-data:
     runs-on: ubuntu-latest
@@ -16,22 +20,35 @@ jobs:
 
       - name: Fetch Debian Popcon data for mariadb-server
         run: |
-          curl -s "https://qa.debian.org/cgi-bin/popcon-data?packages=mariadb-server;from_date=2023-01-01;to_date=2025-03-01" | \
-          jq '.["mariadb-server"] | to_entries | map(.key as $date | {month: ($date | split("-")[0] + "-" + split("-")[1]), count: (.value.no_files + .value.old + .value.recent)}) | group_by(.month) | map({month: .[0].month, total_downloads: (map(.count) | add)})' > debian_popcon.json
+          # Calculate date range dynamically
+          START_DATE="2023-01-01"
+          END_DATE=$(date -I)
+          
+          # Add error handling
+          if ! curl -sf "https://qa.debian.org/cgi-bin/popcon-data?packages=mariadb-server;from_date=${START_DATE};to_date=${END_DATE}" | \
+            jq '.["mariadb-server"] | to_entries | map(.key as $date | {month: ($date | split("-")[0] + "-" + split("-")[1]), count: (.value.no_files + .value.old + .value.recent)}) | group_by(.month) | map({month: .[0].month, total_downloads: (map(.count) | add)})' > debian_popcon.json; then
+            echo "Error: Failed to fetch or process Debian Popcon data"
+            exit 1
+          fi
 
       - name: Commit and push if changed
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          # Fetch the latest changes from the remote repository
           git fetch origin
-
-          # Rebase local changes on top of the remote main branch
           git rebase origin/main
 
-          # Stage the changes
           git add debian_popcon.json
-
-          # Commit and push if there are changes
-          git diff --staged --quiet || (git commit -m "Update Debian Popcon data" && git push origin main)
+          
+          # Check for changes and commit if needed
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update Debian Popcon data"
+            # Add error handling for push
+            if ! git push origin main; then
+              echo "Error: Failed to push changes"
+              exit 1
+            fi
+          fi
