@@ -18,15 +18,18 @@ jobs:
           jq -r '.result | group_by(.month) | map({month: .[0].month, total_downloads: (map(.no_dlds | tonumber) | add)})' \
           | jq 'map({month: (.month | split("-") | .[0] + "-" + .[1]), total_downloads})' > mariadborg_downloads.json
 
-      - name: Stage changes
+      - name: Set up Git configuration
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+
+      - name: Fetch and rebase from origin/main
+        run: |
           git fetch origin
           git rebase origin/main
-          git push origin/main
+
+      - name: Stage, commit and push changes
+        run: |
           git add mariadborg_downloads.json
-          git commit -m 'mariadb.org downloads'
-          git fetch origin
-          git rebase origin/main
-          git push origin/main
+          git diff --quiet || git commit -m 'mariadb.org downloads'
+          git push origin main
