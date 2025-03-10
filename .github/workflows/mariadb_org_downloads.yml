@@ -34,7 +34,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git diff
           git add mariadborg_raw.json
-          git add mariadborg_mobthly_downloads.json
+          git add mariadborg_monthly_downloads.json
           git commit -m "Update Mariadb.org downloads data" 
           git fetch orig
           git pull --rebase
