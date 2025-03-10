@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # Use the fine-grained token for authentication
+          token: ${{ secrets.MARIADB_TOKEN }} # Use the fine-grained token for authentication
 
       - name: Fetch downloads data
         run: |
