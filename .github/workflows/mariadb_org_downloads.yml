@@ -20,8 +20,8 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git pull
+          git fetch origin
+          git rebase origin/main
           git add mariadborg_downloads.json
           git commit -m "Update MariaDB downloads data"
-          git pull --rebase 
-          git push
+          git push origin main
