@@ -22,10 +22,12 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+          git status
 
       - name: Stage changes
         run: |
           git add mariadborg_downloads.json
+          git status
 
       - name: Commit changes if there are any
         run: |
@@ -35,6 +37,7 @@ jobs:
         run: |
           git fetch origin
           git rebase origin/main
+          git status
 
       - name: Push changes
         run: |
