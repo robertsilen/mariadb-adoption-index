@@ -32,4 +32,5 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add mariadborg_downloads.json
-          git diff --staged --quiet || (git commit -m "Update MariaDB downloads data" && git push origin HEAD:main)
+          git diff --staged --quiet || (git commit -m "Update MariaDB downloads data" && \
+          git push https://${{ secrets.MARIADB_TOKEN }}@github.com/robertsilen/mariadb-adoption-index.git HEAD:main)
