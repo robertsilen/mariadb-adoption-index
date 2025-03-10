@@ -12,7 +12,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.MARIADB_TOKEN }} # Use the fine-grained token for authentication
+          token: ${{ secrets.MARIADB_TOKEN }} # Use the custom token
+
+      - name: Debug token permissions
+        run: |
+          echo "Testing token permissions..."
+          curl -H "Authorization: token ${{ secrets.MARIADB_TOKEN }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               https://api.github.com/repos/robertsilen/mariadb-adoption-index
 
       - name: Fetch downloads data
         run: |
