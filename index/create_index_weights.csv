@@ -1,3 +1,5 @@
 label,path,weight
 "MariaDB.org Downloads",mariadborg_downloads,20
 "Debian Popcon",debian_popcon,10
+"Docker Official Image Pulls",docker_official_image_pulls,10
+"GitHub New PRs External",github_new_prs_external,5
