@@ -24,31 +24,13 @@ jobs:
           START_DATE="2023-01-01"
           END_DATE=$(date -I)
           
-          # Add error handling
-          if ! curl -sf "https://qa.debian.org/cgi-bin/popcon-data?packages=mariadb-server;from_date=${START_DATE};to_date=${END_DATE}" | \
-            jq '.["mariadb-server"] | to_entries | map(.key as $date | {month: ($date | split("-")[0] + "-" + split("-")[1]), count: (.value.no_files + .value.old + .value.recent)}) | group_by(.month) | map({month: .[0].month, total_downloads: (map(.count) | add)})' > debian_popcon.json; then
-            echo "Error: Failed to fetch or process Debian Popcon data"
-            exit 1
-          fi
+          curl -sf "https://qa.debian.org/cgi-bin/popcon-data?packages=mariadb-server;from_date=${START_DATE};to_date=${END_DATE}" > debian_popcon_raw.json
 
-      - name: Commit and push if changed
+      - name: Commit and push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-
-          git fetch origin
-          git rebase origin/main
-
-          git add debian_popcon.json
-          
-          # Check for changes and commit if needed
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update Debian Popcon data"
-            # Add error handling for push
-            if ! git push origin main; then
-              echo "Error: Failed to push changes"
-              exit 1
-            fi
-          fi
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "debian popcon ${timestamp}" || exit 0
+          git push
