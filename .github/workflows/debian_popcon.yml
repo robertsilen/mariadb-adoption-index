@@ -24,7 +24,7 @@ jobs:
           START_DATE="2023-01-01"
           END_DATE=$(date -I)
           
-          curl -sf "https://qa.debian.org/cgi-bin/popcon-data?packages=mariadb-server;from_date=${START_DATE};to_date=${END_DATE}" > debian_popcon_raw.json
+          curl -sf "https://qa.debian.org/cgi-bin/popcon-data?packages=mariadb-server;from_date=${START_DATE};to_date=${END_DATE}" > data/debian_popcon_raw.json
 
       - name: Commit and push
         run: |
