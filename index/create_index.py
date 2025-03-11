@@ -11,7 +11,7 @@ plt.figure(figsize=(8, 8))
 plt.pie(weights['weight'], labels=weights['label'], autopct='%1.1f%%', startangle=140)
 plt.title('Weights Distribution')
 plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-plt.savefig('index/mariadb_adoption_index_weights.png')  # Save the pie chart as a PNG file
+plt.savefig('index/mariadb_adoption_index_weights.png', dpi=150)  # Save the pie chart as a PNG file with lower resolution
 plt.close()  # Close the plot to free up memory
 
 # 2. Combine the monthly csv files using merge

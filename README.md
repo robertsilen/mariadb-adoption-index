@@ -12,7 +12,7 @@
 # Documentation
 
 
-The MariaDB weighted index is calculated in [create_index.py](index/create_index.py) by fetching the monthly values, calculating their index value compared to the baseline value of 2024-01. A weighted summary index value per month is calculated as defined in [create_index_weights.csv](index/create_index_weights.csv).
+The MariaDB weighted index is calculated in [create_index.py](index/create_index.py) using prepared monthly values. A monthly index value for each value by using 2024-01 as the baseline. A single weighted summary index value per month is calculated as defined in [create_index_weights.csv](index/create_index_weights.csv).
 
 The source data is fetched either with automation from their original sources (see .github/workflows/) or added manually by the MariaDB Foundation. Raw fetched data is converted to monthly values in _monthly.csv files. 
 
