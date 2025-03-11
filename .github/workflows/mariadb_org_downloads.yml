@@ -25,5 +25,6 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add -A
-          git commit -m "Update Mariadb.org downloads data" 
+          timestamp=$(date -u)
+          git commit -m "mariadb.org downloads ${timestamp}"
           git push
