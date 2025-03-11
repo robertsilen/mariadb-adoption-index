@@ -18,13 +18,21 @@ jobs:
 
       - name: Fetch data
         run: |
-          curl -sf "https://downloads.mariadb.org/rest-api/charts-data-by-month/" > mariadborg_raw.json
- 
+          curl -sf "https://downloads.mariadb.org/rest-api/charts-data-by-month/" > mariadborg_downloads_raw.json
+
+      - name: Install requirements
+        run: |
+          python -m pip install pandas json
+
+      - name: Process data
+        run: |
+          python mariadborg_downloads.py
+
       - name: Commit and push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add -A
           timestamp=$(date -u)
-          git commit -m "mariadb.org downloads ${timestamp}"
+          git commit -m "mariadb.org downloads monthly ${timestamp}" || exit 0
           git push
