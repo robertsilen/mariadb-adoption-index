@@ -13,31 +13,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Fetch downloads data
+      - name: Fetch data
         run: |
-          if ! curl -sf "https://downloads.mariadb.org/rest-api/charts-data-by-month/" > mariadborg_raw.json; then
-            echo "Failed to fetch data from MariaDB downloads API"
-            exit 1
-          fi
-          
-          cat mariadborg_raw.json | \
-          jq -r '.result | group_by(.month) | map({month: .[0].month, total_downloads: (map(.no_dlds | tonumber) | add)})' \
-          | jq 'map({month: (.month | split("-") | .[0] + "-" + .[1]), total_downloads})' > mariadborg_monthly_downloads.json
-
-      - name: Set up Git and commit changes
+          curl -sf "https://downloads.mariadb.org/rest-api/charts-data-by-month/" > mariadborg_raw.json
+ 
+      - name: Commit and push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git diff
-          git add mariadborg_raw.json
-          git add mariadborg_monthly_downloads.json
+          git add -A
           git commit -m "Update Mariadb.org downloads data" 
-          git fetch orig
-          git pull --rebase
-          git push origin main
-
-
-
-
-
+          git push
