@@ -64,10 +64,11 @@ filtered_data.to_csv('index/mariadb_adoption_index_table_12m.csv')
 plt.figure(figsize=(10, 5))
 plt.axis('off')  # Turn off the axis
 
-# Include index labels in the cellText
-cell_text = filtered_data.reset_index().values  # Reset index to include it in the values
+# Format the filtered_data values with thousand separators
+formatted_data = filtered_data.applymap(lambda x: f"{int(x):,}" if isinstance(x, (int, float)) else x)
+cell_text = formatted_data.reset_index().values  # Reset index to include it in the values
 col_labels = [''] + list(filtered_data.columns)  # Add empty cell as the first column label
-table = plt.table(cellText=cell_text, colLabels=col_labels, cellLoc='center', loc='center', colColours=['#f5f5f5']*len(col_labels))
+table = plt.table(cellText=cell_text, colLabels=col_labels, cellLoc='right', loc='center', colColours=['#f5f5f5']*len(col_labels))
 table.auto_set_column_width([0])  # Set the width of the first column automatically
 table.scale(1.2, 1)  # Scale the table for better visibility
 

@@ -1,18 +1,19 @@
-# GitHub Actions Testing
+# MariaDB Adoption Index (beta)
 
-## Monthly Index
-![Monthly Index](monthly_index.png)
+## Monthly Weighted Index (baseline 2024-01)
+![Monthly Index](index/mariadb_adoption_index_chart_12m.png)
 
-## Weights
+## Index Weights
+![Weights](index/mariadb_adoption_index_weights.png)
 
-| Metric | Weight |
-|--------|--------|
-| mariadborg_downloads | 50 |
-| debian_popcon | 50 |
+## Baseline (2024-01) and rolling 12 month values
+![Monthly Values](index/mariadb_adoption_index_table_12m.png)
 
-## Monthly values for past 12 months
+# Documentation
 
-| Metric | 2024-01 | 2024-03 | 2024-04 | 2024-05 | 2024-06 | 2024-07 | 2024-08 | 2024-09 | 2024-10 | 2024-11 | 2024-12 | 2025-01 | 2025-02 |
-|--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
-| mariadborg_downloads | 71,617 | 79,039 | 74,552 | 75,840 | 69,828 | 72,452 | 91,304 | 85,491 | 90,238 | 101,014 | 78,550 | 82,015 | 116,526 |
-| debian_popcon | 400,955 | 409,699 | 369,290 | 378,631 | 348,928 | 351,505 | 353,434 | 337,494 | 345,524 | 326,865 | 331,569 | 329,985 | 283,411 |
+
+The MariaDB weighted index is calculated in [create_index.py](index/create_index.py) by fetching the monthly values, calculating their index value compared to the baseline value of 2024-01. A weighted summary index value per month is calculated as defined in [create_index_weights.csv](index/create_index_weights.csv).
+
+The source data is fetched either with automation from their original sources (see .github/workflows/) or added manually by the MariaDB Foundation. Raw fetched data is converted to monthly values in _monthly.csv files. 
+
+Cursor and Claude have been used to generate this solution. 
