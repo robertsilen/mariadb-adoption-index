@@ -28,11 +28,14 @@ jobs:
         run: |
           python mariadborg_downloads.py
 
+      - name: Set timestamp
+        run: |
+          echo "timestamp=$(date -u '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
       - name: Commit and push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add -A
-          timestamp=$(date -u)
           git commit -m "mariadb.org downloads monthly ${timestamp}" || exit 0
           git push
