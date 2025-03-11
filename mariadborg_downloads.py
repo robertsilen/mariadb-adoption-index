@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-data = json.load(open('mariadborg_raw.json', 'r'))
+data = json.load(open('mariadborg_downloads_raw.json', 'r'))
 df = pd.DataFrame(data['result'])
 monthly_totals = df.groupby('month')['no_dlds'].sum().reset_index()
 monthly_totals['month'] = monthly_totals['month'].str[:-3]
