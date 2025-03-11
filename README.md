@@ -6,7 +6,7 @@
 ## Index Weights
 ![Weights](index/mariadb_adoption_index_weights.png)
 
-## Baseline (2024-01) and rolling 12 month values
+## Rolling 12 month values and baseline (2024-01)
 ![Monthly Values](index/mariadb_adoption_index_table_12m.png)
 
 # Documentation
