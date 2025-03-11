@@ -22,7 +22,7 @@ jobs:
 
       - name: Install requirements
         run: |
-          python -m pip install pandas json
+          python -m pip install pandas
 
       - name: Process data
         run: |
