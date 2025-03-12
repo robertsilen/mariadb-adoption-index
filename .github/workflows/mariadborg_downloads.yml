@@ -22,7 +22,7 @@ jobs:
 
       - name: Install requirements
         run: |
-          python -m pip install pandas
+          python -m pip install pandas matplotlib
 
       - name: Process data
         run: |
