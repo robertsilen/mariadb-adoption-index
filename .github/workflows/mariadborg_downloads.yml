@@ -18,7 +18,7 @@ jobs:
 
       - name: Fetch data
         run: |
-          curl -sf "https://downloads.mariadb.org/rest-api/charts-data-by-month/" > data/mariadborg_downloads_raw.json
+          curl -sf "https://downloads.mariadb.org/rest-api/charts-data-by-month/" > data/mariadborg_downloads/raw.json
 
       - name: Install requirements
         run: |
@@ -26,7 +26,7 @@ jobs:
 
       - name: Process data
         run: |
-          python mariadborg_downloads.py
+          python data/mariadborg_downloads/raw2monthly.py
 
       - name: Commit and push
         run: |

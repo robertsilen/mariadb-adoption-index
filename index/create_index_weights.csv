@@ -3,3 +3,22 @@ label,path,weight
 "Debian Popcon",debian_popcon,10
 "Docker Official Image Pulls",docker_official_image_pulls,10
 "GitHub New PRs External",github_new_prs_external,5
+"Github New PRs Unique Contributors",github_new_prs_unique_contributors,5
+"GitHub Stars",github_stars,3
+"Github repo README mariadb",github_repo_readme,3
+"Zulip Total Users",zulip_total_users,2
+"Zulip Users 15-day active",zulip_users_active_15d,1
+"DB Engines Score",db_engines_score,10
+"Google Trends",google_trends,5
+"Wikipedia Views All Langs",wikipedia_views_all_langs,5
+"Reddit Subscribers (MariaDB)",reddit_subscribers,3
+"Hackernews",hackernews,3
+"Stackexchange new mariadb questions",stackexchange_new_questions,3
+"LinkedIn Followers Foundation",linkedin_followers_foundation,2
+"LinkedIn Followers PLC",linkedin_followers_plc,2
+"YouTube Subscribers Foundation",youtube_subscribers_foundation,2
+"YouTube Subscribers plc",youtube_subscribers_plc,2
+"Fosstodon Followers Foundation",fosstodon_followers_foundation,1
+"Instagram Followers Foundation",instagram_followers_foundation,1
+"X (Twitter) Foundation Followers",x_followers_foundation,1
+"X (Twitter) plc Followers",x_followers_plc,1
