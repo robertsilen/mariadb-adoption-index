@@ -1,6 +1,5 @@
 import json
 import pandas as pd
-import matplotlib.pyplot as plt
 
 data = json.load(open('data/mariadborg_downloads/raw.json', 'r'))
 df = pd.DataFrame(data['result'])
