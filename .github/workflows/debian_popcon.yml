@@ -1,4 +1,4 @@
-name: Fetch Debian Popcon Data on MariaDB
+name: Debian Popcon
 
 on:
   schedule:

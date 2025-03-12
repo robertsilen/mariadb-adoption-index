@@ -1,4 +1,4 @@
-name: Fetch mariadb.org Downloads
+name: mariadb.org Downloads
 
 on:
   schedule:
