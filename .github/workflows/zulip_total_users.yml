@@ -1,0 +1,43 @@
+name: Zulip Total Users
+
+on:
+  schedule:
+    - cron: '30 0 * * *'  # Runs once daily at 00:30 UTC
+  workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
+
+env:
+  ZULIP_KEY: ${{ secrets.ZULIP_KEY }}
+  ZULIP_EMAIL: ${{ secrets.ZULIP_EMAIL }}
+
+jobs:
+  fetch-pulls:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Fetch Zulip Total Users and Append to CSV
+        run: |
+          DATE=$(date +%F)
+          VALUE=$(curl -u $ZULIP_EMAIL:$ZULIP_KEY https://mariadb.zulipchat.com/api/v1/users | jq '.members | length')
+          PATH_TO_CSV="data/zulip_total_users/daily.csv"
+
+          # Ensure the CSV file exists with the header
+          if [ ! -f $PATH_TO_CSV ]; then
+            echo "date,value" > $PATH_TO_CSV
+          fi
+
+          # Check if the date already exists in the CSV file
+          if ! grep -q "$DATE" $PATH_TO_CSV; then
+            echo "$DATE,$VALUE" >> $PATH_TO_CSV
+          fi
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "zulip total users ${timestamp}" || exit 0
+          git push
