@@ -6,7 +6,7 @@ label,path,weight
 "Github New PRs Unique Contributors",github_new_prs_unique_contributors,5
 "GitHub Stars",github_stars,3
 "Github repo README mariadb",github_repo_readme,3
-"Zulip Total Users",zulip_total_users,2
+"Zulip Total Users",zulip_users_total,2
 "Zulip Users 15-day active",zulip_users_active_15d,1
 "DB Engines Score",db_engines_score,10
 "Google Trends",google_trends,5

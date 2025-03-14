@@ -1,4 +1,4 @@
-name: Zulip Total Users
+name: Zulip Users Active 15d
 
 on:
   schedule:
@@ -17,11 +17,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Fetch Zulip Total Users and Append to CSV
+      - name: Fetch Zulip Users Active 15d and Append to CSV
         run: |
           DATE=$(date +%F)
-          VALUE=$(curl -u $ZULIP_EMAIL:$ZULIP_KEY https://mariadb.zulipchat.com/api/v1/users | jq '.members | length')
-          PATH_TO_CSV="data/zulip_total_users/daily.csv"
+          VALUE=$(curl -u $ZULIP_EMAIL:$ZULIP_KEY https://mariadb.zulipchat.com/api/v1/users | jq '[.members[] | select(.last_activity > (now - (15 * 86400)))] | length')
+          PATH_TO_CSV="data/zulip_users_active_15d/daily.csv"
 
           # Ensure the CSV file exists with the header
           if [ ! -f $PATH_TO_CSV ]; then
@@ -39,5 +39,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add -A
           timestamp=$(date -I)
-          git commit -m "zulip total users ${timestamp}" || exit 0
+          git commit -m " zulip users active 15d ${timestamp}" || exit 0
           git push
