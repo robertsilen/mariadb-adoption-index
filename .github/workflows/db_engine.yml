@@ -1,0 +1,43 @@
+name: DB Engines Score and Ranking
+
+on:
+  schedule:
+    - cron: '30 0 * * *'  # Runs once daily at 00:30 UTC
+  workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
+
+jobs:
+  fetch-pulls:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Fetch MariaDB Pull Count and Append to CSV
+        run: |
+          DATE=$(date +%F)
+          # Store the three values in an array
+          readarray -t VALUES < <(curl -s https://db-engines.com/en/system/MariaDB | grep -o -E "Score.*text-align:left\">[0-9.]+|#[0-9]+" | sed 's/.*">//;s/#//')
+          SCORE="${VALUES[0]}"
+          OVERALL_RANK="${VALUES[1]}"
+          RDBMS_RANK="${VALUES[2]}"
+          PATH_TO_CSV="data/db_engines_score/daily.csv"
+
+          # Ensure the CSV file exists with the header
+          if [ ! -f $PATH_TO_CSV ]; then
+            echo "date,db_engines_score,db_engines_overall_rank,db_engines_rdbms_rank" > $PATH_TO_CSV
+          fi
+
+          # Check if the date already exists in the CSV file
+          if ! grep -q "$DATE" $PATH_TO_CSV; then
+            echo "$DATE,$SCORE,$OVERALL_RANK,$RDBMS_RANK" >> $PATH_TO_CSV
+          fi
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "db-engines score and ranking ${timestamp}" || exit 0
+          git push
