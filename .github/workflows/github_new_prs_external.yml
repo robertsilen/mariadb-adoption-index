@@ -9,6 +9,9 @@ on:
 permissions:
   contents: write
 
+env:
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
 jobs:
   fetch-data:
     runs-on: ubuntu-latest
