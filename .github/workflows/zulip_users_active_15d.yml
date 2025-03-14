@@ -20,7 +20,7 @@ jobs:
       - name: Fetch Zulip Users Active 15d and Append to CSV
         run: |
           DATE=$(date +%F)
-          VALUE=$(curl -u $ZULIP_EMAIL:$ZULIP_KEY https://mariadb.zulipchat.com/api/v1/users | jq '[.members[] | select(.last_activity > (now - (15 * 86400)))] | length')
+          VALUE=$(curl -u $ZULIP_EMAIL:$ZULIP_KEY "https://mariadb.zulipchat.com/api/v1/messages?anchor=newest&num_before=1000&num_after=0" | jq '[.messages[] | select(.timestamp > (now - (15 * 86400)))] | .[].sender_email' | sort -u | wc -l)
           PATH_TO_CSV="data/zulip_users_active_15d/daily.csv"
 
           # Ensure the CSV file exists with the header
