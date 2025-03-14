@@ -1,0 +1,40 @@
+name: Github New PRs Unique Contributors
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allows manual triggering
+
+# Add permissions block
+permissions:
+  contents: write
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for proper pull and rebase operations
+
+      - name: Install requirements
+        run: |
+          python -m pip install pandas
+
+      - name: Fetch data
+        run: |
+          python data/github_new_prs_unique_contributors/fetch.py
+
+      - name: Process data
+        run: |
+          python data/github_new_prs_unique_contributors/latest2monthly.py
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "github new prs unique contributors ${timestamp}" || exit 0
+          git push
