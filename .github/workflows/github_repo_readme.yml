@@ -1,4 +1,4 @@
-name: Github READMEs with MariaDB
+name: Github Repo READMEs with MariaDB
 
 on:
   schedule:
