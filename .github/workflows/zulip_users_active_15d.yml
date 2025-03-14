@@ -25,7 +25,7 @@ jobs:
 
           # Ensure the CSV file exists with the header
           if [ ! -f $PATH_TO_CSV ]; then
-            echo "date,value" > $PATH_TO_CSV
+            echo "date,zulip_users_active_15d" > $PATH_TO_CSV
           fi
 
           # Check if the date already exists in the CSV file
