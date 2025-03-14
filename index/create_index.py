@@ -22,7 +22,6 @@ for index, row in weights.iterrows():
         how='outer'
     )
     combined_data = combined_data.fillna(0).astype({col: 'int' for col in combined_data.columns if col != 'month'})
-
 # 3. Calculate index values for each column (excluding 'month') by adding a column _index for each column, and set the baseline to 2024-01
 baseline_date = '2024-01'
 for column in combined_data.columns:
@@ -41,7 +40,7 @@ combined_data['weighted_index'] = (combined_data['weighted_index'] / weights_sum
 # 5. Prepare the final table with the weighted index and columns with values
 # and save to a csv file
 combined_data = combined_data.loc[:, ~combined_data.columns.str.endswith('_index') | (combined_data.columns == 'weighted_index')]
-# Move 'c' to be the first column after 'month'
+# Move weighted_index to be the first column after 'month'
 combined_data = combined_data[['month', 'weighted_index'] + [col for col in combined_data.columns if col not in ['month', 'weighted_index']]]
 
 # Replace the column names with the labels from the weights DataFrame
@@ -57,18 +56,21 @@ filtered_data = combined_data[combined_data['month'].isin(months_to_include)]
 # Transpose the DataFrame and save to a csv file
 filtered_data = filtered_data.set_index('month').T
 # Format the filtered_data values with thousand separators
-formatted_data = filtered_data.map(lambda x: f"{int(x):,}" if isinstance(x, (int, float)) else x)
+formatted_data = filtered_data.map(lambda x: f"{int(x):,}" if isinstance(x, (int, float)) else x)  # Handle numpy.int64
 
-#weights_with_empty_row = pd.Series([''] + weights['weight'].astype(str).values.tolist())  # Change weights to strings
-#filtered_data.insert(0, 'Weight', weights_with_empty_row.values)  # Add weights as the first column
-print(filtered_data)
+
+
 filtered_data.to_csv('index/mariadb_adoption_index_table_12m.csv')
-
 # and save the table to a PNG file
 plt.figure(figsize=(10, 5))
 plt.axis('off') 
+formatted_data = formatted_data.reset_index() # Reset index to include it in the values
 
-cell_text = formatted_data.reset_index().values  # Reset index to include it in the values
+# trying to add weights as the first column to the final table
+#weights_with_empty_row = pd.Series([''] + weights['weight'].astype(str).values.tolist())  # Change weights to strings
+#filtered_data = filtered_data.insert(0, 'Weight', weights_with_empty_row.values)  # Add weights as the first column
+
+cell_text = formatted_data.values  
 col_labels = [''] + list(filtered_data.columns)  # Add empty cell as the first column label
 table = plt.table(cellText=cell_text, colLabels=col_labels, cellLoc='right', loc='center', colColours=['#f5f5f5']*len(col_labels))
 table.auto_set_column_width([0])  # Set the width of the first column automatically
