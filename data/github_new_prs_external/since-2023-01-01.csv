@@ -3,7 +3,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3891,External Contribution,2025-03-13T19:36:03Z,slawomir-pryczek,open,MDEV-36297: Ability to backup selected partitions only,https://github.com/MariaDB/server/pull/3891
 3890,MariaDB Corporation,2025-03-12T13:00:01Z,Thirunarayanan,open,MDEV-36270 mariabackup.incremental_compressed fails in 10.11+,https://github.com/MariaDB/server/pull/3890
 3889,MariaDB Corporation,2025-03-12T10:48:44Z,dr-m,open,MDEV-36122 Assertion failure ctx0->old_table->get_ref_count() == 1 in ha_innobase::commit_inplace_alter_table(),https://github.com/MariaDB/server/pull/3889
-3888,MariaDB Corporation,2025-03-12T06:36:36Z,dr-m,open,MDEV-35813 Unnecessary InnoDB log writes in INSERT…SELECT,https://github.com/MariaDB/server/pull/3888
+3888,MariaDB Corporation,2025-03-12T06:36:36Z,dr-m,closed,MDEV-35813 Unnecessary InnoDB log writes in INSERT…SELECT,https://github.com/MariaDB/server/pull/3888
 3887,MariaDB Corporation,2025-03-11T13:18:21Z,Thirunarayanan,open,MDEV-35420 Server aborts while deleting the record in spatial index,https://github.com/MariaDB/server/pull/3887
 3886,MariaDB Corporation,2025-03-10T10:23:14Z,Thirunarayanan,open,MDEV-19574 innodb_stats_method is not honored when innodb_stats_persistent=ON,https://github.com/MariaDB/server/pull/3886
 3885,MariaDB Corporation,2025-03-10T07:23:02Z,mariadb-DebarunBanerjee,open,MDEV-36226 Stall and crash when page cleaner fails to generate free p…,https://github.com/MariaDB/server/pull/3885
