@@ -12,7 +12,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3882,External Contribution,2025-03-09T17:28:00Z,qobood,closed,MDEV-36263 - Fix typos in C comments inside sql/,https://github.com/MariaDB/server/pull/3882
 3881,External Contribution,2025-03-09T14:24:52Z,jiteshchawla1511,open,MDEV-35876: speedup collation/charset lookup,https://github.com/MariaDB/server/pull/3881
 3880,External Contribution,2025-03-08T19:33:59Z,KhaledR57,closed,MDEV-36206: Fix mysqld deprecation warning,https://github.com/MariaDB/server/pull/3880
-3879,MariaDB Foundation,2025-03-08T06:31:16Z,knielsen,open,Fix sporadic failures of rpl.rpl_gtid_crash,https://github.com/MariaDB/server/pull/3879
+3879,MariaDB Foundation,2025-03-08T06:31:16Z,knielsen,closed,Fix sporadic failures of rpl.rpl_gtid_crash,https://github.com/MariaDB/server/pull/3879
 3878,MariaDB Corporation,2025-03-07T15:27:23Z,Olernov,open,MDEV-34870 - Join order optimizer hints,https://github.com/MariaDB/server/pull/3878
 3877,Codership,2025-03-07T13:21:28Z,plampio,open,Galera feature: Retry applying writesets at slaves,https://github.com/MariaDB/server/pull/3877
 3876,MariaDB Corporation,2025-03-07T09:00:40Z,dr-m,closed,MDEV-36227 Race condition between ALTER TABLE…EXCHANGE PARTITION and SELECT,https://github.com/MariaDB/server/pull/3876
@@ -280,7 +280,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3614,,2024-11-07T01:04:12Z,Thirunarayanan,closed,MDEV-35363   Avoid cloning of table statistics while saving the InnoDB table stats,https://github.com/MariaDB/server/pull/3614
 3613,MariaDB Corporation,2024-11-06T14:10:13Z,dmitryshulga,open,MDEV-35299,https://github.com/MariaDB/server/pull/3613
 3612,MariaDB Corporation,2024-11-05T19:38:15Z,bnestere,closed,MDEV-35350: Consolidate MTR wait_for_pattern_in_file.inc and SEARCH_WAIT in search_pattern_in_file.inc,https://github.com/MariaDB/server/pull/3612
-3611,External Contribution,2024-11-05T12:48:56Z,Dreamsorcerer,open,MDEV-36009 - Systemd: Restart on OOM,https://github.com/MariaDB/server/pull/3611
+3611,External Contribution,2024-11-05T12:48:56Z,Dreamsorcerer,closed,MDEV-36009 - Systemd: Restart on OOM,https://github.com/MariaDB/server/pull/3611
 3610,Codership,2024-11-05T11:20:28Z,denis-protivensky,closed,MDEV-28378: Don't hang trying to peek log event past the end of log,https://github.com/MariaDB/server/pull/3610
 3609,Codership,2024-11-05T10:44:19Z,janlindstrom,closed,MDEV-35345 : Galera test failure on MW-402,https://github.com/MariaDB/server/pull/3609
 3608,Codership,2024-11-05T10:14:39Z,janlindstrom,closed,MDEV-35344 : Galera test failure on galera_sync_wait_upto,https://github.com/MariaDB/server/pull/3608
