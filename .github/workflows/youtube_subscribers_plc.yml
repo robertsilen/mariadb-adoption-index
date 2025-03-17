@@ -1,0 +1,42 @@
+name: Youtube Subscribers plc
+
+on:
+  schedule:
+    - cron: '30 0 * * *'  # Runs once daily at 00:30 UTC
+  workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
+
+env:
+  YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+
+jobs:
+  fetch-pulls:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Youtube Subscribers plc and Append to CSV
+        run: |
+          DATE=$(date +%F)
+          VALUE=$(curl -s "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCFESL9PsYAUHICJ_jqlqyRw&&key=$YOUTUBE_API_KEY" | jq '.items[0].statistics.subscriberCount')
+          PATH_TO_CSV="data/youtube_subscribers_plc/daily.csv"
+
+          # Ensure the CSV file exists with the header
+          if [ ! -f $PATH_TO_CSV ]; then
+            echo "date,youtube_subscribers_plc" > $PATH_TO_CSV
+          fi
+
+          # Check if the date already exists in the CSV file
+          if ! grep -q "$DATE" $PATH_TO_CSV; then
+            echo "$DATE,$VALUE" >> $PATH_TO_CSV
+          fi
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "youtube subscribers plc ${timestamp}" || exit 0
+          git push
