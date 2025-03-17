@@ -1,0 +1,39 @@
+name: Reddit Subscribers
+
+on:
+  schedule:
+    - cron: '30 0 * * *'  # Runs once daily at 00:30 UTC
+  workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
+
+jobs:
+  fetch-pulls:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Fetch Reddit Subscribers and Append to CSV
+        run: |
+          DATE=$(date +%F)
+          VALUE=$(curl -s -A "MariaDBStats/1.0" https://www.reddit.com/r/mariadb/about.json | jq '.data.subscribers')
+          PATH_TO_CSV="data/reddit_subscribers/daily.csv"
+
+          # Ensure the CSV file exists with the header
+          if [ ! -f $PATH_TO_CSV ]; then
+            echo "date,reddit_subscribers" > $PATH_TO_CSV
+          fi
+
+          # Check if the date already exists in the CSV file
+          if ! grep -q "$DATE" $PATH_TO_CSV; then
+            echo "$DATE,$VALUE" >> $PATH_TO_CSV
+          fi
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "reddit subscribers ${timestamp}" || exit 0
+          git push
