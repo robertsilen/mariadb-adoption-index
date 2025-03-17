@@ -2,7 +2,7 @@ name: Reddit Subscribers
 
 on:
   schedule:
-    - cron: '30 0 * * *'  # Runs once daily at 00:30 UTC
+    - cron: '0 4 1 * *'  # Runs at 6 AM EET (4 AM UTC) on the first day of each month
   workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
 
 jobs:
@@ -17,11 +17,11 @@ jobs:
         run: |
           DATE=$(date +%F)
           VALUE=$(curl -s https://www.reddit.com/r/mariadb/about.json | jq .data.subscribers)
-          PATH_TO_CSV="data/reddit_subscribers/daily.csv"
+          PATH_TO_CSV="data/reddit_subscribers/monthly.csv"
 
           # Ensure the CSV file exists with the header
           if [ ! -f $PATH_TO_CSV ]; then
-            echo "date,reddit_subscribers" > $PATH_TO_CSV
+            echo "month,reddit_subscribers" > $PATH_TO_CSV
           fi
 
           # Check if the date already exists in the CSV file
