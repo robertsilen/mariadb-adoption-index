@@ -20,25 +20,25 @@ Cursor and Claude have been used to generate this solution.
 
 ## KPI details
 
-| KPI                                    | Data Source Fetch      | Create Monthly |
-|----------------------------------------|------------------------|----------------|
-| mariadb.org downloads                  | curl, historic         | python         |
-| Debien popcon                          | curl, historic         | python         |
-| Docker official image pulls            | curl, daily            | python         |
-| Github new PRs external                | python, historic, key  | python         |
-| Github new PRs ext. unique user names  | python, historic, key  | python         |
-| Github stars                           | curl, daily            | python, todo   |
-| Github readme repos                    | curl, daily            | python, todo   |
-| Zulip total users                      | curl, daily, key       | python, todo   |
-| Zulip active users 15d                 | curl, daily, key       | python, todo   |
-| DB-engines                             | curl, daily, scrape    | python, todo   |
-| Google trends                          | python, historic       | -              |
-| Wikipedia views all langs              | python, historic       | -              |
-| Reddit subscribers                     | curl, daily, key       | python, todo   |
-| Hackernews                             | python, historic, key  | with fetch     |
-| Stackexchange new questions            | python, historic       | with fetch     |
-| LinkedIn                               | manual                 | -              |
-| Youtube                                | python, daily, key     | python, todo   |
-| Fosstadon                              | manual                 | -              |
-| Instagram                              | python, broken         | python, todo   |
-| X (Twitter)                            | manual                 | -              |
+| KPI                                    | Fetch Method          | Key | Create Monthly |
+|----------------------------------------|-----------------------|-----|----------------|
+| mariadb.org downloads                  | curl, historic        |     | python         |
+| Debien popcon                          | curl, historic        |     | python         |
+| Docker official image pulls            | curl, daily           |     | python         |
+| Github new PRs external                | python, historic      | key | python         |
+| Github new PRs ext. unique user names  | python, historic      | key | python         |
+| Github stars                           | curl, daily           |     | python, wip    |
+| Github readme repos                    | curl, daily           |     | python, wip    |
+| Zulip total users                      | curl, daily           | key | python, wip    |
+| Zulip active users 15d                 | curl, daily           | key | python, wip    |
+| DB-engines                             | curl scrape, daily    |     | python, wip    |
+| Google trends                          | python, historic      |     | -              |
+| Wikipedia views all langs              | python, historic      |     | -              |
+| Reddit subscribers                     | curl, daily           | key | python, wip    |
+| Hackernews                             | python, historic      | key | with fetch     |
+| Stackexchange new questions            | python, historic      |     | with fetch     |
+| LinkedIn                               | manual                |     | -              |
+| Youtube                                | python, daily         | key | python, wip    |
+| Fosstadon                              | manual                |     | -              |
+| Instagram                              | python, broken        |     | python, wip    |
+| X (Twitter)                            | manual                |     | -              |
