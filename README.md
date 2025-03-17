@@ -20,25 +20,25 @@ Cursor and Claude have been used to generate this solution.
 
 ## KPI details
 
-| KPI                                    | Data Source           | Create Monthly |
-|----------------------------------------|-----------------------|----------------|
-| mariadb.org downloads                  | curl, historic        | python         |
-| dabien popcon                          | curl, historic        | python         |
-| docker                                 | curl, save daily      | python         |
-| github new PRs external                | python, historic      | -              |
-| github new PRs ext. unique user names  | python, historic      | -              |
-| github stars                           | curl, save daily      | python         |
-| github readme repos                    | python, historic      | python         |
-| Zulip total users                      | curl, save daily      | python         |
-| Zulip active users 15d                 | curl, save daily      | python         |
-| DB-engines                             | python, scrape        | -              |
-| Google Trends                          | python, historic      | -              |
-| Wikipedia views all langs              | python, historic      | -              |
-| Reddit subscribers                     | curl, save daily      | python         |
-| Hackernews                             | python, historic      | -              |
-| Stackexchange new questions            | python, historic      | -              |
-| LinkedIn                               | manual                | -              |
-| Youtube                                | python, daily         | python         |
-| Fosstadon                              | manual                | -              |
-| Instagram                              | python, d, broken     | python         |
-| X (Twitter)                            | manual                |                |
+| KPI                                    | Data Source Fetch      | Create Monthly |
+|----------------------------------------|------------------------|----------------|
+| mariadb.org downloads                  | curl, historic         | python         |
+| Debien popcon                          | curl, historic         | python         |
+| Docker official image pulls            | curl, daily            | python         |
+| Github new PRs external                | python, historic, key  | python         |
+| Github new PRs ext. unique user names  | python, historic, key  | python         |
+| Github stars                           | curl, daily            | python, todo   |
+| Github readme repos                    | curl, daily            | python, todo   |
+| Zulip total users                      | curl, daily, key       | python, todo   |
+| Zulip active users 15d                 | curl, daily, key       | python, todo   |
+| DB-engines                             | curl, daily, scrape    | python, todo   |
+| Google trends                          | python, historic       | -              |
+| Wikipedia views all langs              | python, historic       | -              |
+| Reddit subscribers                     | curl, daily, key       | python, todo   |
+| Hackernews                             | python, historic, key  | with fetch     |
+| Stackexchange new questions            | python, historic       | with fetch     |
+| LinkedIn                               | manual                 | -              |
+| Youtube                                | python, daily, key     | python, todo   |
+| Fosstadon                              | manual                 | -              |
+| Instagram                              | python, broken         | python, todo   |
+| X (Twitter)                            | manual                 | -              |
