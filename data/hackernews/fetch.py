@@ -40,6 +40,6 @@ monthly_df = pd.DataFrame(sorted(monthly_mentions.items(), key=lambda x: x[1], r
                          columns=["month", "hackernews_mentions"])
 
 # Save to CSV
-monthly_df.to_csv("/data/hackernews/monthly.csv", index=False)
+monthly_df.to_csv("data/hackernews/monthly.csv", index=False)
 
 print("Saved to monthly.csv")
