@@ -17,3 +17,28 @@ The MariaDB weighted index is calculated in [create_index.py](index/create_index
 The source data is fetched either with automation from their original sources (see .github/workflows/) or added manually by the MariaDB Foundation. Raw fetched data is converted to monthly values in _monthly.csv files. 
 
 Cursor and Claude have been used to generate this solution. 
+
+## KPI details
+
+| KPI                                    | Data Source           | Create Monthly |
+|----------------------------------------|-----------------------|----------------|
+| mariadb.org downloads                  | curl, historic        | python         |
+| dabien popcon                          | curl, historic        | python         |
+| docker                                 | curl, save daily      | python         |
+| github new PRs external                | python, historic      | -              |
+| github new PRs ext. unique user names  | python, historic      | -              |
+| github stars                           | curl, save daily      | python         |
+| github readme repos                    | python, historic      | python         |
+| Zulip total users                      | curl, save daily      | python         |
+| Zulip active users 15d                 | curl, save daily      | python         |
+| DB-engines                             | python, scrape        | -              |
+| Google Trends                          | python, historic      | -              |
+| Wikipedia views all langs              | python, historic      | -              |
+| Reddit subscribers                     | curl, save daily      | python         |
+| Hackernews                             | python, historic      | -              |
+| Stackexchange new questions            | python, historic      | -              |
+| LinkedIn                               | manual                | -              |
+| Youtube                                | python, daily         | python         |
+| Fosstadon                              | manual                | -              |
+| Instagram                              | python, d, broken     | python         |
+| X (Twitter)                            | manual                |                |
