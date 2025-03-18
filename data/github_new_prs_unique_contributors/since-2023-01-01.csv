@@ -1,4 +1,6 @@
 PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
+3894,MariaDB Corporation,2025-03-17T17:57:29Z,Thirunarayanan,open,MDEV-36281	DML aborts during online virtual index,https://github.com/MariaDB/server/pull/3894
+3893,Codership,2025-03-17T11:23:57Z,janlindstrom,open,"MDEV-33850 : For Galera, create sequence with low cache got signal 6 …",https://github.com/MariaDB/server/pull/3893
 3892,External Contribution,2025-03-14T01:56:26Z,KhaledR57,open,MDEV-34621: Fix division by zero in mariadb-slap when iterations=0,https://github.com/MariaDB/server/pull/3892
 3891,External Contribution,2025-03-13T19:36:03Z,slawomir-pryczek,open,MDEV-36297: Ability to backup selected partitions only,https://github.com/MariaDB/server/pull/3891
 3890,MariaDB Corporation,2025-03-12T13:00:01Z,Thirunarayanan,open,MDEV-36270 mariabackup.incremental_compressed fails in 10.11+,https://github.com/MariaDB/server/pull/3890
@@ -34,7 +36,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3860,MariaDB Foundation,2025-02-27T01:28:06Z,grooverdan,closed,MDEV-36156: MSAN Compile and Link flags needed for compile/run checks,https://github.com/MariaDB/server/pull/3860
 3859,,2025-02-26T16:55:03Z,IOSTREAM18,closed,mariadb assignment to show triggers for show create table,https://github.com/MariaDB/server/pull/3859
 3858,MariaDB Foundation,2025-02-26T08:01:33Z,grooverdan,closed,MDEV-36155: MSAN use-of-uninitialized-value innodb.log_file_size_online,https://github.com/MariaDB/server/pull/3858
-3857,MariaDB Corporation,2025-02-26T07:22:33Z,mariadb-DebarunBanerjee,open,MDEV-36149 UBSAN in X is outside the range of representable values of…,https://github.com/MariaDB/server/pull/3857
+3857,MariaDB Corporation,2025-02-26T07:22:33Z,mariadb-DebarunBanerjee,closed,MDEV-36149 UBSAN in X is outside the range of representable values of…,https://github.com/MariaDB/server/pull/3857
 3856,MariaDB Corporation,2025-02-25T14:54:22Z,dr-m,open,MDEV-36122 Assertion ctx0->old_table->get_ref_count() == 1,https://github.com/MariaDB/server/pull/3856
 3855,,2025-02-25T14:33:35Z,prafulk30,closed,Encora Test: Add Tailoring Column,https://github.com/MariaDB/server/pull/3855
 3854,MariaDB Corporation,2025-02-25T13:48:04Z,vaintroub,closed,Rewrite the 'Types' chapter in coding standards.,https://github.com/MariaDB/server/pull/3854
