@@ -16,7 +16,7 @@ jobs:
       - name: Fetch Reddit Subscribers and Append to CSV
         run: |
           DATE=$(date +%F)
-          VALUE=$(curl -s https://www.reddit.com/r/mariadb/about.json | jq .data.subscribers)
+          VALUE=$(curl -s -A "MariaDBcount/1.0" https://www.reddit.com/r/mariadb/about.json | jq .data.subscribers)
           PATH_TO_CSV="data/reddit_subscribers/daily.csv"
 
           # Ensure the CSV file exists with the header
