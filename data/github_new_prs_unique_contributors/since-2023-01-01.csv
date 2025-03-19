@@ -1,4 +1,6 @@
 PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
+3896,MariaDB Corporation,2025-03-18T12:50:19Z,Thirunarayanan,open,MDEV-36180 Doublewrite recovery of innodb_checksum_algorithm=full_crc32 page_compressed pages does not work,https://github.com/MariaDB/server/pull/3896
+3895,MariaDB Foundation,2025-03-18T09:30:54Z,knielsen,open,MDEV-36265: Unique error for changing Domain ID with open temporary tables,https://github.com/MariaDB/server/pull/3895
 3894,MariaDB Corporation,2025-03-17T17:57:29Z,Thirunarayanan,open,MDEV-36281	DML aborts during online virtual index,https://github.com/MariaDB/server/pull/3894
 3893,Codership,2025-03-17T11:23:57Z,janlindstrom,open,"MDEV-33850 : For Galera, create sequence with low cache got signal 6 …",https://github.com/MariaDB/server/pull/3893
 3892,External Contribution,2025-03-14T01:56:26Z,KhaledR57,open,MDEV-34621: Fix division by zero in mariadb-slap when iterations=0,https://github.com/MariaDB/server/pull/3892
@@ -12,13 +14,13 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3884,MariaDB Corporation,2025-03-10T05:43:17Z,Thirunarayanan,closed,MDEV-36253  Redundant check in wf_incremental_process(),https://github.com/MariaDB/server/pull/3884
 3883,MariaDB Corporation,2025-03-10T01:17:21Z,ParadoxV5,open,MDEV-19248 Implement MASTER_BIND for CHANGE MASTER,https://github.com/MariaDB/server/pull/3883
 3882,External Contribution,2025-03-09T17:28:00Z,qobood,closed,MDEV-36263 - Fix typos in C comments inside sql/,https://github.com/MariaDB/server/pull/3882
-3881,External Contribution,2025-03-09T14:24:52Z,jiteshchawla1511,open,MDEV-35876: speedup collation/charset lookup,https://github.com/MariaDB/server/pull/3881
+3881,External Contribution,2025-03-09T14:24:52Z,jiteshchawla1511,closed,MDEV-35876: speedup collation/charset lookup,https://github.com/MariaDB/server/pull/3881
 3880,External Contribution,2025-03-08T19:33:59Z,KhaledR57,closed,MDEV-36206: Fix mysqld deprecation warning,https://github.com/MariaDB/server/pull/3880
 3879,MariaDB Foundation,2025-03-08T06:31:16Z,knielsen,closed,Fix sporadic failures of rpl.rpl_gtid_crash,https://github.com/MariaDB/server/pull/3879
 3878,MariaDB Corporation,2025-03-07T15:27:23Z,Olernov,open,MDEV-34870 - Join order optimizer hints,https://github.com/MariaDB/server/pull/3878
 3877,Codership,2025-03-07T13:21:28Z,plampio,open,Galera feature: Retry applying writesets at slaves,https://github.com/MariaDB/server/pull/3877
 3876,MariaDB Corporation,2025-03-07T09:00:40Z,dr-m,closed,MDEV-36227 Race condition between ALTER TABLE…EXCHANGE PARTITION and SELECT,https://github.com/MariaDB/server/pull/3876
-3875,MariaDB Corporation,2025-03-07T05:13:18Z,ParadoxV5,open,MDEV-36238 Functional Tests for --master-info-file and --show-slave-auth-info,https://github.com/MariaDB/server/pull/3875
+3875,MariaDB Corporation,2025-03-07T05:13:18Z,ParadoxV5,closed,MDEV-36238 Functional Tests for --master-info-file and --show-slave-auth-info,https://github.com/MariaDB/server/pull/3875
 3874,External Contribution,2025-03-06T16:30:31Z,tonychen2001,open,MDEV-36245 - Long server_audit_file_path causes buffer overflow ,https://github.com/MariaDB/server/pull/3874
 3873,MariaDB Foundation,2025-03-06T04:38:06Z,grooverdan,open,MDEV-36229: Remove CAP_DAC_OVERRIDE CAP_AUDIT_WRITE from AmbientCapabilities,https://github.com/MariaDB/server/pull/3873
 3872,MariaDB Corporation,2025-03-06T04:30:53Z,mariadb-YuchenPei,open,MDEV-32732 Support DESC indexes in loose scan optimization,https://github.com/MariaDB/server/pull/3872
