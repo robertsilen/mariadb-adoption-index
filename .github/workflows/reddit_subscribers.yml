@@ -19,7 +19,7 @@ jobs:
       - name: Fetch Reddit Subscribers and Append to CSV
         run: |
           DATE=$(date +%F)
-          VALUE=$(curl -s -A "mariadb script/1.0" -H "Authorization: bearer $REDDIT_TOKEN" https://oath.reddit.com/r/mariadb/about | jq .data.subscribers)
+          VALUE=$(curl -L -s -A "mariadb script/1.0" -H "Authorization: bearer $REDDIT_TOKEN" https://oath.reddit.com/r/mariadb/about.json | jq .data.subscribers)
                     
           PATH_TO_CSV="data/reddit_subscribers/daily.csv"
 
