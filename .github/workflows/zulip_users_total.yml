@@ -2,7 +2,7 @@ name: Zulip Users Total
 
 on:
   schedule:
-    - cron: '30 0 * * *'  # Runs once daily at 00:30 UTC
+    - cron: '55 2 * * *'  # Runs once daily at 00:30 UTC
   workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
 
 env:

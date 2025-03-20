@@ -2,7 +2,7 @@ name: Instagram Followers MariaDB Foundation
 
 on:
   schedule:
-    - cron: '0 15 * * *'  # Runs at 6 AM EET (4 AM UTC) on the first day of each month
+    - cron: '25 2 * * *'  # Runs at 6 AM EET (4 AM UTC) on the first day of each month
   workflow_dispatch:  # Allows manual triggering
 
 # Add permissions block

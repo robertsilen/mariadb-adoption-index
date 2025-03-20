@@ -2,7 +2,7 @@ name: Github Repo READMEs with MariaDB
 
 on:
   schedule:
-    - cron: '30 0 * * *'  # Runs once daily at 00:30 UTC
+    - cron: '15 2 * * *'  # Runs once daily at 00:30 UTC
   workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
 
 jobs:

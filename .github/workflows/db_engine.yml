@@ -2,7 +2,7 @@ name: DB Engines Score and Ranking
 
 on:
   schedule:
-    - cron: '45 0 * * *'  # Runs once daily at 00:30 UTC
+    - cron: '5 2 * * *'
   workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
 
 jobs:

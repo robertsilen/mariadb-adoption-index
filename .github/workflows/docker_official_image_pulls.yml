@@ -2,7 +2,7 @@ name: Docker Official Image Pulls
 
 on:
   schedule:
-    - cron: '30 0 * * *'  # Runs once daily at 00:30 UTC
+    - cron: '10 2 * * *' 
   workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
 
 jobs:

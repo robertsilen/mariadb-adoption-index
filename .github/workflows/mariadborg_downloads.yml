@@ -2,7 +2,7 @@ name: mariadb.org Downloads
 
 on:
   schedule:
-    - cron: '0 4 1 * *'  # Runs at 6 AM EET (4 AM UTC) on the first day of each month
+    - cron: '30 3 1 * *'  # Runs at 6 AM EET (4 AM UTC) on the first day of each month
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
