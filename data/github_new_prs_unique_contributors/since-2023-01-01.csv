@@ -1,4 +1,6 @@
 PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
+3898,MariaDB Corporation,2025-03-19T18:12:00Z,DaveGosselin-MariaDB,open,MDEV-36042 Assertion failed in Binary_string::q_append,https://github.com/MariaDB/server/pull/3898
+3897,MariaDB Corporation,2025-03-19T03:58:45Z,ParadoxV5,open,MDEV-35304 fixup: Threading-agnostic MTR test,https://github.com/MariaDB/server/pull/3897
 3896,MariaDB Corporation,2025-03-18T12:50:19Z,Thirunarayanan,open,MDEV-36180 Doublewrite recovery of innodb_checksum_algorithm=full_crc32 page_compressed pages does not work,https://github.com/MariaDB/server/pull/3896
 3895,MariaDB Foundation,2025-03-18T09:30:54Z,knielsen,open,MDEV-36265: Unique error for changing Domain ID with open temporary tables,https://github.com/MariaDB/server/pull/3895
 3894,MariaDB Corporation,2025-03-17T17:57:29Z,Thirunarayanan,open,MDEV-36281	DML aborts during online virtual index,https://github.com/MariaDB/server/pull/3894
@@ -58,7 +60,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3840,MariaDB Corporation,2025-02-17T13:25:37Z,vaintroub,open,MDEV-14091 Support password protected SSL key in server.,https://github.com/MariaDB/server/pull/3840
 3839,External Contribution,2025-02-16T05:48:33Z,hp77-creator,open,MDEV-23962 Remove arc directory obsolete code and move it to mysql_upgrade,https://github.com/MariaDB/server/pull/3839
 3838,External Contribution,2025-02-13T22:18:02Z,FarihaIS,open,MDEV-32362 Remove generated columns from INSERT statements in dump tool,https://github.com/MariaDB/server/pull/3838
-3837,MariaDB Corporation,2025-02-13T19:22:22Z,DaveGosselin-MariaDB,open,MDEV-34413 Index Condition Pushdown for reverse-ordered scans,https://github.com/MariaDB/server/pull/3837
+3837,MariaDB Corporation,2025-02-13T19:22:22Z,DaveGosselin-MariaDB,closed,MDEV-34413 Index Condition Pushdown for reverse-ordered scans,https://github.com/MariaDB/server/pull/3837
 3836,MariaDB Corporation,2025-02-13T16:45:57Z,andrelkin,open,MDEV-35217: Provide information for debugging parallel replication,https://github.com/MariaDB/server/pull/3836
 3835,MariaDB Corporation,2025-02-13T12:45:45Z,dr-m,closed,MDEV-36082 Race condition between log_t::resize_start() and log_t::resize_abort(),https://github.com/MariaDB/server/pull/3835
 3834,MariaDB Corporation,2025-02-13T10:23:39Z,dr-m,closed,MDEV-35436 dict_stats_fetch_from_ps() unnecessarily holds exclusive dict_sys.latch,https://github.com/MariaDB/server/pull/3834
