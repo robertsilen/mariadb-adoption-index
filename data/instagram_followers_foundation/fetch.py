@@ -3,8 +3,9 @@ import csv
 from datetime import datetime
 import os
 
-L = instaloader.Instaloader()
+L = instaloader.Instaloader(download_pictures=False)
 profile = instaloader.Profile.from_username(L.context, "mariadb_org")
+print(profile.followers)
 
 # Get today's date in YYYY-MM-DD format
 today = datetime.now().strftime('%Y-%m-%d')
