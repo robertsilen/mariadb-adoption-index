@@ -29,6 +29,11 @@ jobs:
             echo "$DATE,$PULL_COUNT" >> $PATH_TO_CSV
           fi
 
+      - name: Install Python dependencies
+        run: pip install pandas
+
+      - name: Update monthly.csv with scripts/daily2monthly.py
+        run: python scripts/daily2monthly.py brew_installs_30d
 
       - name: Commit and push
         run: |
