@@ -37,7 +37,7 @@ Cursor and Claude have been used to generate this solution.
 | Reddit subscribers                     | curl, daily           | key  | daily2monthly.py  |
 | Hackernews                             | fetch.py, historic    |      | fetch.py          |
 | Stackexchange new questions            | fetch.py, historic    |      | fetch.py          |
-| LinkedIn                               | manual                | auth | wip               |
+| LinkedIn                               | manual                |      | wip               |
 | Youtube                                | curl, daily           | key  | daily2monthly.py  |
 | Fosstadon                              | manual                |      | wip               |
 | Instagram                              | manual                |      | wip               |
