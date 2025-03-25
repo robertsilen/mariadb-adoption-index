@@ -1,0 +1,45 @@
+name: Brew Installs 30d
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Runs once daily at 03:00 UTC
+  workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
+
+jobs:
+  fetch-pulls:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Fetch brew installs 30d and Append to CSV
+        run: |
+          DATE=$(date +%F)
+          PULL_COUNT=$(curl -s curl -s "https://formulae.brew.sh/api/formula/mariadb.json" | jq '.analytics.install["30d"].mariadb')
+          PATH_TO_CSV="data/brew_installs_30d/daily.csv"
+
+          # Ensure the CSV file exists with the header
+          if [ ! -f $PATH_TO_CSV ]; then
+            echo "date,brew_installs_30d" > $PATH_TO_CSV
+          fi
+
+          # Check if the date already exists in the CSV file
+          if ! grep -q "$DATE" $PATH_TO_CSV; then
+            echo "$DATE,$PULL_COUNT" >> $PATH_TO_CSV
+          fi
+
+      - name: Install Python dependencies
+        run: pip install pandas
+
+      - name: Update monthly.csv with scripts/daily2monthly.py
+        run: python scripts/daily2monthly.py brew_installs_30d
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "brew installs 30d ${timestamp}" || exit 0
+          git push

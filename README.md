@@ -25,8 +25,8 @@ Cursor and Claude have been used to generate this solution.
 | mariadb.org downloads                  | curl, historic        |      | raw2monthly.py    |
 | Debien popcon                          | curl, historic        |      | raw2monthly.py    |
 | Docker official image pulls            | curl, daily           |      | wip               |
-| Github new PRs external                | python, historic      | key  | latest2monthly.py |
-| Github new PRs ext. unique user names  | python, historic      | key  | latest2monthly.py |
+| Github new PRs external                | fetch.py, historic    | key  | latest2monthly.py |
+| Github new PRs ext. unique user names  | fetch.py, historic    | key  | latest2monthly.py |
 | Github stars                           | curl, daily           |      | daily2monthly.py  |
 | Github readme repos                    | curl, daily           |      | daily2monthly.py  |
 | Zulip total users                      | curl, daily           | key  | daily2monthly.py  |
