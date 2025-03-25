@@ -20,28 +20,28 @@ Cursor and Claude have been used to generate this solution.
 
 ## KPI details
 
-| KPI                                    | Fetch Method          | Key  | Create Monthly |
-|----------------------------------------|-----------------------|------|----------------|
-| mariadb.org downloads                  | curl, historic        |      | python         |
-| Debien popcon                          | curl, historic        |      | python         |
-| Docker official image pulls            | curl, daily           |      | python         |
-| Github new PRs external                | python, historic      | key  | python         |
-| Github new PRs ext. unique user names  | python, historic      | key  | python         |
-| Github stars                           | curl, daily           |      | python, wip    |
-| Github readme repos                    | curl, daily           |      | python, wip    |
-| Zulip total users                      | curl, daily           | key  | python, wip    |
-| Zulip active users 15d                 | curl, daily           | key  | python, wip    |
-| DB-engines                             | curl scrape, daily    |      | python, wip    |
-| Google trends                          | python, historic      |      | -              |
-| Wikipedia views all langs              | python, historic      |      | -              |
-| Reddit subscribers                     | curl, daily           | key  | python, wip    |
-| Hackernews                             | python, historic      |      | with fetch     |
-| Stackexchange new questions            | python, historic      |      | with fetch     |
-| LinkedIn                               | manual                | auth | -              |
-| Youtube                                | python, daily         | key  | python, wip    |
-| Fosstadon                              | manual                |      | -              |
-| Instagram                              | python, broken        |      | python, wip    |
-| X (Twitter)                            | manual                |      | -              |
+| KPI                                    | Fetch Method          | Key  | Create Monthly    |
+|----------------------------------------|-----------------------|------|-------------------|
+| mariadb.org downloads                  | curl, historic        |      | raw2monthly.py    |
+| Debien popcon                          | curl, historic        |      | raw2monthly.py    |
+| Docker official image pulls            | curl, daily           |      | wip               |
+| Github new PRs external                | python, historic      | key  | latest2monthly.py |
+| Github new PRs ext. unique user names  | python, historic      | key  | latest2monthly.py |
+| Github stars                           | curl, daily           |      | daily2monthly.py  |
+| Github readme repos                    | curl, daily           |      | daily2monthly.py  |
+| Zulip total users                      | curl, daily           | key  | daily2monthly.py  |
+| Zulip active users 15d                 | curl, daily           | key  | daily2monthly.py  |
+| DB-engines                             | curl scrape, daily    |      | daily2monthly.py  |
+| Google trends                          | fetch.py, historic    |      | fetch.py          |
+| Wikipedia views all langs              | fetch.py, historic    |      | fetch.py          |
+| Reddit subscribers                     | curl, daily           | key  | daily2monthly.py  |
+| Hackernews                             | fetch.py, historic    |      | fetch.py          |
+| Stackexchange new questions            | fetch.py, historic    |      | fetch.py          |
+| LinkedIn                               | manual                | auth | wip               |
+| Youtube                                | curl, daily           | key  | daily2monthly.py  |
+| Fosstadon                              | manual                |      | wip               |
+| Instagram                              | manual                |      | wip               |
+| X (Twitter)                            | manual                |      | wip               |
 
 ### API-Key docs
 * [Github fine-grained personal access tokens](https://github.blog/security/application-security/introducing-fine-grained-personal-access-tokens-for-github/)
