@@ -27,6 +27,9 @@ jobs:
             echo "date,youtube_subscribers_foundation" > $PATH_TO_CSV
           fi
 
+          # Ensure file ends with newline
+          [ -f $PATH_TO_CSV ] && [ "$(tail -c1 $PATH_TO_CSV)" != "" ] && echo "" >> $PATH_TO_CSV
+
           # Check if the date already exists in the CSV file
           if ! grep -q "$DATE" $PATH_TO_CSV; then
             echo "$DATE,$VALUE" >> $PATH_TO_CSV
