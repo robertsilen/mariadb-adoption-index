@@ -32,9 +32,13 @@ def dailymax2monthly(value):
         print(f"Error processing files: {str(e)}")
         print("\nAttempting to debug daily.csv...")
         # Read the file line by line to identify problematic rows
-        with open(path + 'daily.csv', 'r') as f:
-            for i, line in enumerate(f, 1):
-                print(f"Line {i}: {line.strip()}, Fields: {len(line.strip().split(','))}")
+        try:
+            with open(path + 'daily.csv', 'r') as f:
+                for i, line in enumerate(f, 1):
+                    print(f"Line {i}: {line.strip()}, Fields: {len(line.strip().split(','))}")
+        except Exception as read_error:
+            print(f"Could not read daily.csv: {str(read_error)}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
