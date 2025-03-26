@@ -4,11 +4,21 @@ import sys
 def dailymax2monthly(value):
     path = f'data/{value}/'
     try:
-        # Try reading with explicit delimiter and error handling
+        # Read daily data with better error handling and skip empty lines
         df_daily = pd.read_csv(path + 'daily.csv', 
                              header=0,
                              delimiter=',',
-                             on_bad_lines='warn')
+                             on_bad_lines='warn',
+                             skip_blank_lines=True)
+        
+        # Validate that required columns exist
+        if 'date' not in df_daily.columns:
+            raise ValueError("'date' column not found in daily.csv")
+        if value not in df_daily.columns:
+            raise ValueError(f"'{value}' column not found in daily.csv")
+            
+        # Clean the dataframe by dropping any rows with NaN values
+        df_daily = df_daily.dropna(subset=['date', value])
         
         df_daily['date'] = pd.to_datetime(df_daily['date'])
         df_daily['month'] = df_daily['date'].dt.strftime('%Y-%m')
@@ -31,18 +41,19 @@ def dailymax2monthly(value):
     except Exception as e:
         print(f"Error processing files: {str(e)}")
         print("\nAttempting to debug daily.csv...")
-        # Read the file line by line to identify problematic rows
         try:
             with open(path + 'daily.csv', 'r') as f:
-                for i, line in enumerate(f, 1):
-                    print(f"Line {i}: {line.strip()}, Fields: {len(line.strip().split(','))}")
+                lines = [line.strip() for line in f if line.strip()]  # Skip empty lines
+                for i, line in enumerate(lines, 1):
+                    print(f"Line {i}: {line}, Fields: {len(line.split(','))}")
         except Exception as read_error:
             print(f"Could not read daily.csv: {str(read_error)}")
         sys.exit(1)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python daily2monthly.py <value>")
-        sys.exit(1)
-    dailymax2monthly(sys.argv[1])
+    #if len(sys.argv) != 2:
+    #    print("Usage: python daily2monthly.py <value>")
+    #    sys.exit(1)
+    value = 'reddit_subscribers'
+    dailymax2monthly(value)
     
