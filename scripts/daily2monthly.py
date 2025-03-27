@@ -20,9 +20,13 @@ def dailymax2monthly(value):
         # Clean the dataframe by dropping any rows with NaN values
         df_daily = df_daily.dropna(subset=['date', value])
         
+        # Convert date and sort by it first
         df_daily['date'] = pd.to_datetime(df_daily['date'])
+        df_daily = df_daily.sort_values('date')  # Sort by full date
         df_daily['month'] = df_daily['date'].dt.strftime('%Y-%m')
-        df_month_new = df_daily.groupby('month')[value].max().reset_index()
+        
+        # Group by month and take the last value, is sorted by date already
+        df_month_new = df_daily.groupby('month')[value].last().reset_index()
         print("New monthly data:")
         print(df_month_new)
 
@@ -51,9 +55,9 @@ def dailymax2monthly(value):
         sys.exit(1)
 
 if __name__ == "__main__":
-    #if len(sys.argv) != 2:
-    #    print("Usage: python daily2monthly.py <value>")
-    #    sys.exit(1)
-    value = 'reddit_subscribers'
+    if len(sys.argv) != 2:
+        print("Usage: python daily2monthly.py <value>")
+        sys.exit(1)
+    value = sys.argv[1]
     dailymax2monthly(value)
     

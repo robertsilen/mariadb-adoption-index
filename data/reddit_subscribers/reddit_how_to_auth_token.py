@@ -3,10 +3,10 @@
 
 import requests
 
-CLIENT_ID = "client_id"
-CLIENT_SECRET = "client_secret"
-USERNAME = "username"
-PASSWORD = "password"
+CLIENT_ID = ""
+CLIENT_SECRET = ""
+USERNAME = "robersilen"
+PASSWORD = ""
 USER_AGENT = "mariadb script/0.1 by mariadb"
 
 # Request an access token
