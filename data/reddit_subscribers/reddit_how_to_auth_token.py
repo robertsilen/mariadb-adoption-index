@@ -5,7 +5,7 @@ import requests
 
 CLIENT_ID = ""
 CLIENT_SECRET = ""
-USERNAME = "robersilen"
+USERNAME = ""
 PASSWORD = ""
 USER_AGENT = "mariadb script/0.1 by mariadb"
 
