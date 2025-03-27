@@ -29,12 +29,6 @@ jobs:
             echo "$DATE,$PULL_COUNT" >> $PATH_TO_CSV
           fi
 
-      - name: Install Python dependencies
-        run: pip install pandas
-
-      - name: Update monthly.csv with scripts/daily2monthly.py
-        run: python scripts/daily2monthly.py docker_official_image_pulls delta
-
       - name: Commit and push
         run: |
           git config --global user.name "github-actions"
