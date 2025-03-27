@@ -21,7 +21,7 @@ jobs:
 
           # Ensure the CSV file exists with the header
           if [ ! -f $PATH_TO_CSV ]; then
-            echo "date,mariadb_official_image_pulls" > $PATH_TO_CSV
+            echo "date,docker_official_image_pulls" > $PATH_TO_CSV
           fi
 
           # Check if the date already exists in the CSV file
@@ -33,7 +33,7 @@ jobs:
         run: pip install pandas
 
       - name: Update monthly.csv with scripts/daily2monthly.py
-        run: python scripts/daily2monthly.py mariadb_official_image_pulls delta
+        run: python scripts/daily2monthly.py docker_official_image_pulls delta
 
       - name: Commit and push
         run: |
