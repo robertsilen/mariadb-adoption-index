@@ -1,7 +1,8 @@
 import pandas as pd
 import sys
 
-def dailymax2monthly(value):
+# Takes last daily value of the month and appends to existing monthly data 
+def daily2monthly(value):
     path = f'data/{value}/'
     try:
         # Read daily data with better error handling and skip empty lines
@@ -54,10 +55,20 @@ def dailymax2monthly(value):
             print(f"Could not read daily.csv: {str(read_error)}")
         sys.exit(1)
 
+def delta2monthly(value):
+    path = f'data/{value}/'
+    df_monthly = pd.read_csv(path + 'monthly.csv', header=0)
+    df_monthly = df_monthly.sort_values('month')
+    df_monthly[f'{value}_delta'] = df_monthly[value].diff()
+    df_monthly.to_csv(path + 'monthly_delta.csv', index=False)    
+    print("\nMonthly delta data:")
+    print(df_monthly)
+
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python daily2monthly.py <value>")
+    if len(sys.argv) < 2:
+        print("Usage: python daily2monthly.py <value> [delta]")
         sys.exit(1)
     value = sys.argv[1]
-    dailymax2monthly(value)
-    
+    daily2monthly(value)
+    if len(sys.argv) > 2 and sys.argv[2] == "delta":
+        delta2monthly(value)

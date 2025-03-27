@@ -1,4 +1,4 @@
-name: Docker Official Image Pulls
+name: Docker Official Image Pulls, Monthly Delta
 
 on:
   schedule:
@@ -29,11 +29,17 @@ jobs:
             echo "$DATE,$PULL_COUNT" >> $PATH_TO_CSV
           fi
 
+      - name: Install Python dependencies
+        run: pip install pandas
+
+      - name: Update monthly.csv with scripts/daily2monthly.py
+        run: python scripts/daily2monthly.py mariadb_official_image_pulls delta
+
       - name: Commit and push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add -A
           timestamp=$(date -I)
-          git commit -m "docker official image pulls ${timestamp}" || exit 0
+          git commit -m "docker official image pulls, ${timestamp} & monthlydelta" || exit 0
           git push
