@@ -19,32 +19,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Get Reddit Token
-        run: python data/reddit_subscribers/get_auth_token.py
-
       - name: Fetch Reddit Subscribers and Append to CSV
         run: |
           DATE=$(date +%F)
-          
-          # Store the API response in a variable and check for errors
-          RESPONSE=$(curl -v -L -s -A "mariadb script/1.0" -H "Authorization: bearer $REDDIT_TOKEN" https://oauth.reddit.com/r/mariadb/about.json)
-          
-          # Check if the response contains an error message
-          if echo "$RESPONSE" | jq -e '.error' > /dev/null; then
-            echo "Error from Reddit API:"
-            echo "$RESPONSE" | jq '.'
-            exit 1
-          fi
-          
-          # Extract and validate the subscriber count
-          VALUE=$(echo "$RESPONSE" | jq '.data.subscribers')
-          
-          if [ "$VALUE" = "null" ] || [ -z "$VALUE" ]; then
-            echo "Error: Failed to get valid subscriber count from Reddit API"
-            echo "API Response:"
-            echo "$RESPONSE" | jq '.'
-            exit 1
-          fi
+          VALUE=$(python data/reddit_subscribers/fetch.py --subscribers)
                     
           PATH_TO_CSV="data/reddit_subscribers/daily.csv"
 
