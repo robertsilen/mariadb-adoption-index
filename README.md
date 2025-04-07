@@ -34,7 +34,7 @@ Cursor and Claude have been used to generate this solution.
 | DB-engines                             | curl scrape, daily    |      | daily2monthly.py  |
 | Google trends                          | fetch.py, historic    |      | fetch.py          |
 | Wikipedia views all langs              | fetch.py, historic    |      | fetch.py          |
-| Reddit subscribers                     | curl, daily           | key  | daily2monthly.py  |
+| Reddit subscribers                     | fetch.py, daily       | key  | daily2monthly.py  |
 | Hackernews                             | fetch.py, historic    |      | fetch.py          |
 | Stackexchange new questions            | fetch.py, historic    |      | fetch.py          |
 | LinkedIn                               | manual                |      | wip               |
