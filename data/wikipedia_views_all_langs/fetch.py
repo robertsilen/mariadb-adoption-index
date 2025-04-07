@@ -70,6 +70,9 @@ def stats_to_csv(stats, output_path):
     df['month'] = df['timestamp'].dt.strftime('%Y-%m')
     grouped_df = df.groupby('month')['views'].sum().reset_index()
     
+    # Rename the views column to wikipedia_views_all_langs
+    grouped_df = grouped_df.rename(columns={'views': 'wikipedia_views_all_langs'})
+    
     # Sort grouped data by month in descending order
     grouped_df = grouped_df.sort_values('month', ascending=False)
     

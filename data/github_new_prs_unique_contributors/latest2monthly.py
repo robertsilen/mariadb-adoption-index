@@ -23,7 +23,7 @@ for month in all_months:
     print(f"{window_data['month'].min()} - {window_data['month'].max()}: PRs: {len(window_data)}, Unique Contributors: {unique_count}")
     #print(window_data['creator_username'].unique())
 
-results['unique_users_12m'] = unique_users_counts
+results['github_new_prs_unique_contributors'] = unique_users_counts
 results['month'] = results['month'].astype(str)
 results = results.sort_values('month', ascending=False)
 results.to_csv('data/github_new_prs_unique_contributors/monthly.csv', index=False)
