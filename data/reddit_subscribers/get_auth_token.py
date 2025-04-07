@@ -2,11 +2,13 @@
 # Start by creating app in https://www.reddit.com/prefs/apps and enter values below: 
 
 import requests
+import os
 
-CLIENT_ID = ""
-CLIENT_SECRET = ""
-USERNAME = ""
-PASSWORD = ""
+# Get credentials from environment variables
+CLIENT_ID = os.getenv("REDDIT_CLIENT_ID")
+CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET")
+USERNAME = os.getenv("REDDIT_USERNAME")
+PASSWORD = os.getenv("REDDIT_PASSWORD")
 USER_AGENT = "mariadb script/0.1 by mariadb"
 
 # Request an access token
@@ -26,4 +28,5 @@ response = requests.post(
 )
 
 TOKEN = response.json().get("access_token")
-print("Access Token:", TOKEN)
+# Save token to environment variable
+os.environ["REDDIT_TOKEN"] = TOKEN
