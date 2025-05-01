@@ -1,6 +1,6 @@
 PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 4028,"MariaDB Corporation, Replication",2025-04-29T19:45:16Z,bnestere,open,MDEV-36714: Rows_log_event::write_data_header overallocates buffer size,https://github.com/MariaDB/server/pull/4028
-4027,,2025-04-29T13:03:56Z,hemantdangi-gc,closed,MDL BF-BF conflict on ALTER and UPDATE with multi-level foreign key parents,https://github.com/MariaDB/server/pull/4027
+4027,Codership,2025-04-29T13:03:56Z,hemantdangi-gc,closed,MDL BF-BF conflict on ALTER and UPDATE with multi-level foreign key parents,https://github.com/MariaDB/server/pull/4027
 4026,Codership,2025-04-29T12:18:21Z,denis-protivensky,open,"MDEV-36710: Revert ""MDEV-33136: backport corrections from 10.11+""",https://github.com/MariaDB/server/pull/4026
 4025,MariaDB Foundation,2025-04-29T07:05:14Z,grooverdan,closed,MDEV-36168 ASAN error in Item_func_latlongfromgeohash::decode_geohash…,https://github.com/MariaDB/server/pull/4025
 4024,Codership,2025-04-28T07:32:52Z,janlindstrom,open,MDEV-36512 : galera_3nodes.GCF-354: certification position less than …,https://github.com/MariaDB/server/pull/4024
@@ -17,7 +17,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 4013,MariaDB Foundation,2025-04-24T21:29:35Z,svoj,closed,MDEV-36666 - atomic.alter_table still times out often,https://github.com/MariaDB/server/pull/4013
 4012,External Contribution,2025-04-24T16:35:04Z,FarihaIS,open,MDEV-36397 Record change_user command in MTR output,https://github.com/MariaDB/server/pull/4012
 4011,Codership,2025-04-24T11:13:55Z,janlindstrom,open,MDEV-36628 : galera_vote_during_ist test failed,https://github.com/MariaDB/server/pull/4011
-4010,MariaDB Corporation,2025-04-24T10:58:07Z,bsrikanth-mariadb,open,"MDEV-36461 Remove join_execution nodes from the trace, and instead add range-checked-for-each-record when needed",https://github.com/MariaDB/server/pull/4010
+4010,MariaDB Corporation,2025-04-24T10:58:07Z,bsrikanth-mariadb,closed,"MDEV-36461 Remove join_execution nodes from the trace, and instead add range-checked-for-each-record when needed",https://github.com/MariaDB/server/pull/4010
 4009,MariaDB Foundation,2025-04-24T10:55:12Z,svoj,closed,MDEV-36684 - main.mdl_sync fails under valgrind (test for Bug#42643),https://github.com/MariaDB/server/pull/4009
 4008,MariaDB Foundation,2025-04-24T09:42:44Z,svoj,closed,MDEV-36648 - main.mdl_sync extra test.t2 row in I_S.metadata_lock_info,https://github.com/MariaDB/server/pull/4008
 4007,MariaDB Corporation,2025-04-24T08:19:16Z,Thirunarayanan,closed,MDEV-36682  Conflict between MDEV-36504 and MDEV-16329,https://github.com/MariaDB/server/pull/4007
@@ -30,7 +30,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 4000,MariaDB Corporation,2025-04-23T12:00:07Z,dr-m,closed,MDEV-36646: innodb_buffer_pool_size change aborted,https://github.com/MariaDB/server/pull/4000
 3999,MariaDB Foundation,2025-04-22T15:51:58Z,cvicentiu,closed,HAVE_valgrind typo fixup and -asan suffix,https://github.com/MariaDB/server/pull/3999
 3998,MariaDB Corporation,2025-04-22T15:10:16Z,bsrikanth-mariadb,closed,MDEV-21510 optimizer trace should show the index name in the block chosen_access_method,https://github.com/MariaDB/server/pull/3998
-3997,MariaDB Corporation,2025-04-22T15:01:03Z,Olernov,open,MDEV-36638 Some optimizer hint warnings are returned as errors,https://github.com/MariaDB/server/pull/3997
+3997,MariaDB Corporation,2025-04-22T15:01:03Z,Olernov,closed,MDEV-36638 Some optimizer hint warnings are returned as errors,https://github.com/MariaDB/server/pull/3997
 3996,MariaDB Corporation,2025-04-22T14:06:42Z,vlad-lesin,closed,MDEV-36639 innodb_snapshot_isolation=1 gives error for not committed …,https://github.com/MariaDB/server/pull/3996
 3995,MariaDB Corporation,2025-04-22T13:11:08Z,bsrikanth-mariadb,closed,MDEV-21510 optimizer trace should show the index name in the block chosen_access_method,https://github.com/MariaDB/server/pull/3995
 3994,Codership,2025-04-22T06:00:31Z,janlindstrom,closed,MDEV-36620 : galera_toi_ddl_nonconflicting test failure,https://github.com/MariaDB/server/pull/3994
