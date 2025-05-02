@@ -23,8 +23,8 @@ for index, row in weights.iterrows():
         how='outer'
     )
     combined_data = combined_data.fillna(0).astype({col: 'int' for col in combined_data.columns if col != 'month'})
-# 3. Calculate index values for each column (excluding 'month') by adding a column _index for each column, and set the baseline to 2024-01
-baseline_date = '2024-01'
+# 3. Calculate index values for each column (excluding 'month') by adding a column _index for each column, and set the baseline to 2023-12
+baseline_date = '2023-12'
 for column in combined_data.columns:
     if column != 'month':
         baseline_value = combined_data[combined_data['month'] == baseline_date][column].iloc[0]
