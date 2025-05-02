@@ -7,6 +7,9 @@
 ![Weights](index/mariadb_adoption_index_weights.png)
 
 ## Rolling 12 month values and baseline (2024-01)
+
+!! Downloads from mariadb.org for 2024-04 missing !!
+
 ![Monthly Values](index/mariadb_adoption_index_table_12m.png)
 
 # Documentation

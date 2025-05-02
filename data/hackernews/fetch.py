@@ -36,7 +36,7 @@ while True:
         break
 
 # Convert to DataFrame
-monthly_df = pd.DataFrame(sorted(monthly_mentions.items(), key=lambda x: x[1], reverse=True), 
+monthly_df = pd.DataFrame(sorted(monthly_mentions.items(), key=lambda x: x[0]), 
                          columns=["month", "hackernews"])
 
 # Save to CSV

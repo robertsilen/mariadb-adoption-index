@@ -1,0 +1,1 @@
+# get manually from https://www.linkedin.com/company/mariadb-foundation/about/
