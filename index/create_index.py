@@ -1,6 +1,7 @@
 import pandas as pd
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
+from dateutil.relativedelta import relativedelta
 
 
 # 1. Read create_index_weights.csv and plot weights as a pie chart
@@ -51,7 +52,7 @@ combined_data.rename(columns={'weighted_index': 'Weighted Index'}, inplace=True)
 # Filter to last 12 months and baseline month
 current_date = datetime.now()
 previous_month = (current_date - timedelta(days=current_date.day)).replace(day=1)
-months_to_include = [baseline_date] + [(previous_month - timedelta(days=30 * i)).strftime('%Y-%m') for i in range(12)]
+months_to_include = [baseline_date] + [(previous_month - relativedelta(months=i)).strftime('%Y-%m') for i in range(12)]
 filtered_data = combined_data[combined_data['month'].isin(months_to_include)]
 # Transpose the DataFrame and save to a csv file
 filtered_data = filtered_data.set_index('month').T
