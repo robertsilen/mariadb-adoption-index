@@ -8,7 +8,7 @@
 
 ## Rolling 12 month values and baseline (2024-01)
 
-!! Downloads from mariadb.org for 2024-04 missing !!
+Baseline 2024-01-01 in practise values for month of 2023-12.
 
 ![Monthly Values](index/mariadb_adoption_index_table_12m.png)
 
