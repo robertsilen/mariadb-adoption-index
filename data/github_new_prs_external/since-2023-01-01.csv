@@ -1,17 +1,93 @@
 PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
+4155,"MariaDB Corporation, Replication",2025-06-30T23:04:21Z,ParadoxV5,open,MDEV-37102: Fix Test by Waiting for the State,https://github.com/MariaDB/server/pull/4155
+4154,MariaDB Corporation,2025-06-30T08:30:53Z,dr-m,open,MDEV-37115: Optimize reverse index scan,https://github.com/MariaDB/server/pull/4154
+4153,MariaDB Corporation,2025-06-27T16:09:53Z,raghunandanbhat,closed,"MDEV-31721: Cursor protocol increases the counter of ""Empty_queries""",https://github.com/MariaDB/server/pull/4153
+4152,Codership,2025-06-27T07:37:01Z,janlindstrom,open,MDEV-36923 : Add warning messages for applier FK failures,https://github.com/MariaDB/server/pull/4152
+4151,MariaDB Foundation,2025-06-27T00:48:28Z,grooverdan,open,MDEV-37092 galera_new_cluster installed under WITH_WSREP=OFF,https://github.com/MariaDB/server/pull/4151
+4150,MariaDB Corporation,2025-06-26T13:15:49Z,dr-m,open,MDEV-32067 InnoDB linear read ahead had better be logical,https://github.com/MariaDB/server/pull/4150
+4149,MariaDB Corporation,2025-06-26T08:58:46Z,Thirunarayanan,open,MDEV-22250 InnoDB: Failing assertion: opt_no_lock during mariabackup --backup,https://github.com/MariaDB/server/pull/4149
+4148,MariaDB Corporation,2025-06-26T07:33:55Z,Thirunarayanan,open,MDEV-22250 InnoDB: Failing assertion: opt_no_lock during mariabackup --backup,https://github.com/MariaDB/server/pull/4148
+4147,MariaDB Corporation,2025-06-26T03:13:33Z,bsrikanth-mariadb,open,MDEV-36410 wrong result with index_merge intersect plan,https://github.com/MariaDB/server/pull/4147
+4146,MariaDB Corporation,2025-06-25T07:08:41Z,Thirunarayanan,closed,MDEV-22250 InnoDB: Failing assertion: opt_no_lock during mariabackup --backup,https://github.com/MariaDB/server/pull/4146
+4145,MariaDB Foundation,2025-06-25T04:29:02Z,grooverdan,open,MDEV-34388 debug clang,https://github.com/MariaDB/server/pull/4145
+4144,MariaDB Foundation,2025-06-24T22:22:58Z,grooverdan,closed,MDEV-36738: mariadb@.service incorrectly changing pam ownership in mariadb-install-db,https://github.com/MariaDB/server/pull/4144
+4143,MariaDB Foundation,2025-06-24T06:53:20Z,grooverdan,open,MDEV-35826 Debian to include arm64 dependencies for columnstore,https://github.com/MariaDB/server/pull/4143
+4142,MariaDB Foundation,2025-06-24T05:22:52Z,grooverdan,closed,MDEV-36697: Wrong server.cnf group for version,https://github.com/MariaDB/server/pull/4142
+4141,MariaDB Foundation,2025-06-24T05:17:44Z,grooverdan,closed,MDEV-36697: Wrong server.cnf group for version,https://github.com/MariaDB/server/pull/4141
+4140,MariaDB Corporation,2025-06-24T03:27:20Z,mariadb-RexJohnston,open,MDEV-37057 Wrong result with LATERAL DERIVED,https://github.com/MariaDB/server/pull/4140
+4139,MariaDB Corporation,2025-06-24T03:14:49Z,mariadb-RexJohnston,closed,10.6 mdev 37057,https://github.com/MariaDB/server/pull/4139
+4138,MariaDB Corporation,2025-06-23T10:23:34Z,Thirunarayanan,closed,MDEV-35863 innodb.doublewrite_debug test case fails to start the server,https://github.com/MariaDB/server/pull/4138
+4137,Codership,2025-06-23T06:56:56Z,janlindstrom,closed,"MDEV-35523 : Server crashes with ""WSREP: Unknown writeset version: -1""",https://github.com/MariaDB/server/pull/4137
+4136,MariaDB Corporation,2025-06-23T05:45:52Z,dr-m,closed,MDEV-37049 my_assume_aligned assertion in mariabackup,https://github.com/MariaDB/server/pull/4136
+4135,MariaDB Foundation,2025-06-23T04:48:15Z,grooverdan,open,MDEV-37052 JSON_SCHEMA_VALID stack overflow handling errors,https://github.com/MariaDB/server/pull/4135
+4134,MariaDB Foundation,2025-06-23T04:41:38Z,grooverdan,open,MDEV-37052: JSON_TABLE stack overflow handling errors,https://github.com/MariaDB/server/pull/4134
+4133,"MariaDB Corporation, Replication",2025-06-21T23:27:20Z,ParadoxV5,open,MDEV-36839 Optimize Rows_log_event Reporting of Process Info,https://github.com/MariaDB/server/pull/4133
+4132,External Contribution,2025-06-21T12:56:46Z,Simoffsky,open,MDEV-36696 Row-loop optimization via JIT [WIP],https://github.com/MariaDB/server/pull/4132
+4131,MariaDB Corporation,2025-06-20T20:19:14Z,DaveGosselin-MariaDB,open,MDEV-37029 Make vcol rewrite handle row-based INs,https://github.com/MariaDB/server/pull/4131
+4130,MariaDB Corporation,2025-06-20T09:14:22Z,bsrikanth-mariadb,open,MDEV-35353 set correct number of rows_examined for union all queries,https://github.com/MariaDB/server/pull/4130
+4129,MariaDB Foundation,2025-06-20T01:08:54Z,grooverdan,open,MDEV-37048 revert MSAN my_vsnprintf_ex for double workaround,https://github.com/MariaDB/server/pull/4129
+4128,MariaDB Corporation,2025-06-19T05:47:11Z,Olernov,open,"MDEV-20022 sql_mode=""oracle"" does not support TO_NUMBER() function",https://github.com/MariaDB/server/pull/4128
+4127,MariaDB Foundation,2025-06-19T04:40:31Z,grooverdan,closed,MDEV-37033 UBSAN: row_log_table_apply_ops runtime error: applying non-zero offset 1048576 to null pointer,https://github.com/MariaDB/server/pull/4127
+4126,MariaDB Corporation,2025-06-18T12:44:55Z,DaveGosselin-MariaDB,open,MDEV-35913 Assertion `m_comparator.cmp_type() != ROW_RESULT' in Item_…,https://github.com/MariaDB/server/pull/4126
+4125,MariaDB Corporation,2025-06-18T01:30:37Z,DaveGosselin-MariaDB,open,MDEV-23699 Assertion failed in ha_tina::delete_row,https://github.com/MariaDB/server/pull/4125
+4124,MariaDB Corporation,2025-06-17T17:02:56Z,DaveGosselin-MariaDB,open,MDEV-36389 Incorrect query results for an indexed text column,https://github.com/MariaDB/server/pull/4124
+4123,MariaDB Corporation,2025-06-17T14:37:59Z,Thirunarayanan,closed,MDEV-36650  Unexpected checkpoint in the test innodb.doublewrite,https://github.com/MariaDB/server/pull/4123
+4122,MariaDB Corporation,2025-06-17T13:05:58Z,mariadb-DebarunBanerjee,closed,MDEV-36959 Deadlock does not rollback transaction fully,https://github.com/MariaDB/server/pull/4122
+4121,MariaDB Corporation,2025-06-17T08:38:04Z,bsrikanth-mariadb,closed,MDEV-36215 Fix Wrong query result due to Table Elimination,https://github.com/MariaDB/server/pull/4121
+4120,MariaDB Foundation,2025-06-17T07:52:05Z,grooverdan,closed,MDEV-37019 MSAN_STAT_WORKAROUND macro remove,https://github.com/MariaDB/server/pull/4120
+4119,MariaDB Corporation,2025-06-17T06:59:55Z,Thirunarayanan,closed,MDEV-36962  innodb.log_file_overwrite fails with ASAN errors,https://github.com/MariaDB/server/pull/4119
+4118,External Contribution,2025-06-16T08:53:06Z,sitano,open,MDEV-10267/pre: move fulltext example plugin into fulltext/example,https://github.com/MariaDB/server/pull/4118
+4117,MariaDB Corporation,2025-06-16T04:20:30Z,ParadoxV5,open,MDEV-25123: Lift `not_*san` in `not_ubsan` Tests,https://github.com/MariaDB/server/pull/4117
+4116,External Contribution,2025-06-14T00:32:03Z,brad0,closed,Enable CMake CRC32 / CRYPTO tests for aarch64 with Clang,https://github.com/MariaDB/server/pull/4116
+4115,External Contribution,2025-06-13T23:56:52Z,brad0,closed,Enable use of elf_aux_info() to detect CPU features on aarch64 and powerpc64,https://github.com/MariaDB/server/pull/4115
+4114,External Contribution,2025-06-13T14:48:38Z,KhaledR57,open,MDEV-36107: Add expression support to mysqltest,https://github.com/MariaDB/server/pull/4114
+4113,Codership,2025-06-13T11:58:15Z,hemantdangi-gc,open,MENT-2297: Inconsistency detected - create sequence,https://github.com/MariaDB/server/pull/4113
+4112,"MariaDB Corporation, MariaDB Foundation",2025-06-13T11:46:13Z,Thirunarayanan,closed,MDEV-36871 mariadb-backup incremental segfault querying mariadb_backup_history,https://github.com/MariaDB/server/pull/4112
+4111,MariaDB Corporation,2025-06-13T09:03:14Z,raghunandanbhat,closed,"MDEV-24588, 36851 followup: Fix derived, hybrid func test for --view-protocol",https://github.com/MariaDB/server/pull/4111
+4110,Codership,2025-06-13T07:53:23Z,hemantdangi-gc,closed,MENT-2297: Inconsistency detected - create sequence,https://github.com/MariaDB/server/pull/4110
+4109,MariaDB Corporation,2025-06-12T19:39:19Z,DaveGosselin-MariaDB,closed,MDEV-36997 Assertion failed in ha_tina::delete_row on multi delete,https://github.com/MariaDB/server/pull/4109
+4108,GSoC,2025-06-12T13:42:23Z,HazemRawi,open,GSOC'25 - MDEV-12513 Implementation of Native INTERVAL Data Type,https://github.com/MariaDB/server/pull/4108
+4107,MariaDB Corporation,2025-06-12T11:02:55Z,raghunandanbhat,closed,MDEV-36851: COALESCE() returns nullable column while IFNULL() does not,https://github.com/MariaDB/server/pull/4107
+4106,MariaDB Foundation,2025-06-12T09:59:40Z,fauust,closed,MDEV-36995: ifunc is not supported by musl,https://github.com/MariaDB/server/pull/4106
+4105,Codership,2025-06-12T07:59:55Z,janlindstrom,closed,MDEV-34761 : Assertion `client_state_.mode() == wsrep::client_state::…,https://github.com/MariaDB/server/pull/4105
+4104,Codership,2025-06-12T05:51:29Z,janlindstrom,open,MDEV-36134 : Mariadb server crashed during insert,https://github.com/MariaDB/server/pull/4104
+4103,"MariaDB Corporation, Replication",2025-06-12T03:35:50Z,ParadoxV5,open,MDEV-36840 Seconds_Behind_Master Spike at Log Rotation on Parallel Replica,https://github.com/MariaDB/server/pull/4103
+4102,MariaDB Corporation,2025-06-11T19:54:04Z,DaveGosselin-MariaDB,open,MDEV-35739 ST_INTERSECTION precise self-intersection,https://github.com/MariaDB/server/pull/4102
+4101,MariaDB Corporation,2025-06-11T15:21:01Z,Thirunarayanan,closed,MDEV-30363   InnoDB: Failing assertion: trx->error_state == DB_SUCCESS in que_run_threads,https://github.com/MariaDB/server/pull/4101
+4100,MariaDB Foundation,2025-06-11T07:07:00Z,grooverdan,open,MDEV-30942 MSAN_OPTIONS=poison_in_dtor=1 causes failures in free_root(),https://github.com/MariaDB/server/pull/4100
+4099,MariaDB Foundation,2025-06-10T23:52:05Z,grooverdan,closed,MDEV-34933/MDEV-27964: enable MSAN for crypt and parsec (rpl),https://github.com/MariaDB/server/pull/4099
+4098,MariaDB Corporation,2025-06-10T08:36:19Z,mariadb-lenastartseva,closed,MDEV-36977: Histogram code lacks coverage for non-latin characters,https://github.com/MariaDB/server/pull/4098
+4097,External Contribution,2025-06-09T14:39:03Z,fsmeets,open,Fix bootstrapping Galera nodes on FreeBSD 15.0,https://github.com/MariaDB/server/pull/4097
+4096,External Contribution,2025-06-09T11:12:16Z,apostolis1,open,"GSOC'25 - MDEV-36100 Automatic embedding generation and ""expensive"" functions ",https://github.com/MariaDB/server/pull/4096
+4095,Codership,2025-06-09T08:03:01Z,janlindstrom,closed,MDEV-36968 : galera_3nodes.inconsistency_shutdown test occasionally h…,https://github.com/MariaDB/server/pull/4095
+4094,External Contribution,2025-06-08T11:56:24Z,hp77-creator,open,add frm_parser,https://github.com/MariaDB/server/pull/4094
+4093,External Contribution,2025-06-06T10:00:53Z,mikejuliet13,open,MDEV-37107 - Optimise dot_product by loop-unrolling by a factor of 4,https://github.com/MariaDB/server/pull/4093
+4092,Codership,2025-06-06T07:45:52Z,janlindstrom,closed,MDEV-36953 : mysql-wsrep#198 test hangs,https://github.com/MariaDB/server/pull/4092
+4091,MariaDB Corporation,2025-06-06T03:19:17Z,mariadb-RexJohnston,closed,MDEV-29300  Assertion `*ref && (*ref)->fixed()' failed in Item_field:…,https://github.com/MariaDB/server/pull/4091
+4090,External Contribution,2025-06-05T12:21:40Z,PavolSloboda,open,Got rid of the INFO_BIN and INFO_SRC files,https://github.com/MariaDB/server/pull/4090
+4089,Codership,2025-06-05T10:04:00Z,janlindstrom,open,MDEV-36949 : unstable autoincrement value in galera_toi_ddl_nonconfli…,https://github.com/MariaDB/server/pull/4089
+4088,MariaDB Corporation,2025-06-04T19:32:11Z,Thirunarayanan,open,MDEV-35163  InnoDB persistent statistics fail to update after ALTER TABLE...ALGORITHM=COPY,https://github.com/MariaDB/server/pull/4088
+4087,MariaDB Corporation,2025-06-04T11:49:19Z,bsrikanth-mariadb,open,MDEV-36511 dump basic statistics to the trace,https://github.com/MariaDB/server/pull/4087
+4086,"GSoC, External Contribution, Replication",2025-06-03T22:54:44Z,MohanadKh03,open,MDEV-9345: Replication to enable filtering on master,https://github.com/MariaDB/server/pull/4086
+4085,MariaDB Foundation,2025-06-03T04:21:09Z,grooverdan,closed,MDEV-34863 RAM Usage Changed Significantly Between 10.11 Releases (po…,https://github.com/MariaDB/server/pull/4085
+4084,MariaDB Corporation,2025-06-02T18:20:19Z,mariadb-RexJohnston,open,10.11 mdev 35673,https://github.com/MariaDB/server/pull/4084
+4083,MariaDB Corporation,2025-06-02T12:34:15Z,drrtuy,open,MDEV-36922 New getter to read Engine Independent JSON histogram buckets directly,https://github.com/MariaDB/server/pull/4083
+4082,MariaDB Corporation,2025-06-02T09:38:28Z,raghunandanbhat,closed,MDEV-24588: Assertion `item->name.str && item->name.str[0]` failed in `TABLE_LIST::create_field_translation` on SELECT,https://github.com/MariaDB/server/pull/4082
+4081,External Contribution,2025-06-01T15:01:11Z,kostadinsh,open,Fix building with gcc 16 (evex512 removal),https://github.com/MariaDB/server/pull/4081
+4080,MariaDB Foundation,2025-06-01T03:59:00Z,grooverdan,closed,MDEV-36765: JSON Histogram cannot handle >1 byte characters,https://github.com/MariaDB/server/pull/4080
 4079,External Contribution,2025-05-29T15:02:15Z,FaramosCZ,open,Make sure the 'lex_hash.h' and 'lex_token.h' header files are packed,https://github.com/MariaDB/server/pull/4079
 4078,External Contribution,2025-05-29T11:36:18Z,FaramosCZ,open,Make building of the INFO_SRC and INFO_BIN files optional,https://github.com/MariaDB/server/pull/4078
 4077,Codership,2025-05-29T05:03:43Z,temeo,open,MDEV-34493 memory leak when using galera node with only replication thread,https://github.com/MariaDB/server/pull/4077
-4076,MariaDB Foundation,2025-05-29T04:02:12Z,grooverdan,open,MDEV-34388: Stack overflow on Alpine Linux (postfix) - sanitizers,https://github.com/MariaDB/server/pull/4076
+4076,MariaDB Foundation,2025-05-29T04:02:12Z,grooverdan,closed,MDEV-34388: Stack overflow on Alpine Linux (postfix) - sanitizers,https://github.com/MariaDB/server/pull/4076
 4075,MariaDB Foundation,2025-05-28T15:01:02Z,svoj,open,MDEV-29474 - main.lock_sync fails with timeout,https://github.com/MariaDB/server/pull/4075
 4074,MariaDB Corporation,2025-05-28T12:01:35Z,dr-m,closed,MDEV-36886 log_t::get_lsn_approx() isn't lower bound,https://github.com/MariaDB/server/pull/4074
-4073,MariaDB Corporation,2025-05-28T10:45:40Z,Thirunarayanan,open,MDEV-36487  Fix ha_innobase::check() for sequences,https://github.com/MariaDB/server/pull/4073
-4072,External Contribution,2025-05-28T08:07:43Z,grooverdan,open,MDEV-34425 mroonga files are not copied by mariabackup,https://github.com/MariaDB/server/pull/4072
+4073,MariaDB Corporation,2025-05-28T10:45:40Z,Thirunarayanan,closed,MDEV-36487  Fix ha_innobase::check() for sequences,https://github.com/MariaDB/server/pull/4073
+4072,External Contribution,2025-05-28T08:07:43Z,grooverdan,closed,MDEV-34425 mroonga files are not copied by mariabackup,https://github.com/MariaDB/server/pull/4072
 4071,MariaDB Corporation,2025-05-26T17:37:15Z,vaintroub,closed, MDEV-36885 Build and test Windows ARM64 on CI ,https://github.com/MariaDB/server/pull/4071
 4070,MariaDB Corporation,2025-05-26T17:31:31Z,vaintroub,closed,MDEV-36885  Build and test Windows ARM64 on CI,https://github.com/MariaDB/server/pull/4070
 4069,MariaDB Corporation,2025-05-26T14:53:14Z,Thirunarayanan,open,MDEV-36787  ROLLBACK TO SAVEPOINT fails with assert invalid state,https://github.com/MariaDB/server/pull/4069
 4068,MariaDB Corporation,2025-05-26T10:12:44Z,dr-m,closed,MDEV-36882: Inconsistent DBUG_ASSERT trips GCC -Og,https://github.com/MariaDB/server/pull/4068
-4067,MariaDB Corporation,2025-05-26T07:55:12Z,raghunandanbhat,open,MDEV-24588: Assertion `item->name.str && item->name.str[0]` failed in `TABLE_LIST::create_field_translation`,https://github.com/MariaDB/server/pull/4067
+4067,MariaDB Corporation,2025-05-26T07:55:12Z,raghunandanbhat,closed,MDEV-24588: Assertion `item->name.str && item->name.str[0]` failed in `TABLE_LIST::create_field_translation`,https://github.com/MariaDB/server/pull/4067
 4066,MariaDB Corporation,2025-05-26T06:42:14Z,Thirunarayanan,closed,MDEV-36771 Assertion 'bulk_insert == TRX_NO_BULK' failed in trx_t::assert_freed,https://github.com/MariaDB/server/pull/4066
 4065,External Contribution,2025-05-25T04:18:33Z,ottok,open,Install PAM modules and systemd units from /lib to /usr/lib,https://github.com/MariaDB/server/pull/4065
 4064,MariaDB Foundation,2025-05-24T17:40:18Z,svoj,closed,MDEV-36835 - main.aborted_clients fails after various tests,https://github.com/MariaDB/server/pull/4064
@@ -19,10 +95,10 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 4062,MariaDB Corporation,2025-05-23T13:41:48Z,dr-m,closed,MDEV-36868: Inconsistency when shrinking innodb_buffer_pool_size,https://github.com/MariaDB/server/pull/4062
 4061,MariaDB Foundation,2025-05-23T10:44:04Z,grooverdan,closed,MDEV-36316/MDEV-36327/MDEV-36328 Msan debug innodb,https://github.com/MariaDB/server/pull/4061
 4060,External Contribution,2025-05-23T02:41:20Z,coneco-cy,closed,MDEV-36864 crc32 compatibility on Windows on ARM64,https://github.com/MariaDB/server/pull/4060
-4059,External Contribution,2025-05-23T00:09:16Z,brad0,open,Rocksdb: Add missing getauxval() test for Linux,https://github.com/MariaDB/server/pull/4059
+4059,External Contribution,2025-05-23T00:09:16Z,brad0,closed,Rocksdb: Add missing getauxval() test for Linux,https://github.com/MariaDB/server/pull/4059
 4058,MariaDB Corporation,2025-05-22T15:15:50Z,Olernov,open,MDEV-35856: implement index hints,https://github.com/MariaDB/server/pull/4058
 4057,MariaDB Corporation,2025-05-22T14:43:40Z,Olernov,closed,MDEV-35856 index hints,https://github.com/MariaDB/server/pull/4057
-4056,External Contribution,2025-05-22T01:12:05Z,brad0,open,Replace deprecated CMAKE_COMPILER_IS_GNU(CC|CXX) with CMAKE_(C|CXX)_COMPILER_ID,https://github.com/MariaDB/server/pull/4056
+4056,External Contribution,2025-05-22T01:12:05Z,brad0,closed,Replace deprecated CMAKE_COMPILER_IS_GNU(CC|CXX) with CMAKE_(C|CXX)_COMPILER_ID,https://github.com/MariaDB/server/pull/4056
 4055,MariaDB Corporation,2025-05-21T19:53:04Z,DaveGosselin-MariaDB,open,MDEV-36125 [NO_]INDEX_MERGE Hint,https://github.com/MariaDB/server/pull/4055
 4054,MariaDB Corporation,2025-05-21T13:21:59Z,andrelkin,open,"MDEV-31949 III. Innodb flush_log_later for XA commit,rollback",https://github.com/MariaDB/server/pull/4054
 4053,Codership,2025-05-21T07:17:04Z,janlindstrom,open,MDEV-36843 : Galera tests fail if wsrep_provider_options is too long …,https://github.com/MariaDB/server/pull/4053
@@ -38,7 +114,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 4043,MariaDB Corporation,2025-05-13T14:31:22Z,andrelkin,open,MDEV-35570 parallel slave ALTER-SEQUNCE attemted to binlog out-of-order,https://github.com/MariaDB/server/pull/4043
 4042,MariaDB Corporation,2025-05-13T09:12:25Z,dr-m,closed,"MDEV-36760, MDEV-36781, MDEV-36759: Fix performance regressions after MDEV-29445",https://github.com/MariaDB/server/pull/4042
 4041,"MariaDB Corporation, Replication",2025-05-10T17:02:13Z,andrelkin,open,MDEV-32830 I. refactor XA binlogging for better integration with BGC/…,https://github.com/MariaDB/server/pull/4041
-4040,External Contribution,2025-05-09T22:42:42Z,brad0,open,Enable building RocksDB on non-Linux aarch64 OSes,https://github.com/MariaDB/server/pull/4040
+4040,External Contribution,2025-05-09T22:42:42Z,brad0,closed,MDEV-37001 Enable building RocksDB on non-Linux aarch64 OSes,https://github.com/MariaDB/server/pull/4040
 4039,Codership,2025-05-08T09:00:15Z,janlindstrom,closed,MDEV-36620 : galera_toi_ddl_nonconflicting test failure,https://github.com/MariaDB/server/pull/4039
 4038,MariaDB Corporation,2025-05-08T08:26:07Z,dr-m,closed,MDEV-36760 log_t::append_prepare_wait(): Bogus assertion on write_lsn,https://github.com/MariaDB/server/pull/4038
 4037,"MariaDB Corporation, Replication",2025-05-07T02:42:30Z,ParadoxV5,open,MDEV-18983 Port rpl_semi_sync_master_wait_for_slave_count from MySQL,https://github.com/MariaDB/server/pull/4037
@@ -46,7 +122,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 4035,Codership,2025-05-06T05:17:27Z,janlindstrom,closed,MDEV-36622 : Hang during galera_evs_suspect_timeout test,https://github.com/MariaDB/server/pull/4035
 4034,MariaDB Corporation,2025-05-06T02:48:13Z,bsrikanth-mariadb,open,MDEV-36483 Optimizer Trace Replay step #1: dump DDLs of tables/views,https://github.com/MariaDB/server/pull/4034
 4033,MariaDB Corporation,2025-05-05T07:45:43Z,Olernov,closed,Optimizer hints feature,https://github.com/MariaDB/server/pull/4033
-4032,MariaDB Corporation,2025-05-03T19:16:57Z,ParadoxV5,open,MDEV-35837: Update CODING_STANDARDS to C++17,https://github.com/MariaDB/server/pull/4032
+4032,MariaDB Corporation,2025-05-03T19:16:57Z,ParadoxV5,closed,MDEV-35837: Update CODING_STANDARDS to C++17,https://github.com/MariaDB/server/pull/4032
 4031,MariaDB Foundation,2025-05-02T07:38:40Z,grooverdan,closed,MDEV-35009: Initialize affected_rows in SQL service,https://github.com/MariaDB/server/pull/4031
 4030,MariaDB Foundation,2025-05-02T07:25:57Z,grooverdan,closed,MDEV-36729: ha_example::show_func_example is incorrectly defined,https://github.com/MariaDB/server/pull/4030
 4029,MariaDB Foundation,2025-05-02T07:10:17Z,grooverdan,open,MDEV-36721: remove PrivateDevices=false from systemd services,https://github.com/MariaDB/server/pull/4029
@@ -55,9 +131,9 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 4026,Codership,2025-04-29T12:18:21Z,denis-protivensky,open,"MDEV-36710: Revert ""MDEV-33136: backport corrections from 10.11+""",https://github.com/MariaDB/server/pull/4026
 4025,MariaDB Foundation,2025-04-29T07:05:14Z,grooverdan,closed,MDEV-36168 ASAN error in Item_func_latlongfromgeohash::decode_geohash…,https://github.com/MariaDB/server/pull/4025
 4024,Codership,2025-04-28T07:32:52Z,janlindstrom,closed,MDEV-36512 : galera_3nodes.GCF-354: certification position less than …,https://github.com/MariaDB/server/pull/4024
-4023,External Contribution,2025-04-28T05:54:32Z,csenki,open,"MDEV-30831 fixing, aws_key_management can compile with new aws sdk on UBUNTU 22.04, 24.04",https://github.com/MariaDB/server/pull/4023
+4023,External Contribution,2025-04-28T05:54:32Z,csenki,closed,"MDEV-30831 fixing, aws_key_management can compile with new aws sdk on UBUNTU 22.04, 24.04",https://github.com/MariaDB/server/pull/4023
 4022,Codership,2025-04-28T04:36:51Z,janlindstrom,closed,MDEV-36627 : galera.MDEV-29142: certification position less than last…,https://github.com/MariaDB/server/pull/4022
-4021,MariaDB Corporation,2025-04-27T22:11:13Z,vuvova,open,MDEV-36531 Enable Feedback Plugin for DEB Packages,https://github.com/MariaDB/server/pull/4021
+4021,MariaDB Corporation,2025-04-27T22:11:13Z,vuvova,closed,MDEV-36531 Enable Feedback Plugin for DEB Packages,https://github.com/MariaDB/server/pull/4021
 4020,External Contribution,2025-04-27T12:20:20Z,csenki,closed,Fix MDEV-30831,https://github.com/MariaDB/server/pull/4020
 4019,MariaDB Corporation,2025-04-25T19:55:55Z,DaveGosselin-MariaDB,open,MDEV-36092 New-style hint: [NO_]SPLIT_MATERIALIZED,https://github.com/MariaDB/server/pull/4019
 4018,External Contribution,2025-04-25T19:41:08Z,keeper,closed,MDEV-35599 Replace `longlong10_to_str` with `sprintf`,https://github.com/MariaDB/server/pull/4018
@@ -66,7 +142,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 4015,MariaDB Corporation,2025-04-25T16:04:49Z,DaveGosselin-MariaDB,closed,"MDEV-36694 spatial_utility_function{_collect,_isvalid} broken for --view-protocol",https://github.com/MariaDB/server/pull/4015
 4014,MariaDB Corporation,2025-04-25T12:23:26Z,dr-m,open,"MDEV-36301 SET GLOBAL innodb_log_file_disabled, innodb_log_group_home_dir",https://github.com/MariaDB/server/pull/4014
 4013,MariaDB Foundation,2025-04-24T21:29:35Z,svoj,closed,MDEV-36666 - atomic.alter_table still times out often,https://github.com/MariaDB/server/pull/4013
-4012,External Contribution,2025-04-24T16:35:04Z,FarihaIS,open,MDEV-36397 Record change_user command in MTR output,https://github.com/MariaDB/server/pull/4012
+4012,External Contribution,2025-04-24T16:35:04Z,FarihaIS,closed,MDEV-36397 Record change_user command in MTR output,https://github.com/MariaDB/server/pull/4012
 4011,Codership,2025-04-24T11:13:55Z,janlindstrom,closed,MDEV-36628 : galera_vote_during_ist test failed,https://github.com/MariaDB/server/pull/4011
 4010,MariaDB Corporation,2025-04-24T10:58:07Z,bsrikanth-mariadb,closed,"MDEV-36461 Remove join_execution nodes from the trace, and instead add range-checked-for-each-record when needed",https://github.com/MariaDB/server/pull/4010
 4009,MariaDB Foundation,2025-04-24T10:55:12Z,svoj,closed,MDEV-36684 - main.mdl_sync fails under valgrind (test for Bug#42643),https://github.com/MariaDB/server/pull/4009
@@ -102,7 +178,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3979,MariaDB Corporation,2025-04-16T02:39:24Z,mariadb-RexJohnston,closed,MDEV-36607 find_order_in_list mismatch when order item needs fixing(),https://github.com/MariaDB/server/pull/3979
 3978,External Contribution,2025-04-15T15:37:31Z,HazemRawi,open,MDEV-9343 Copying from YEAR to DATE result in '0000-00-00',https://github.com/MariaDB/server/pull/3978
 3977,MariaDB Corporation,2025-04-15T09:53:30Z,spetrunia,closed,"MDEV-36592: In JOIN ... USING(columns), query plan depends on join order",https://github.com/MariaDB/server/pull/3977
-3976,MariaDB Corporation,2025-04-15T09:17:39Z,dr-m,open,MDEV-36234: Add innodb_linux_aio,https://github.com/MariaDB/server/pull/3976
+3976,MariaDB Corporation,2025-04-15T09:17:39Z,dr-m,closed,MDEV-36234: Add innodb_linux_aio,https://github.com/MariaDB/server/pull/3976
 3975,Codership,2025-04-15T05:40:52Z,janlindstrom,closed,MDEV-36527 : Selecting mysql.wsrep_streaming_log incorrectly not allo…,https://github.com/MariaDB/server/pull/3975
 3974,"MariaDB Corporation, Replication",2025-04-15T04:33:53Z,ParadoxV5,closed,MDEV-36340: Reset `Connects_Tried` with `Master_Retry_Count=X`,https://github.com/MariaDB/server/pull/3974
 3973,MariaDB Corporation,2025-04-14T14:36:29Z,bsrikanth-mariadb,closed,Just src code change. Will change test files later,https://github.com/MariaDB/server/pull/3973
@@ -129,14 +205,14 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3952,External Contribution,2025-04-06T14:46:41Z,qobood,closed,Fix typos in comments inside mysql-test/,https://github.com/MariaDB/server/pull/3952
 3951,MariaDB Foundation,2025-04-05T17:34:42Z,svoj,closed,MDEV-36427 - FTBFS with libxml2 2.14.0,https://github.com/MariaDB/server/pull/3951
 3950,MariaDB Corporation,2025-04-04T18:21:13Z,mariadb-RexJohnston,open,MDEV-36474 Prepared statement with derived table column name specification within used view causing memory use-after-free,https://github.com/MariaDB/server/pull/3950
-3949,MariaDB Corporation,2025-04-04T07:17:54Z,dr-m,open,MDEV-36482: Make aio work WITH_MSAN=ON,https://github.com/MariaDB/server/pull/3949
+3949,MariaDB Corporation,2025-04-04T07:17:54Z,dr-m,closed,MDEV-36482: Make libaio work WITH_MSAN=ON,https://github.com/MariaDB/server/pull/3949
 3948,MariaDB Foundation,2025-04-04T05:30:37Z,grooverdan,closed,MDEV-36480 USAN: checking identifier names for 0 length names,https://github.com/MariaDB/server/pull/3948
 3947,External Contribution,2025-04-04T04:21:14Z,Krishnateja4367,closed,Use C-style block comment for .frm field parsingComment fix v2,https://github.com/MariaDB/server/pull/3947
 3946,MariaDB Foundation,2025-04-04T01:51:25Z,grooverdan,open,draft on checking a bit more strictness,https://github.com/MariaDB/server/pull/3946
 3945,MariaDB Foundation,2025-04-03T23:48:46Z,grooverdan,closed,MDEV-36469 empty db passed to is_infoschema_db is wasteful,https://github.com/MariaDB/server/pull/3945
 3944,External Contribution,2025-04-03T20:38:20Z,UltraGreed,open,[WIP] MDEV-35770 Augment DBUG_ASSERT with __builtin_assume,https://github.com/MariaDB/server/pull/3944
 3943,Codership,2025-04-03T16:13:11Z,temeo,open,MDEV-36150 Retain original internal 2PC XID in Galera Cluster,https://github.com/MariaDB/server/pull/3943
-3942,"External Contribution, Replication",2025-04-03T13:38:34Z,apostolis1,open,MDEV-29499 Improving the 'Can't execute init_slave query' error message with the actual failure,https://github.com/MariaDB/server/pull/3942
+3942,"External Contribution, Replication",2025-04-03T13:38:34Z,apostolis1,closed,MDEV-29499 Improving the 'Can't execute init_slave query' error message with the actual failure,https://github.com/MariaDB/server/pull/3942
 3941,Codership,2025-04-03T09:47:25Z,temeo,open,MDEV-20065 parallel replication for galera slave,https://github.com/MariaDB/server/pull/3941
 3940,MariaDB Foundation,2025-04-03T07:36:39Z,grooverdan,closed,MDEV-36469 don't check is_infoschema_db for null db,https://github.com/MariaDB/server/pull/3940
 3939,Codership,2025-04-02T12:08:17Z,janlindstrom,closed,MDEV-36464 : Galera test failure on galera_3nodes.galera_gtid_2_cluster,https://github.com/MariaDB/server/pull/3939
@@ -208,7 +284,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3873,MariaDB Foundation,2025-03-06T04:38:06Z,grooverdan,closed,MDEV-36229: Remove CAP_DAC_OVERRIDE CAP_AUDIT_WRITE from AmbientCapabilities,https://github.com/MariaDB/server/pull/3873
 3872,MariaDB Corporation,2025-03-06T04:30:53Z,mariadb-YuchenPei,closed,MDEV-32732 Support DESC indexes in loose scan optimization,https://github.com/MariaDB/server/pull/3872
 3871,External Contribution,2025-03-05T21:15:53Z,brad0,closed,MDEV-36217: Fix building with Clang and GCC on RISC-V,https://github.com/MariaDB/server/pull/3871
-3870,MariaDB Corporation,2025-03-05T19:32:52Z,DaveGosselin-MariaDB,open,"MDEV-36106 New-style hints: [NO_]DERIVED_CONDITION_PUSHDOWN, [NO_]MERGE",https://github.com/MariaDB/server/pull/3870
+3870,MariaDB Corporation,2025-03-05T19:32:52Z,DaveGosselin-MariaDB,closed,"MDEV-36106 New-style hints: [NO_]DERIVED_CONDITION_PUSHDOWN, [NO_]MERGE",https://github.com/MariaDB/server/pull/3870
 3869,MariaDB Foundation,2025-03-05T15:14:22Z,iangilfillan,closed,Update 11.8 man pages,https://github.com/MariaDB/server/pull/3869
 3868,MariaDB Corporation,2025-03-05T02:00:41Z,ParadoxV5,open,System Variables Refactor: Eliminate `switch (opt_id)`,https://github.com/MariaDB/server/pull/3868
 3867,,2025-03-04T14:04:23Z,cvicentiu2,closed,TEST PR,https://github.com/MariaDB/server/pull/3867
@@ -292,7 +368,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3789,MariaDB Foundation,2025-01-23T19:57:53Z,cvicentiu,closed,MDEV-35921: s3.mysqldump fails in buildbot,https://github.com/MariaDB/server/pull/3789
 3788,External Contribution,2025-01-23T19:54:35Z,FarihaIS,closed,MDEV-31334: Consider dates ending in 'T' as malformed,https://github.com/MariaDB/server/pull/3788
 3787,External Contribution,2025-01-23T19:38:39Z,amarjilani,closed,MDEV-21375: Get option group suffix from $MARIADB_GROUP_SUFFIX in addition to $MYSQL_GROUP_SUFFIX,https://github.com/MariaDB/server/pull/3787
-3786,External Contribution,2025-01-23T19:23:56Z,chenrui333,open,MDEV-36366 - cmake(libfmt): use find_package to find libfmt,https://github.com/MariaDB/server/pull/3786
+3786,External Contribution,2025-01-23T19:23:56Z,chenrui333,closed,MDEV-36366 - cmake(libfmt): use find_package to find libfmt,https://github.com/MariaDB/server/pull/3786
 3785,MariaDB Corporation,2025-01-23T14:36:09Z,vlad-lesin,closed,"11.4 MDEV-34877 Port ""Bug #11745929 Change lock priority so that the transaction holding S-lock gets X-lock first"" fix from MySQL to MariaDB",https://github.com/MariaDB/server/pull/3785
 3784,MariaDB Corporation,2025-01-23T10:49:36Z,Thirunarayanan,closed,MDEV-35169  ALTER TABLE...IMPORT TABLESPACE does not work with INDEX DESC,https://github.com/MariaDB/server/pull/3784
 3783,MariaDB Corporation,2025-01-22T23:21:33Z,vaintroub,closed,Update WolfSSL to the latest release 5.7.6,https://github.com/MariaDB/server/pull/3783
@@ -317,7 +393,7 @@ PR-number,labels,created_date,creator_username,status,PR-title,PR-URL
 3764,MariaDB Corporation,2025-01-14T20:08:23Z,ParadoxV5,closed,MDEV-35304 & MDEV-25674: Add `Connects_Tried` and `Master_Retry_Count` to SHOW REPLICA STATUS,https://github.com/MariaDB/server/pull/3764
 3763,MariaDB Corporation,2025-01-14T17:42:50Z,DaveGosselin-MariaDB,open,MDEV-35847 mariadb client --wait flag broken,https://github.com/MariaDB/server/pull/3763
 3762,MariaDB Corporation,2025-01-14T06:16:50Z,Olernov,closed,MDEV-32575 MSAN / Valgrind errors in test_if_cheaper_ordering upon re…,https://github.com/MariaDB/server/pull/3762
-3761,MariaDB Foundation,2025-01-14T03:12:34Z,grooverdan,open,MDEV-12305 + others = Hurd upstream misc patches,https://github.com/MariaDB/server/pull/3761
+3761,MariaDB Foundation,2025-01-14T03:12:34Z,grooverdan,closed,MDEV-12305 + others = Hurd upstream misc patches,https://github.com/MariaDB/server/pull/3761
 3760,MariaDB Foundation,2025-01-14T00:35:40Z,grooverdan,closed,MDEV-35838 libressl support differences in CRYPTO_set_mem_functions,https://github.com/MariaDB/server/pull/3760
 3759,MariaDB Foundation,2025-01-13T22:04:34Z,grooverdan,closed,MDEV-34825 FreeBSD fails to build under clang natively (postfix),https://github.com/MariaDB/server/pull/3759
 3758,MariaDB Corporation,2025-01-13T20:59:12Z,DaveGosselin-MariaDB,closed,MDEV-35837 Move to c++17,https://github.com/MariaDB/server/pull/3758
