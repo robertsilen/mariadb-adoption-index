@@ -8,6 +8,7 @@ from datetime import datetime, UTC
 SITES_API = "https://api.stackexchange.com/2.3/sites"
 QUESTIONS_API = "https://api.stackexchange.com/2.3/questions"
 STACKEXCHANGE_KEY = os.getenv("STACKEXCHANGE_KEY")
+# get stackexchange API key from https://stackapps.com
 
 
 def request_json(url, params, max_retries=5):
