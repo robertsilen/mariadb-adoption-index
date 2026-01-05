@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import re
 from collections import defaultdict
 from datetime import datetime
 
@@ -9,6 +10,17 @@ QUERY = "mariadb"
 
 # Store results
 monthly_mentions = defaultdict(int)
+
+def contains_mariadb(item):
+    """Check if 'mariadb' appears as a word in title, url, or story_text"""
+    # Combine all text fields
+    text = ' '.join([
+        item.get('title') or '',
+        item.get('url') or '',
+        item.get('story_text') or ''
+    ]).lower()
+    # Match 'mariadb' as a word (not part of another word)
+    return bool(re.search(r'\bmariadb\b', text))
 
 page = 0
 while True:
@@ -21,6 +33,8 @@ while True:
             break
         
         for item in data["hits"]:
+            if not contains_mariadb(item):
+                continue
             created_at = item.get("created_at")
             if created_at:
                 try:

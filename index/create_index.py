@@ -28,7 +28,11 @@ baseline_date = '2023-12'
 for column in combined_data.columns:
     if column != 'month':
         baseline_value = combined_data[combined_data['month'] == baseline_date][column].iloc[0]
-        combined_data[f'{column}_index'] = combined_data[column] / baseline_value * 100
+        if baseline_value == 0:
+            # If baseline is 0, use 100 as index when current value is also 0, otherwise use the raw value
+            combined_data[f'{column}_index'] = combined_data[column].apply(lambda x: 100 if x == 0 else x * 100)
+        else:
+            combined_data[f'{column}_index'] = combined_data[column] / baseline_value * 100
 
 # 4. Calculate the weighted index by multiplying each index column by its weight and summing the results
 weights_sum = weights['weight'].sum()
