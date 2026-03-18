@@ -1,0 +1,42 @@
+name: LinkedIn Followers, Daily
+
+on:
+  schedule:
+    - cron: '15 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch-linkedin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch LinkedIn follower counts via Apify
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: |
+          export DATE=$(date +%Y-%m-%d)
+          python scripts/fetch_linkedin_followers.py
+
+      - name: Update monthly from daily
+        run: |
+          python scripts/daily2monthly.py linkedin_followers_plc
+          python scripts/daily2monthly.py linkedin_followers_foundation
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "linkedin followers, ${timestamp} & monthly" || exit 0
+          git push

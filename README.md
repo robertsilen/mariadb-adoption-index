@@ -47,7 +47,7 @@ The table below shows how a particular source is updated. "key" means the source
 | Reddit subscribers                     | fetch.py, daily       | key  | daily2monthly.py  |
 | Hackernews                             | fetch.py, historic    |      | fetch.py          |
 | Stackexchange new questions            | fetch.py, historic    |      | fetch.py          |
-| LinkedIn                               | manual                |      | wip               |
+| LinkedIn (PLC + Foundation)            | Apify, daily          | key  | daily2monthly.py  |
 | Youtube                                | curl, daily           | key  | daily2monthly.py  |
 | Fosstadon                              | manual                |      | wip               |
 | Instagram                              | manual                |      | wip               |
@@ -58,7 +58,7 @@ The table below shows how a particular source is updated. "key" means the source
 * [Zulip API keys](https://zulip.com/api/api-keys)
 * [Reddit Developer Token](https://developers.reddit.com/docs/authentication)
 * [Youtube Data API](https://developers.google.com/youtube/registering_an_application)
-* LinkedIn
+* [Apify API token](https://console.apify.com/account/integrations) (for LinkedIn followers via `artificially/linkedin-company-scraper`). Add as repo secret `APIFY_API_TOKEN`.
 * X
 
 ## Misc
