@@ -1,8 +1,9 @@
 import pandas as pd
 import sys
 
-# Takes last daily value of the month and appends to existing monthly data 
-def daily2monthly(value):
+# Takes daily values and appends/merges into existing monthly data.
+# Mode: "last" = use last value of each month; "cumulative" = use (last - first) in month (for cumulative daily series).
+def daily2monthly(value, cumulative=False):
     path = f'data/{value}/'
     try:
         # Read daily data with better error handling and skip empty lines
@@ -26,8 +27,13 @@ def daily2monthly(value):
         df_daily = df_daily.sort_values('date')  # Sort by full date
         df_daily['month'] = df_daily['date'].dt.strftime('%Y-%m')
         
-        # Group by month and take the last value, is sorted by date already
-        df_month_new = df_daily.groupby('month')[value].last().reset_index()
+        if cumulative:
+            # For cumulative series: monthly = last value in month - first value in month (pulls during that month)
+            grp = df_daily.groupby('month')[value]
+            df_month_new = (grp.last() - grp.first()).reset_index()
+        else:
+            # Default: take last value of each month
+            df_month_new = df_daily.groupby('month')[value].last().reset_index()
         print("New monthly data:")
         print(df_month_new)
 
@@ -56,8 +62,10 @@ def daily2monthly(value):
         sys.exit(1)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python daily2monthly.py <value>")
+    if len(sys.argv) < 2:
+        print("Usage: python daily2monthly.py <value> [--cumulative]")
+        print("  --cumulative  for cumulative daily series: monthly = last - first in month (e.g. docker_official_image_pulls)")
         sys.exit(1)
     value = sys.argv[1]
-    daily2monthly(value)
+    cumulative = "--cumulative" in sys.argv
+    daily2monthly(value, cumulative=cumulative)

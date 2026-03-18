@@ -29,6 +29,17 @@ jobs:
             echo "$DATE,$PULL_COUNT" >> $PATH_TO_CSV
           fi
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update monthly from daily (cumulative delta)
+        run: python scripts/daily2monthly.py docker_official_image_pulls --cumulative
+
       - name: Commit and push
         run: |
           git config --global user.name "github-actions"
