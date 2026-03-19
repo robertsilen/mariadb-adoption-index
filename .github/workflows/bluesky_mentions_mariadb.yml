@@ -1,0 +1,34 @@
+name: Bluesky Mentions MariaDB
+
+on:
+  schedule:
+    - cron: '45 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Fetch Bluesky mentions and append daily.csv
+        run: |
+          python data/bluesky_mentions_mariadb/fetch.py
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "bluesky mentions mariadb ${timestamp}" || exit 0
+          git push
