@@ -18,7 +18,7 @@ except ImportError:
 ACTOR_ID = "artificially/linkedin-company-scraper"
 # LinkedIn company URLs (about page data comes from same place)
 COMPANIES = [
-    ("mariadb-corporation", "linkedin_followers_plc"),
+    ("mariadb", "linkedin_followers_plc"),
     ("mariadb-foundation", "linkedin_followers_foundation"),
 ]
 
