@@ -1,8 +1,8 @@
-name: LinkedIn Followers, Daily
+name: LinkedIn Followers, Month Boundary
 
 on:
   schedule:
-    - cron: '15 2 * * *'
+    - cron: '15 2 1,28-31 * *'
   workflow_dispatch:
 
 jobs:
