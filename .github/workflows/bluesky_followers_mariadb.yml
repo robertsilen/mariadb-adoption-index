@@ -2,7 +2,7 @@ name: Bluesky Followers MariaDB
 
 on:
   schedule:
-    - cron: '50 2 * * *'
+    - cron: '52 2 * * *'
   workflow_dispatch:
 
 permissions:
