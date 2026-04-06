@@ -132,7 +132,7 @@ month,platform,monthly_counts
 2016-03,pt.stackoverflow,1
 2016-03,serverfault,5
 2016-03,superuser,1
-2016-04,dba,10
+2016-04,dba,8
 2016-04,ja.stackoverflow,1
 2016-04,ru.stackoverflow,1
 2016-04,serverfault,8
@@ -746,7 +746,7 @@ month,platform,monthly_counts
 2022-08,ru.stackoverflow,2
 2022-08,serverfault,2
 2022-08,softwareengineering,1
-2022-08,stackoverflow,124
+2022-08,stackoverflow,126
 2022-08,superuser,1
 2022-09,askubuntu,1
 2022-09,dba,23
@@ -771,7 +771,7 @@ month,platform,monthly_counts
 2022-11,raspberrypi,1
 2022-11,ru.stackoverflow,4
 2022-11,serverfault,9
-2022-11,stackoverflow,139
+2022-11,stackoverflow,138
 2022-11,superuser,2
 2022-11,unix,1
 2022-12,askubuntu,2
@@ -786,7 +786,7 @@ month,platform,monthly_counts
 2023-01,dba,37
 2023-01,es.stackoverflow,7
 2023-01,ru.stackoverflow,2
-2023-01,stackoverflow,151
+2023-01,stackoverflow,150
 2023-01,superuser,2
 2023-01,unix,1
 2023-02,askubuntu,1
@@ -857,7 +857,7 @@ month,platform,monthly_counts
 2023-10,es.stackoverflow,1
 2023-10,raspberrypi,1
 2023-10,serverfault,9
-2023-10,stackoverflow,67
+2023-10,stackoverflow,66
 2023-10,superuser,1
 2023-10,unix,3
 2023-11,askubuntu,3
@@ -892,7 +892,7 @@ month,platform,monthly_counts
 2024-03,es.stackoverflow,4
 2024-03,ru.stackoverflow,2
 2024-03,serverfault,1
-2024-03,stackoverflow,70
+2024-03,stackoverflow,69
 2024-03,superuser,2
 2024-04,dba,20
 2024-04,es.stackoverflow,2
@@ -961,10 +961,10 @@ month,platform,monthly_counts
 2025-02,serverfault,5
 2025-02,stackoverflow,22
 2025-02,unix,1
-2025-03,dba,9
-2025-03,serverfault,7
-2025-03,stackoverflow,30
-2025-03,unix,2
+2025-03,dba,8
+2025-03,serverfault,4
+2025-03,stackoverflow,29
+2025-03,unix,1
 2025-04,dba,5
 2025-04,ja.stackoverflow,1
 2025-04,serverfault,2
@@ -1010,6 +1010,11 @@ month,platform,monthly_counts
 2026-01,stackoverflow,5
 2026-01,unix,1
 2026-02,dba,5
-2026-02,serverfault,2
-2026-02,stackoverflow,7
+2026-02,serverfault,1
+2026-02,stackoverflow,6
 2026-02,superuser,1
+2026-03,dba,3
+2026-03,ru.stackoverflow,1
+2026-03,stackoverflow,2
+2026-03,superuser,1
+2026-04,stackoverflow,2
