@@ -36,8 +36,8 @@ for page in range(1, 100):
         oldest_date = None  # Initialize oldest date for the current page
         for pr in prs:
             created_date = pr["created_at"]
-            # Check if the created date is older than 2023-01-01
-            if datetime.strptime(created_date, "%Y-%m-%dT%H:%M:%SZ") < datetime(2023, 1, 1):
+            # Check if the created date is older than 2020-01-01
+            if datetime.strptime(created_date, "%Y-%m-%dT%H:%M:%SZ") < datetime(2020, 1, 1):
                 done = True
                 break
             
