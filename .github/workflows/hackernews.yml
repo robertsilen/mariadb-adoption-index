@@ -33,4 +33,5 @@ jobs:
           git add -A
           timestamp=$(date -I)
           git commit -m "google trends ${timestamp}" || exit 0
+          git pull --rebase origin main
           git push

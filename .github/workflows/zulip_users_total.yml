@@ -49,4 +49,5 @@ jobs:
           git add -A
           timestamp=$(date -I)
           git commit -m "zulip total users ${timestamp}" || exit 0
+          git pull --rebase origin main
           git push

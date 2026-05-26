@@ -40,4 +40,5 @@ jobs:
           git add -A
           timestamp=$(date -I)
           git commit -m "github new prs external ${timestamp}" || exit 0
+          git pull --rebase origin main
           git push

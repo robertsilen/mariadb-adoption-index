@@ -39,4 +39,5 @@ jobs:
           git add -A
           timestamp=$(date -I)
           git commit -m "linkedin followers, ${timestamp} & monthly" || exit 0
+          git pull --rebase origin main
           git push

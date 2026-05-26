@@ -47,4 +47,5 @@ jobs:
           git add -A
           timestamp=$(date -I)
           git commit -m "docker official image pulls, ${timestamp} & monthlydelta" || exit 0
+          git pull --rebase origin main
           git push

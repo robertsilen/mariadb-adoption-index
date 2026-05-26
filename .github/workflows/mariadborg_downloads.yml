@@ -35,4 +35,5 @@ jobs:
           git add -A
           timestamp=$(date -I)
           git commit -m "mariadb.org downloads monthly ${timestamp}" || exit 0
+          git pull --rebase origin main
           git push

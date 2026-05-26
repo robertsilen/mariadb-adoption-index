@@ -48,4 +48,5 @@ jobs:
           git add -A
           timestamp=$(date -I)
           git commit -m "youtube subscribers plc ${timestamp}" || exit 0
+          git pull --rebase origin main
           git push
