@@ -58,7 +58,17 @@ def main() -> None:
 
     run_input = {"companyUrls": company_urls}
     run = client.actor(ACTOR_ID).call(run_input=run_input)
-    dataset_id = run["defaultDatasetId"]
+    if run is None:
+        raise SystemExit("Apify actor run failed (no run object returned)")
+
+    # apify-client returns an ActorRun dataclass (>=1.12); fall back to dict
+    # access for older releases that still returned a plain dict.
+    dataset_id = getattr(run, "default_dataset_id", None)
+    if dataset_id is None and isinstance(run, dict):
+        dataset_id = run.get("defaultDatasetId")
+    if not dataset_id:
+        raise SystemExit(f"Apify run did not return a defaultDatasetId: {run!r}")
+
     items = list(client.dataset(dataset_id).iterate_items())
 
     repo_root = Path(__file__).resolve().parent.parent
