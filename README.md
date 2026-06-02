@@ -37,6 +37,7 @@ The table below shows how a particular source is updated. "key" means the source
 | Docker official image pulls            | curl, daily           |      | wip               |
 | Github new PRs external                | fetch.py, historic    | key  | latest2monthly.py |
 | Github new PRs ext. unique user names  | fetch.py, historic    | key  | latest2monthly.py |
+| Github returning contributors          | uses fetch.py above   |      | latest2monthly.py |
 | Github stars                           | curl, daily           |      | daily2monthly.py  |
 | Github readme repos                    | curl, daily           |      | daily2monthly.py  |
 | Zulip total users                      | curl, daily           | key  | daily2monthly.py  |
@@ -52,6 +53,8 @@ The table below shows how a particular source is updated. "key" means the source
 | Fosstadon                              | manual                |      | wip               |
 | Instagram                              | manual                |      | wip               |
 | X (Twitter)                            | manual                |      | wip               |
+
+**Github returning contributors** counts external contributors who submitted PRs in both the current and prior 12-month windows (contributor retention / stickiness).
 
 ### API-Key docs
 * [Github fine-grained personal access tokens](https://github.blog/security/application-security/introducing-fine-grained-personal-access-tokens-for-github/)

@@ -10,7 +10,11 @@ For each month M, the metric counts unique external contributors who:
 Reuses the raw PR data already fetched by
 data/github_new_prs_external/fetch.py so no extra API calls are needed.
 
-Output columns (one row per month, sorted descending):
+Output files (one row per month, sorted descending):
+  monthly-extended.csv - full breakdown for review and analysis
+  monthly.csv          - slim index input: month + github_returning_contributors only
+
+monthly-extended.csv columns:
   month                          - YYYY-MM
   github_returning_contributors  - main metric (count returning)
   contributors_current_12m       - unique contributors in [M-11, M]
@@ -19,16 +23,15 @@ Output columns (one row per month, sorted descending):
   retention_rate_pct             - returning / prior * 100
   prior_window_months            - size of prior window (12 once fully ramped up)
 
-The `prior_window_months` column exists because raw data only goes back to
-2023-01: for early months the prior window is truncated. Treat months where
-prior_window_months < 12 as warm-up; the metric stabilises from the month
-where it first reads 12.
+PR data is fetched from 2020-01-01; prior_window_months reaches 12 from
+2022-05 onwards.
 """
 
 import pandas as pd
 
 SRC = 'data/github_new_prs_external/since-2023-01-01.csv'
-OUT = 'data/github_returning_contributors/monthly.csv'
+RAW_OUT = 'data/github_returning_contributors/monthly-extended.csv'
+MONTHLY_OUT = 'data/github_returning_contributors/monthly.csv'
 
 src = pd.read_csv(SRC).fillna('')
 src['month'] = pd.to_datetime(src['created_date']).dt.to_period('M')
@@ -76,6 +79,8 @@ for M in months:
     })
 
 results = pd.DataFrame(rows).sort_values('month', ascending=False)
-results.to_csv(OUT, index=False)
+results.to_csv(RAW_OUT, index=False)
+results[['month', 'github_returning_contributors']].to_csv(MONTHLY_OUT, index=False)
 print(results.to_string(index=False))
-print(f"\nSaved to {OUT}")
+print(f"\nSaved to {RAW_OUT}")
+print(f"Saved to {MONTHLY_OUT}")

@@ -33,6 +33,10 @@ jobs:
         run: |
           python data/github_new_prs_external/latest2monthly.py
 
+      - name: Process returning contributors
+        run: |
+          python data/github_returning_contributors/latest2monthly.py
+
       - name: Commit and push
         run: |
           git config --global user.name "github-actions"
