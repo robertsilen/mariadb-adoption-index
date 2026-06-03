@@ -1,0 +1,1 @@
+Bing does not share search result hits anymore.
