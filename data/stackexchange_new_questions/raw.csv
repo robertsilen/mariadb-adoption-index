@@ -137,7 +137,7 @@ month,platform,monthly_counts
 2016-04,serverfault,8
 2016-04,unix,3
 2016-05,askubuntu,5
-2016-05,dba,14
+2016-05,dba,11
 2016-05,pt.stackoverflow,1
 2016-05,serverfault,8
 2016-05,superuser,1
@@ -737,6 +737,7 @@ month,platform,monthly_counts
 2022-07,pt.stackoverflow,1
 2022-07,ru.stackoverflow,7
 2022-07,serverfault,3
+2022-07,stackoverflow,1
 2022-07,superuser,1
 2022-08,askubuntu,2
 2022-08,dba,24
@@ -745,7 +746,7 @@ month,platform,monthly_counts
 2022-08,ru.stackoverflow,2
 2022-08,serverfault,2
 2022-08,softwareengineering,1
-2022-08,stackoverflow,125
+2022-08,stackoverflow,128
 2022-08,superuser,1
 2022-09,askubuntu,1
 2022-09,dba,23
@@ -770,7 +771,7 @@ month,platform,monthly_counts
 2022-11,raspberrypi,1
 2022-11,ru.stackoverflow,4
 2022-11,serverfault,9
-2022-11,stackoverflow,138
+2022-11,stackoverflow,137
 2022-11,superuser,2
 2022-11,unix,1
 2022-12,askubuntu,2
@@ -820,7 +821,7 @@ month,platform,monthly_counts
 2023-05,es.stackoverflow,3
 2023-05,ru.stackoverflow,3
 2023-05,serverfault,3
-2023-05,stackoverflow,83
+2023-05,stackoverflow,82
 2023-06,dba,25
 2023-06,es.stackoverflow,3
 2023-06,ja.stackoverflow,1
@@ -834,7 +835,7 @@ month,platform,monthly_counts
 2023-07,ja.stackoverflow,2
 2023-07,ru.stackoverflow,1
 2023-07,serverfault,5
-2023-07,stackoverflow,76
+2023-07,stackoverflow,75
 2023-07,unix,3
 2023-08,dba,20
 2023-08,es.stackoverflow,1
@@ -885,7 +886,7 @@ month,platform,monthly_counts
 2024-02,ja.stackoverflow,1
 2024-02,ru.stackoverflow,2
 2024-02,serverfault,9
-2024-02,stackoverflow,73
+2024-02,stackoverflow,72
 2024-02,superuser,1
 2024-03,dba,19
 2024-03,es.stackoverflow,4
@@ -922,7 +923,7 @@ month,platform,monthly_counts
 2024-08,ja.stackoverflow,1
 2024-08,security,1
 2024-08,serverfault,4
-2024-08,stackoverflow,51
+2024-08,stackoverflow,50
 2024-08,unix,1
 2024-09,askubuntu,2
 2024-09,dba,14
@@ -1021,6 +1022,9 @@ month,platform,monthly_counts
 2026-05,stackoverflow,4
 2026-05,unix,1
 2026-06,dba,3
-2026-06,serverfault,2
+2026-06,serverfault,1
 2026-06,stackoverflow,2
 2026-06,superuser,1
+2026-07,dba,3
+2026-07,serverfault,1
+2026-07,stackoverflow,1
