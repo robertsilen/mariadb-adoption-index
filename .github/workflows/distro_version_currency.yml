@@ -1,0 +1,39 @@
+name: Distro Version Currency
+
+on:
+  schedule:
+    - cron: '0 23 28-31 * *'  # Late on days 28-31; guarded to run only on the last day of the month
+  workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI (runs immediately, no date guard)
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0  # Full history for pull --rebase / push
+
+      - name: Fetch distro version currency and update monthly.csv
+        run: |
+          # On scheduled runs, only proceed on the actual last day of the month.
+          # Manual (workflow_dispatch) runs always proceed, so a first value can
+          # be captured immediately.
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u -d tomorrow +%d)" != "01" ]; then
+            echo "Scheduled run but not the last day of the month — skipping."
+            exit 0
+          fi
+          python data/distro_version_currency/fetch.py
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "distro version currency ${timestamp}" || exit 0
+          git pull --rebase origin main
+          git push
