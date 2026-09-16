@@ -19,11 +19,13 @@ jobs:
           PATH_TO_CSV="data/db_engines_score/daily.csv"
           HTML=$(mktemp)
 
-          # Fetch with a browser-like User-Agent (db-engines.com serves empty/blocked pages to bare curl from CI)
+          # db-engines.com chains to the new "ISRG Root YR" (Let's Encrypt), which the runner's
+          # ca-certificates bundle does not trust yet (curl exit 60). Pin that root explicitly.
           HTTP_CODE=$(curl -sL --retry 3 --retry-delay 10 \
+            --cacert scripts/certs/isrg-root-yr.pem \
             -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36" \
-            -H "Accept: text/html,application/xhtml+xml" -H "Accept-Language: en-US,en;q=0.9" \
-            -o "$HTML" -w "%{http_code}" https://db-engines.com/en/system/MariaDB)
+            -o "$HTML" -w "%{http_code}" https://db-engines.com/en/system/MariaDB) || {
+            echo "::error::curl failed with exit code $?"; exit 1; }
           echo "HTTP status: $HTTP_CODE, $(wc -c < "$HTML") bytes"
 
           # Store the three values in an array
