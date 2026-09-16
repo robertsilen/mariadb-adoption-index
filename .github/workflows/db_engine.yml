@@ -16,12 +16,29 @@ jobs:
       - name: Fetch MariaDB Pull Count and Append to CSV
         run: |
           DATE=$(date +%F)
+          PATH_TO_CSV="data/db_engines_score/daily.csv"
+          HTML=$(mktemp)
+
+          # Fetch with a browser-like User-Agent (db-engines.com serves empty/blocked pages to bare curl from CI)
+          HTTP_CODE=$(curl -sL --retry 3 --retry-delay 10 \
+            -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36" \
+            -H "Accept: text/html,application/xhtml+xml" -H "Accept-Language: en-US,en;q=0.9" \
+            -o "$HTML" -w "%{http_code}" https://db-engines.com/en/system/MariaDB)
+          echo "HTTP status: $HTTP_CODE, $(wc -c < "$HTML") bytes"
+
           # Store the three values in an array
-          readarray -t VALUES < <(curl -s https://db-engines.com/en/system/MariaDB | grep -o -E "Score.*text-align:left\">[0-9.]+|#[0-9]+" | sed 's/.*">//;s/#//')
+          readarray -t VALUES < <(grep -o -E "Score.*text-align:left\">[0-9.]+|#[0-9]+" "$HTML" | sed 's/.*">//;s/#//')
           SCORE="${VALUES[0]}"
           OVERALL_RANK="${VALUES[1]}"
           RDBMS_RANK="${VALUES[2]}"
-          PATH_TO_CSV="data/db_engines_score/daily.csv"
+          echo "Parsed: score=$SCORE overall_rank=$OVERALL_RANK rdbms_rank=$RDBMS_RANK"
+
+          # Fail loudly instead of appending an empty row
+          if [ "$HTTP_CODE" != "200" ] || ! [[ "$SCORE" =~ ^[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::Could not parse DB-Engines score (HTTP $HTTP_CODE). Page excerpt:"
+            grep -o -E ".{0,120}Score.{0,200}" "$HTML" | head -5 || head -c 1500 "$HTML"
+            exit 1
+          fi
 
           # Ensure the CSV file exists with the header
           if [ ! -f $PATH_TO_CSV ]; then
