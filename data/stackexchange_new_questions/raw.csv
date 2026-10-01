@@ -137,7 +137,7 @@ month,platform,monthly_counts
 2016-04,serverfault,8
 2016-04,unix,3
 2016-05,askubuntu,5
-2016-05,dba,10
+2016-05,dba,9
 2016-05,pt.stackoverflow,1
 2016-05,serverfault,8
 2016-05,superuser,1
@@ -737,6 +737,7 @@ month,platform,monthly_counts
 2022-07,pt.stackoverflow,1
 2022-07,ru.stackoverflow,7
 2022-07,serverfault,3
+2022-07,stackoverflow,1
 2022-07,superuser,1
 2022-08,askubuntu,2
 2022-08,dba,24
@@ -745,7 +746,7 @@ month,platform,monthly_counts
 2022-08,ru.stackoverflow,2
 2022-08,serverfault,2
 2022-08,softwareengineering,1
-2022-08,stackoverflow,126
+2022-08,stackoverflow,127
 2022-08,superuser,1
 2022-09,askubuntu,1
 2022-09,dba,23
@@ -807,7 +808,7 @@ month,platform,monthly_counts
 2023-03,raspberrypi,1
 2023-03,ru.stackoverflow,1
 2023-03,serverfault,9
-2023-03,stackoverflow,122
+2023-03,stackoverflow,121
 2023-03,superuser,1
 2023-04,askubuntu,3
 2023-04,dba,30
@@ -985,14 +986,14 @@ month,platform,monthly_counts
 2025-08,dba,8
 2025-08,serverfault,3
 2025-08,stackoverflow,2
-2025-08,unix,4
+2025-08,unix,3
 2025-09,dba,4
 2025-09,serverfault,3
-2025-09,stackoverflow,5
+2025-09,stackoverflow,4
 2025-09,unix,1
 2025-10,dba,13
 2025-10,serverfault,2
-2025-10,stackoverflow,6
+2025-10,stackoverflow,5
 2025-10,superuser,1
 2025-11,dba,4
 2025-11,ru.stackoverflow,1
@@ -1001,7 +1002,7 @@ month,platform,monthly_counts
 2025-11,unix,2
 2025-12,dba,1
 2025-12,serverfault,2
-2025-12,stackoverflow,6
+2025-12,stackoverflow,5
 2026-01,askubuntu,1
 2026-01,dba,7
 2026-01,serverfault,1
@@ -1029,4 +1030,8 @@ month,platform,monthly_counts
 2026-07,stackoverflow,1
 2026-08,dba,1
 2026-08,serverfault,1
-2026-08,stackoverflow,5
+2026-08,stackoverflow,3
+2026-09,dba,1
+2026-09,es.stackoverflow,1
+2026-09,magento,1
+2026-09,stackoverflow,4
