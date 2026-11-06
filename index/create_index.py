@@ -25,10 +25,15 @@ for index, row in weights.iterrows():
     combined_data = combined_data.fillna(0).astype({col: 'int' for col in combined_data.columns if col != 'month'})
 # 3. Calculate index values for each column (excluding 'month') by adding a column _index for each column, and set the baseline to 2023-12
 baseline_date = '2023-12'
+fixed_baselines = weights.set_index('path')['baseline'].dropna()
 for column in combined_data.columns:
     if column != 'month':
         baseline_value = combined_data[combined_data['month'] == baseline_date][column].iloc[0]
-        if baseline_value == 0:
+        if column in fixed_baselines:
+            # Metric did not exist at baseline_date: use the fixed baseline from create_index_weights.csv, and 100 for months without data
+            fixed_baseline = fixed_baselines[column]
+            combined_data[f'{column}_index'] = combined_data[column].apply(lambda x: 100 if x == 0 else x / fixed_baseline * 100)
+        elif baseline_value == 0:
             # If baseline is 0, use 100 as index when current value is also 0, otherwise use the raw value
             combined_data[f'{column}_index'] = combined_data[column].apply(lambda x: 100 if x == 0 else x * 100)
         else:

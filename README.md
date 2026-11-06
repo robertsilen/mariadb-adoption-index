@@ -20,6 +20,8 @@ The Adoption Index is a weighted average of chosen metrics depciting MariaDB's a
 
 To create the adoption index for the latest month, run the script in [index/create_index.py](index/create_index.py). It will use monthly data stored in ```monthly.csv``` files in the ```data``` folder, and weights defined in [index/create_index_weights.csv](index/create_index_weights.csv).
 
+A metric that did not exist at the baseline has a fixed value in the `baseline` column of the weights file, and counts as 100 in months without data. Ecosystem Hub entries use 134, the earliest traceable count, from May 2026 (see [history.md](data/ecohub_entries/history.md)).
+
 ## Automation to fetch data
 
 The source data that the adoption index is based on, are monthly values in the ```data``` folder. 
