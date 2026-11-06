@@ -78,9 +78,9 @@
   },
   "Amazon RDS": {
    "broad_page": {
-    "mariadb": 1,
-    "mysql": 3,
-    "postgresql": 5,
+    "mariadb": 2,
+    "mysql": 5,
+    "postgresql": 7,
     "status": 200,
     "url": "https://aws.amazon.com/rds/"
    },
