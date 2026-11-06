@@ -403,8 +403,8 @@
     "mariadb": null,
     "mysql": null,
     "postgresql": null,
-    "status": 200,
-    "title": "Dewaweb: Layanan Web Hosting Terbaik Bersertifikat ISO 27001",
+    "status": 403,
+    "title": null,
     "url": "https://www.dewaweb.com/"
    }
   },
@@ -650,11 +650,11 @@
   },
   "GMO Internet / ConoHa": {
    "broad_page": {
-    "mariadb": 0,
-    "mysql": 1,
-    "postgresql": 0,
-    "status": 200,
-    "title": "ConoHa WING\u3010\u516c\u5f0f\u3011\u6708\u984d968\u5186\u301c\u306e\u30ec\u30f3\u30bf\u30eb\u30b5\u30fc\u30d0\u30fc",
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
     "url": "https://www.conoha.jp/"
    }
   },
@@ -952,19 +952,19 @@
   },
   "IDCloudHost": {
    "broad_page": {
-    "mariadb": 31,
-    "mysql": 0,
-    "postgresql": 33,
-    "status": 200,
-    "title": "Managed Database - IDCloudHost",
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
     "url": "https://idcloudhost.com/managed-database"
    },
    "mariadb_page": {
-    "mariadb": 6,
-    "mysql": 0,
-    "postgresql": 0,
-    "status": 200,
-    "title": "Managed MariaDB - IDCloudHost",
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
     "url": "https://idcloudhost.com/managed-mariadb"
    }
   },
@@ -1047,32 +1047,32 @@
     "mariadb": null,
     "mysql": null,
     "postgresql": null,
-    "status": 200,
-    "title": "Fast, Flexible Cloud Solutions | VMs, VPS, IaaS | Kamatera",
+    "status": 403,
+    "title": null,
     "url": "https://www.kamatera.com/"
    },
    "mariadb_page": {
-    "mariadb": 26,
-    "mysql": 9,
-    "postgresql": 1,
-    "status": 200,
-    "title": "Reliable MariaDB Hosting | 30-Day Free Trial | Kamatera",
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
     "url": "https://www.kamatera.com/products/mariadb"
    },
    "mysql_page": {
-    "mariadb": 1,
-    "mysql": 41,
-    "postgresql": 1,
-    "status": 200,
-    "title": "High-Performance MySQL Cloud Hosting | Kamatera",
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
     "url": "https://www.kamatera.com/services/mysql"
    },
    "postgresql_page": {
-    "mariadb": 1,
-    "mysql": 1,
-    "postgresql": 46,
-    "status": 200,
-    "title": "Scalable PostgreSQL Hosting | Kamatera",
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
     "url": "https://www.kamatera.com/services/postgresql"
    }
   },
@@ -1357,8 +1357,8 @@
     "mariadb": null,
     "mysql": null,
     "postgresql": null,
-    "status": 200,
-    "title": "Home | Newfold Digital",
+    "status": 403,
+    "title": null,
     "url": "https://newfold.com/"
    }
   },
@@ -1858,7 +1858,7 @@
     "mysql": 5,
     "postgresql": 5,
     "status": 200,
-    "title": "Self-Hosted DBaaS Platform | CCX by Severalnines",
+    "title": "Self-Hosted DBaaS Platform for Private & Hybrid Clouds | CCX",
     "url": "https://severalnines.com/ccx/"
    },
    "mariadb_page": {

@@ -49,7 +49,7 @@ date,provider,page,title,mariadb,mysql,postgresql,status,not_counted_for,url
 2026-11-06,Elestio,postgresql,Managed PostgreSQL as a Service | Elestio,0,1,21,200,,https://elest.io/open-source/postgresql
 2026-11-06,MariaDB Cloud,broad,MariaDB Cloud | MariaDB,74,3,1,200,"mysql, postgresql",https://mariadb.com/products/cloud/
 2026-11-06,MariaDB Cloud,mariadb,MariaDB Server Version Support | Cloud | MariaDB Documentation,34,0,0,200,"mysql, postgresql",https://mariadb.com/docs/mariadb-cloud/reference/mariadb-server-versions
-2026-11-06,Severalnines CCX,broad,Self-Hosted DBaaS Platform | CCX by Severalnines,5,5,5,200,,https://severalnines.com/ccx/
+2026-11-06,Severalnines CCX,broad,Self-Hosted DBaaS Platform for Private & Hybrid Clouds | CCX,5,5,5,200,,https://severalnines.com/ccx/
 2026-11-06,Severalnines CCX,mariadb,Sovereign MariaDB as a Service | CCX | Severalnines,11,2,2,200,,https://severalnines.com/ccx/mariadb/
 2026-11-06,Severalnines CCX,mysql,Sovereign MySQL as a Service | CCX | Severalnines,2,14,2,200,,https://severalnines.com/ccx/mysql/
 2026-11-06,Severalnines CCX,postgresql,Sovereign PostgreSQL as a Service | CCX | Severalnines,2,2,14,200,,https://severalnines.com/ccx/postgresql/
@@ -95,10 +95,10 @@ date,provider,page,title,mariadb,mysql,postgresql,status,not_counted_for,url
 2026-11-06,IBM Cloud,postgresql,IBM Cloud Databases for PostgreSQL,0,0,21,200,,https://www.ibm.com/products/databases-for-postgresql
 2026-11-06,Cloudflare,broad,Cloudflare Developer Platform | Build applications | Cloudflare,,,,200,,https://www.cloudflare.com/developer-platform/
 2026-11-06,Hetzner,broad,"Dedicated Servers, Cloud & Hosting from Germany | Hetzner",,,,200,,https://www.hetzner.com/
-2026-11-06,Kamatera,broad,"Fast, Flexible Cloud Solutions | VMs, VPS, IaaS | Kamatera",,,,200,"mariadb, mysql, postgresql",https://www.kamatera.com/
-2026-11-06,Kamatera,mariadb,Reliable MariaDB Hosting | 30-Day Free Trial | Kamatera,26,9,1,200,"mariadb, mysql, postgresql",https://www.kamatera.com/products/mariadb
-2026-11-06,Kamatera,mysql,High-Performance MySQL Cloud Hosting | Kamatera,1,41,1,200,"mariadb, mysql, postgresql",https://www.kamatera.com/services/mysql
-2026-11-06,Kamatera,postgresql,Scalable PostgreSQL Hosting | Kamatera,1,1,46,200,"mariadb, mysql, postgresql",https://www.kamatera.com/services/postgresql
+2026-11-06,Kamatera,broad,,,,,403,"mariadb, mysql, postgresql",https://www.kamatera.com/
+2026-11-06,Kamatera,mariadb,,,,,403,"mariadb, mysql, postgresql",https://www.kamatera.com/products/mariadb
+2026-11-06,Kamatera,mysql,,,,,403,"mariadb, mysql, postgresql",https://www.kamatera.com/services/mysql
+2026-11-06,Kamatera,postgresql,,,,,403,"mariadb, mysql, postgresql",https://www.kamatera.com/services/postgresql
 2026-11-06,UpCloud,broad,Cloud Databases | UpCloud,3,20,25,200,mariadb,https://upcloud.com/products/managed-databases/
 2026-11-06,UpCloud,mysql,MySQL Managed Databases - UpCloud,0,32,18,200,mariadb,https://upcloud.com/mysql-managed-databases
 2026-11-06,UpCloud,postgresql,PostgreSQL Managed Databases - UpCloud,0,18,47,200,mariadb,https://upcloud.com/postgresql-managed-databases
@@ -159,7 +159,7 @@ date,provider,page,title,mariadb,mysql,postgresql,status,not_counted_for,url
 2026-11-06,Hostinger,mysql,MySQL VPS Docker Hosting | One-Click Database,0,11,2,200,,https://www.hostinger.com/applications/mysql
 2026-11-06,Hostinger,postgresql,PostgreSQL VPS Docker Hosting | One-Click Database,0,0,11,200,,https://www.hostinger.com/applications/postgresql
 2026-11-06,HOSTAFRICA,broad,"Web Hosting, Domains and Email in Africa | HostAfrica",0,0,1,200,,https://hostafrica.com/
-2026-11-06,Newfold Digital,broad,Home | Newfold Digital,,,,200,,https://newfold.com/
+2026-11-06,Newfold Digital,broad,,,,,403,,https://newfold.com/
 2026-11-06,Liquid Web,broad,Managed Database Hosting | Secure & High-Performance Solutions,2,2,2,200,,https://www.liquidweb.com/managed-databases
 2026-11-06,20i,broad,20i® – Expect More From Your Hosting,,,,200,,https://www.20i.com/
 2026-11-06,ChemiCloud,broad,Get Worry-Free Web Hosting From ChemiCloud,,,,200,,https://chemicloud.com/
@@ -209,7 +209,7 @@ date,provider,page,title,mariadb,mysql,postgresql,status,not_counted_for,url
 2026-11-06,Catalyst Cloud,broad,The only cloud computing provider that’s made of NZ | IaaS and PaaS,,,,200,,https://catalystcloud.nz/
 2026-11-06,CtrlS Datacenters,broad,Asia's Largest Rated-4 Data Center Network | CtrlS,,,,200,,https://www.ctrls.com/
 2026-11-06,E2E Networks,broad,DBaaS | E2E Cloud docs,3,3,6,200,,https://docs.e2enetworks.com/myaccount/database/
-2026-11-06,GMO Internet / ConoHa,broad,ConoHa WING【公式】月額968円〜のレンタルサーバー,0,1,0,200,,https://www.conoha.jp/
+2026-11-06,GMO Internet / ConoHa,broad,,,,,403,,https://www.conoha.jp/
 2026-11-06,Locaweb,broad,DBaaS - Database as a Service | Servidor de Banco de dados,0,2,0,200,,https://www.locaweb.com.br/dbaas
 2026-11-06,NAVER Cloud,broad,NAVER CLOUD PLATFORM 네이버 클라우드 플랫폼,0,3,3,200,,https://www.ncloud.com/product/database
 2026-11-06,NHN Cloud,broad,서비스 : NHN Cloud,9,10,15,200,,https://www.nhncloud.com/kr/service
@@ -219,13 +219,13 @@ date,provider,page,title,mariadb,mysql,postgresql,status,not_counted_for,url
 2026-11-06,Sakura Internet,broad,データベース | さくらのクラウド マニュアル,3,0,3,200,,https://manual.sakura.ad.jp/cloud/appliance/database/
 2026-11-06,cyber_Folks,broad,cyber_Folks - hosting | domeny | e-marketing | certyfikaty ssl,,,,200,,https://cyberfolks.pl/
 2026-11-06,Biznet Gio,broad,"Biznet Gio Cloud | Cloud Modern untuk Website, Aplikasi & AI",,,,200,,https://www.biznetgio.com/
-2026-11-06,Dewaweb,broad,Dewaweb: Layanan Web Hosting Terbaik Bersertifikat ISO 27001,,,,200,,https://www.dewaweb.com/
+2026-11-06,Dewaweb,broad,,,,,403,,https://www.dewaweb.com/
 2026-11-06,Digital Pacific,broad,Digital Pacific Australia | Buy Domain and Hosting in Australia: Reliable Solutions for Your Website,,,,200,,https://www.digitalpacific.com.au/
 2026-11-06,Domeneshop,broad,Domeneshop,,,,200,,https://domene.shop/
 2026-11-06,Exabytes,broad,Hosting - Exabytes COM,,,,200,,https://www.exabytes.com/hosting
 2026-11-06,Hostpoint,broad,"Hostpoint | Domains, Webhosting, Managed Server, E-Mail und mehr!",,,,200,,https://www.hostpoint.ch/
-2026-11-06,IDCloudHost,broad,Managed Database - IDCloudHost,31,0,33,200,,https://idcloudhost.com/managed-database
-2026-11-06,IDCloudHost,mariadb,Managed MariaDB - IDCloudHost,6,0,0,200,,https://idcloudhost.com/managed-mariadb
+2026-11-06,IDCloudHost,broad,,,,,403,,https://idcloudhost.com/managed-database
+2026-11-06,IDCloudHost,mariadb,,,,,403,,https://idcloudhost.com/managed-mariadb
 2026-11-06,KT Cloud,broad,kt cloud (케이티클라우드),,,,200,,https://www.ktcloud.com/
 2026-11-06,KingHost,broad,KingHost na Black Friday: Hospedagem com até 80% OFF,,,,200,,https://king.host/
 2026-11-06,Loopia,broad,Loopia - Hemsida | Domän | Webbhotell | WordPress,,,,200,,https://www.loopia.se/
