@@ -1,0 +1,33 @@
+name: Managed MariaDB Providers
+
+on:
+  schedule:
+    - cron: '5 4 * * 1'  # Runs weekly on Mondays at 04:05 UTC
+  workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-pages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Check provider pages and update raw.json
+        run: python data/managed_mariadb_providers/fetch.py
+
+      - name: Update monthly files with raw2monthly.py
+        run: python data/managed_mariadb_providers/raw2monthly.py
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "managed mariadb providers ${timestamp}" || exit 0
+          git pull --rebase origin main
+          git push

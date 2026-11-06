@@ -1,0 +1,676 @@
+{
+ "2026-11-06": {
+  "Aiven": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 3,
+    "status": 200,
+    "url": "https://aiven.io/docs/products/services"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 23,
+    "postgresql": 3,
+    "status": 200,
+    "url": "https://aiven.io/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 78,
+    "status": 200,
+    "url": "https://aiven.io/postgresql"
+   }
+  },
+  "Akamai": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 6,
+    "postgresql": 2,
+    "status": 200,
+    "url": "https://techdocs.akamai.com/cloud-computing/docs/aiven-database-clusters"
+   },
+   "mysql_page": {
+    "mariadb": 1,
+    "mysql": 52,
+    "postgresql": 2,
+    "status": 200,
+    "url": "https://techdocs.akamai.com/cloud-computing/docs/aiven-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 38,
+    "status": 200,
+    "url": "https://techdocs.akamai.com/cloud-computing/docs/aiven-postgresql"
+   }
+  },
+  "Alibaba Cloud": {
+   "broad_page": {
+    "mariadb": 4,
+    "mysql": 77,
+    "postgresql": 50,
+    "status": 200,
+    "url": "https://www.alibabacloud.com/en/product/databases"
+   },
+   "mariadb_page": {
+    "mariadb": 20,
+    "mysql": 3,
+    "postgresql": 0,
+    "status": 200,
+    "url": "https://www.alibabacloud.com/product/apsaradb-for-rds-mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 99,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://www.alibabacloud.com/product/apsaradb-for-rds-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 70,
+    "status": 200,
+    "url": "https://www.alibabacloud.com/product/apsaradb-for-rds-postgresql"
+   }
+  },
+  "Amazon RDS": {
+   "broad_page": {
+    "mariadb": 1,
+    "mysql": 3,
+    "postgresql": 5,
+    "status": 200,
+    "url": "https://aws.amazon.com/rds/"
+   },
+   "mariadb_page": {
+    "mariadb": 21,
+    "mysql": 2,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://aws.amazon.com/rds/mariadb/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 22,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://aws.amazon.com/rds/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 27,
+    "status": 200,
+    "url": "https://aws.amazon.com/rds/postgresql/"
+   }
+  },
+  "Clever Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 15,
+    "postgresql": 22,
+    "status": 200,
+    "url": "https://www.clever.cloud/developers/doc/deploy/databases/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 29,
+    "postgresql": 20,
+    "status": 200,
+    "url": "https://www.clever.cloud/developers/doc/deploy/databases/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 14,
+    "postgresql": 51,
+    "status": 200,
+    "url": "https://www.clever.cloud/developers/doc/deploy/databases/postgresql/"
+   }
+  },
+  "Coolify": {
+   "broad_page": {
+    "mariadb": 6,
+    "mysql": 8,
+    "postgresql": 9,
+    "status": 200,
+    "url": "https://coolify.io/docs/databases/"
+   },
+   "mariadb_page": {
+    "mariadb": 44,
+    "mysql": 7,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://coolify.io/docs/databases/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 3,
+    "mysql": 45,
+    "postgresql": 3,
+    "status": 200,
+    "url": "https://coolify.io/docs/databases/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 1,
+    "mysql": 3,
+    "postgresql": 58,
+    "status": 200,
+    "url": "https://coolify.io/docs/databases/postgresql"
+   }
+  },
+  "DigitalOcean": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 2,
+    "status": 200,
+    "url": "https://www.digitalocean.com/products/managed-databases"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 29,
+    "postgresql": 2,
+    "status": 200,
+    "url": "https://www.digitalocean.com/products/managed-databases-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 26,
+    "status": 200,
+    "url": "https://www.digitalocean.com/products/managed-databases-postgresql"
+   }
+  },
+  "Elestio": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 6,
+    "status": 200,
+    "url": "https://elest.io/"
+   },
+   "mariadb_page": {
+    "mariadb": 29,
+    "mysql": 5,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://elest.io/open-source/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 25,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://elest.io/open-source/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 21,
+    "status": 200,
+    "url": "https://elest.io/open-source/postgresql"
+   }
+  },
+  "Exoscale": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 5,
+    "postgresql": 9,
+    "status": 200,
+    "url": "https://www.exoscale.com/dbaas/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 88,
+    "postgresql": 11,
+    "status": 200,
+    "url": "https://www.exoscale.com/dbaas/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 5,
+    "postgresql": 61,
+    "status": 200,
+    "url": "https://www.exoscale.com/dbaas/postgresql/"
+   }
+  },
+  "Google Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 13,
+    "postgresql": 30,
+    "status": 200,
+    "url": "https://cloud.google.com/products/databases"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 58,
+    "postgresql": 5,
+    "status": 200,
+    "url": "https://cloud.google.com/sql/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 5,
+    "postgresql": 54,
+    "status": 200,
+    "url": "https://cloud.google.com/sql/postgresql"
+   }
+  },
+  "Huawei Cloud": {
+   "broad_page": {
+    "mariadb": 7,
+    "mysql": 27,
+    "postgresql": 3,
+    "status": 200,
+    "url": "https://www.huaweicloud.com/intl/en-us/product/database.html"
+   },
+   "mariadb_page": {
+    "mariadb": 7,
+    "mysql": 1,
+    "postgresql": 0,
+    "status": 200,
+    "url": "https://support.huaweicloud.com/intl/en-us/productdesc-rds-mariadb/en-us_topic_0043898356.html"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 59,
+    "postgresql": 0,
+    "status": 200,
+    "url": "https://www.huaweicloud.com/intl/en-us/product/mysql.html"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 33,
+    "status": 200,
+    "url": "https://www.huaweicloud.com/intl/en-us/product/pg.html"
+   }
+  },
+  "IONOS Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 2,
+    "status": 200,
+    "url": "https://cloud.ionos.com/managed/dbaas"
+   },
+   "mariadb_page": {
+    "mariadb": 24,
+    "mysql": 0,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://docs.ionos.com/cloud/databases/mariadb"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 18,
+    "status": 200,
+    "url": "https://cloud.ionos.com/managed/dbaas/postgresql"
+   }
+  },
+  "Koyeb": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 56,
+    "status": 200,
+    "url": "https://www.koyeb.com/docs/databases"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 56,
+    "status": 200,
+    "url": "https://www.koyeb.com/docs/databases"
+   }
+  },
+  "Layerbase": {
+   "broad_page": {
+    "mariadb": 8,
+    "mysql": 14,
+    "postgresql": 47,
+    "status": 200,
+    "url": "https://layerbase.com/"
+   },
+   "mariadb_page": {
+    "mariadb": 83,
+    "mysql": 38,
+    "postgresql": 9,
+    "status": 200,
+    "url": "https://layerbase.com/db/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 25,
+    "mysql": 96,
+    "postgresql": 4,
+    "status": 200,
+    "url": "https://layerbase.com/db/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 2,
+    "mysql": 3,
+    "postgresql": 75,
+    "status": 200,
+    "url": "https://layerbase.com/db/postgresql"
+   }
+  },
+  "MariaDB Cloud": {
+   "broad_page": {
+    "mariadb": 74,
+    "mysql": 3,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://mariadb.com/products/cloud/"
+   },
+   "mariadb_page": {
+    "mariadb": 34,
+    "mysql": 0,
+    "postgresql": 0,
+    "status": 200,
+    "url": "https://mariadb.com/docs/mariadb-cloud/reference/mariadb-server-versions"
+   }
+  },
+  "Microsoft Azure": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 11,
+    "postgresql": 19,
+    "status": 200,
+    "url": "https://azure.microsoft.com/en-us/products/category/databases"
+   },
+   "mariadb_page": {
+    "mariadb": 4,
+    "mysql": 0,
+    "postgresql": 0,
+    "status": 200,
+    "url": "https://learn.microsoft.com/en-us/lifecycle/products/azure-database-for-mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 72,
+    "postgresql": 0,
+    "status": 200,
+    "url": "https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 30,
+    "status": 200,
+    "url": "https://learn.microsoft.com/en-us/azure/postgresql/overview"
+   }
+  },
+  "Northflank": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 6,
+    "postgresql": 7,
+    "status": 200,
+    "url": "https://northflank.com/docs/v1/application/databases-and-persistence/deploy-a-database"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 48,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://northflank.com/dbaas/managed-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 52,
+    "status": 200,
+    "url": "https://northflank.com/dbaas/managed-postgresql"
+   }
+  },
+  "OVHcloud Public Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 8,
+    "postgresql": 10,
+    "status": 200,
+    "url": "https://www.ovhcloud.com/en/public-cloud/databases/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 35,
+    "postgresql": 7,
+    "status": 200,
+    "url": "https://www.ovhcloud.com/en/public-cloud/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 4,
+    "postgresql": 35,
+    "status": 200,
+    "url": "https://www.ovhcloud.com/en/public-cloud/postgresql/"
+   }
+  },
+  "OVHcloud Web Cloud": {
+   "broad_page": {
+    "mariadb": 4,
+    "mysql": 6,
+    "postgresql": 7,
+    "status": 200,
+    "url": "https://www.ovhcloud.com/en/web-cloud/databases/"
+   },
+   "mariadb_page": {
+    "mariadb": 4,
+    "mysql": 19,
+    "postgresql": 28,
+    "status": 200,
+    "url": "https://docs.ovhcloud.com/en/guides/web-cloud/databases/db-eos-eol"
+   }
+  },
+  "Open Telekom Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 33,
+    "postgresql": 33,
+    "status": 200,
+    "url": "https://www.t-cloud-public.com/en/products-services/core-services/relational-database-service"
+   }
+  },
+  "Railway": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 10,
+    "postgresql": 18,
+    "status": 200,
+    "url": "https://docs.railway.com/databases"
+   },
+   "mariadb_page": {
+    "mariadb": 25,
+    "mysql": 20,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://railway.com/deploy/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 22,
+    "postgresql": 6,
+    "status": 200,
+    "url": "https://docs.railway.com/databases/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 30,
+    "status": 200,
+    "url": "https://docs.railway.com/databases/postgresql"
+   }
+  },
+  "Render": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 10,
+    "status": 200,
+    "url": "https://render.com/pricing"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 36,
+    "postgresql": 2,
+    "status": 200,
+    "url": "https://render.com/docs/deploy-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 8,
+    "status": 200,
+    "url": "https://render.com/docs/postgresql"
+   }
+  },
+  "STACKIT": {
+   "broad_page": {
+    "mariadb": 1,
+    "mysql": 0,
+    "postgresql": 1,
+    "status": 200,
+    "url": "https://stackit.com/en/products/data-ai"
+   },
+   "mariadb_page": {
+    "mariadb": 21,
+    "mysql": 4,
+    "postgresql": 0,
+    "status": 200,
+    "url": "https://docs.stackit.cloud/products/databases/mariadb/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 27,
+    "status": 200,
+    "url": "https://docs.stackit.cloud/products/databases/postgresql-flex/"
+   }
+  },
+  "Scaleway": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 6,
+    "postgresql": 6,
+    "status": 200,
+    "url": "https://api.github.com/repos/scaleway/docs-content/contents/pages"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 2,
+    "status": 200,
+    "url": "https://raw.githubusercontent.com/scaleway/docs-content/main/pages/managed-databases-for-postgresql-and-mysql/index.mdx"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 2,
+    "status": 200,
+    "url": "https://raw.githubusercontent.com/scaleway/docs-content/main/pages/managed-databases-for-postgresql-and-mysql/index.mdx"
+   }
+  },
+  "Severalnines CCX": {
+   "broad_page": {
+    "mariadb": 5,
+    "mysql": 5,
+    "postgresql": 5,
+    "status": 200,
+    "url": "https://severalnines.com/ccx/"
+   },
+   "mariadb_page": {
+    "mariadb": 11,
+    "mysql": 2,
+    "postgresql": 2,
+    "status": 200,
+    "url": "https://severalnines.com/ccx/mariadb/"
+   },
+   "mysql_page": {
+    "mariadb": 2,
+    "mysql": 14,
+    "postgresql": 2,
+    "status": 200,
+    "url": "https://severalnines.com/ccx/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 2,
+    "mysql": 2,
+    "postgresql": 14,
+    "status": 200,
+    "url": "https://severalnines.com/ccx/postgresql/"
+   }
+  },
+  "Tencent Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 96,
+    "postgresql": 0,
+    "status": 200,
+    "url": "https://www.tencentcloud.com/products/cdb"
+   },
+   "mariadb_page": {
+    "mariadb": 5,
+    "mysql": 9,
+    "postgresql": 0,
+    "status": 200,
+    "url": "https://www.tencentcloud.com/document/product/237/69268"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 96,
+    "postgresql": 0,
+    "status": 200,
+    "url": "https://www.tencentcloud.com/products/cdb"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 22,
+    "status": 200,
+    "url": "https://www.tencentcloud.com/products/postgres"
+   }
+  },
+  "Upsun": {
+   "broad_page": {
+    "mariadb": 39,
+    "mysql": 36,
+    "postgresql": 37,
+    "status": 200,
+    "url": "https://developer.upsun.com/docs/add-services"
+   },
+   "mariadb_page": {
+    "mariadb": 240,
+    "mysql": 156,
+    "postgresql": 13,
+    "status": 200,
+    "url": "https://developer.upsun.com/docs/add-services/mysql"
+   },
+   "mysql_page": {
+    "mariadb": 240,
+    "mysql": 156,
+    "postgresql": 13,
+    "status": 200,
+    "url": "https://developer.upsun.com/docs/add-services/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 9,
+    "mysql": 11,
+    "postgresql": 265,
+    "status": 200,
+    "url": "https://developer.upsun.com/docs/add-services/postgresql"
+   }
+  },
+  "Vultr": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 11,
+    "postgresql": 6,
+    "status": 200,
+    "url": "https://docs.vultr.com/support/products/managed-databases/what-databases-are-supported-by-vultr-managed-databases"
+   }
+  }
+ }
+}
