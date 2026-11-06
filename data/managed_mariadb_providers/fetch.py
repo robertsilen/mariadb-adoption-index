@@ -1,5 +1,6 @@
 # Checks whether the pages of managed database providers mention MariaDB, MySQL and PostgreSQL.
 # Reads the pages from providers.csv and saves the counts under today's date in raw.json.
+# latest_run.csv has the same results for the latest run only, one row per page, for reading.
 # Run from the root of the repository. A second run on the same day replaces that day's results.
 #
 # "mariadb", "mysql" and "postgresql" are numbers of mentions, or null when the page could not be read.
@@ -10,6 +11,7 @@
 
 import csv
 import datetime
+import html
 import json
 import os
 import re
@@ -25,11 +27,11 @@ DATABASES = ["mariadb", "mysql", "postgresql"]
 
 def read_page(url):
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    result = {"url": url, "status": None, "mariadb": None, "mysql": None, "postgresql": None}
+    result = {"url": url, "status": None, "title": None, "mariadb": None, "mysql": None, "postgresql": None}
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
             result["status"] = response.status
-            html = response.read().decode("utf-8", "replace")
+            body = response.read().decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
         result["status"] = e.code
         if e.code in (404, 410):
@@ -39,7 +41,11 @@ def read_page(url):
         result["status"] = type(e).__name__
         return result
 
-    text = re.sub(r"<(script|style)\b.*?</\1>", " ", html, flags=re.S | re.I)
+    title = re.search(r"<title[^>]*>(.*?)</title>", body, re.S | re.I)
+    if title:
+        result["title"] = re.sub(r"\s+", " ", html.unescape(title.group(1))).strip()
+
+    text = re.sub(r"<(script|style)\b.*?</\1>", " ", body, flags=re.S | re.I)
     text = re.sub(r"<[^>]+>", " ", text)
     mariadb = len(re.findall(r"maria\s?db", text, re.I))
     mysql = len(re.findall(r"\bmysql\b", text, re.I))
@@ -57,7 +63,9 @@ def print_changes(previous, current):
         for name, page in pages.items():
             before = previous.get(provider, {}).get(name, {})
             if page["mariadb"] is None:
-                print(f"NOT READ  {provider} {name}: {page['status']} {page['url']}")
+                # Many hosting home pages name no database, which isn't worth a line every week.
+                if page["status"] != 200 or before.get("mariadb") is not None:
+                    print(f"NOT READ  {provider} {name}: {page['status']} {page['url']}")
                 continue
             # A page about one database often mentions others, so only its own name is watched.
             databases = DATABASES if name == "broad_page" else [name.removesuffix("_page")]
@@ -66,6 +74,16 @@ def print_changes(previous, current):
                     print(f"LOST      {provider} {name} {database}: {before[database]} -> 0 {page['url']}")
                 elif before.get(database) == 0 and page[database] > 0:
                     print(f"NEW       {provider} {name} {database}: 0 -> {page[database]} {page['url']}")
+
+def write_latest_run(today, rows, current):
+    with open(f"{FOLDER}/latest_run.csv", "w", newline="") as f:
+        writer = csv.writer(f, lineterminator="\n")
+        writer.writerow(["date", "provider", "page", "title", "mariadb", "mysql", "postgresql", "status", "not_counted_for", "url"])
+        for row in rows:
+            not_counted_for = ", ".join(db for db in DATABASES if row[f"{db}_not_counted_because"])
+            for name, page in current[row["provider"]].items():
+                writer.writerow([today, row["provider"], name.removesuffix("_page"), page["title"], page["mariadb"],
+                                 page["mysql"], page["postgresql"], page["status"], not_counted_for, page["url"]])
 
 if __name__ == "__main__":
     today = datetime.date.today().isoformat()
@@ -92,6 +110,7 @@ if __name__ == "__main__":
     with open(f"{FOLDER}/raw.json", "w") as f:
         json.dump(raw, f, indent=1, sort_keys=True)
         f.write("\n")
+    write_latest_run(today, rows, current)
 
     total = sum(len(pages) for pages in current.values())
     print(f"{today}: read {len(readable)} of {total} pages for {len(current)} providers")

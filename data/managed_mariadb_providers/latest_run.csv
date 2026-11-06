@@ -1,0 +1,256 @@
+date,provider,page,title,mariadb,mysql,postgresql,status,not_counted_for,url
+2026-11-06,Amazon RDS,broad,Fully Managed Relational Database – Amazon RDS – AWS,2,5,7,200,,https://aws.amazon.com/rds/
+2026-11-06,Amazon RDS,mariadb,Amazon RDS for MariaDB – Amazon Web Services (AWS),21,2,1,200,,https://aws.amazon.com/rds/mariadb/
+2026-11-06,Amazon RDS,mysql,Hosted MySQL - Amazon RDS for MySQL - AWS,0,22,1,200,,https://aws.amazon.com/rds/mysql/
+2026-11-06,Amazon RDS,postgresql,Hosted PostgreSQL - Amazon RDS for PostgreSQL - AWS,0,1,27,200,,https://aws.amazon.com/rds/postgresql/
+2026-11-06,Microsoft Azure,broad,Cloud Databases | Microsoft Azure,0,11,19,200,mariadb,https://azure.microsoft.com/en-us/products/category/databases
+2026-11-06,Microsoft Azure,mariadb,Azure Database for MariaDB - Microsoft Lifecycle | Microsoft Learn,4,0,0,200,mariadb,https://learn.microsoft.com/en-us/lifecycle/products/azure-database-for-mariadb
+2026-11-06,Microsoft Azure,mysql,Azure Database for MySQL flexible server - Azure Database for MySQL | Microsoft Learn,0,72,0,200,mariadb,https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview
+2026-11-06,Microsoft Azure,postgresql,What Is Azure Database for PostgreSQL flexible server? - Azure Database for PostgreSQL | Microsoft Learn,0,0,30,200,mariadb,https://learn.microsoft.com/en-us/azure/postgresql/overview
+2026-11-06,Google Cloud,broad,Google Cloud databases | Google Cloud,0,13,30,200,,https://cloud.google.com/products/databases
+2026-11-06,Google Cloud,mysql,Cloud SQL for MySQL | Google Cloud,0,58,5,200,,https://cloud.google.com/sql/mysql
+2026-11-06,Google Cloud,postgresql,Cloud SQL for PostgreSQL Managed Database | Google Cloud,0,5,54,200,,https://cloud.google.com/sql/postgresql
+2026-11-06,Alibaba Cloud,broad,Alibaba Cloud Database Services Empower Your Business,4,77,50,200,,https://www.alibabacloud.com/en/product/databases
+2026-11-06,Alibaba Cloud,mariadb,ApsaraDB RDS for MariaDB: Designed with Multiple Enterprise Database - Alibaba Cloud,20,3,0,200,,https://www.alibabacloud.com/product/apsaradb-for-rds-mariadb
+2026-11-06,Alibaba Cloud,mysql,ApsaraDB RDS for MySQL: MySQL/SQL/PostgreSQL Database Hosting - Alibaba Cloud,0,99,1,200,,https://www.alibabacloud.com/product/apsaradb-for-rds-mysql
+2026-11-06,Alibaba Cloud,postgresql,ApsaraDB RDS for PostgreSQL: Enables Seamless In-DB AI Integration - Alibaba Cloud,0,3,70,200,,https://www.alibabacloud.com/product/apsaradb-for-rds-postgresql
+2026-11-06,Tencent Cloud,broad,TencentDB for MySQL | Tencent Cloud,0,96,0,200,mariadb,https://www.tencentcloud.com/products/cdb
+2026-11-06,Tencent Cloud,mariadb,Database Version,5,9,0,200,mariadb,https://www.tencentcloud.com/document/product/237/69268
+2026-11-06,Tencent Cloud,mysql,TencentDB for MySQL | Tencent Cloud,0,96,0,200,mariadb,https://www.tencentcloud.com/products/cdb
+2026-11-06,Tencent Cloud,postgresql,TencentDB for PostgreSQL | Tencent Cloud,0,0,22,200,mariadb,https://www.tencentcloud.com/products/postgres
+2026-11-06,Huawei Cloud,broad,Database-Huawei Cloud,7,27,3,200,,https://www.huaweicloud.com/intl/en-us/product/database.html
+2026-11-06,Huawei Cloud,mariadb,DB Engines and Versions_DB Instance Description_Service Overview_Relational Database Service_RDS for MariaDB-Huawei Cloud,7,1,0,200,,https://support.huaweicloud.com/intl/en-us/productdesc-rds-mariadb/en-us_topic_0043898356.html
+2026-11-06,Huawei Cloud,mysql,RDS for MySQL - Fully Managed Database | Huawei Cloud,0,59,0,200,,https://www.huaweicloud.com/intl/en-us/product/mysql.html
+2026-11-06,Huawei Cloud,postgresql,RDS for PostgreSQL - PostgreSQL Hosting | Huawei Cloud,0,3,33,200,,https://www.huaweicloud.com/intl/en-us/product/pg.html
+2026-11-06,IONOS Cloud,broad,Database as a Service (DBaaS) | IONOS CLOUD,0,1,2,200,mysql,https://cloud.ionos.com/managed/dbaas
+2026-11-06,IONOS Cloud,mariadb,MariaDB | Products,24,0,1,200,mysql,https://docs.ionos.com/cloud/databases/mariadb
+2026-11-06,IONOS Cloud,postgresql,PostgreSQL Hosting | Managed Database Service by IONOS,0,0,18,200,mysql,https://cloud.ionos.com/managed/dbaas/postgresql
+2026-11-06,OVHcloud Web Cloud,broad,Database Hosting | Web Cloud Database | OVHcloud Worldwide,4,6,7,200,,https://www.ovhcloud.com/en/web-cloud/databases/
+2026-11-06,OVHcloud Web Cloud,mariadb,Web Cloud Databases EOS and EOL announcements - OVHcloud Documentation,4,19,28,200,,https://docs.ovhcloud.com/en/guides/web-cloud/databases/db-eos-eol
+2026-11-06,OVHcloud Public Cloud,broad,Managed cloud databases solutions | OVHcloud Worldwide,0,8,10,200,,https://www.ovhcloud.com/en/public-cloud/databases/
+2026-11-06,OVHcloud Public Cloud,mysql,Managed MySQL as a service | OVHcloud Worldwide,0,35,7,200,,https://www.ovhcloud.com/en/public-cloud/mysql/
+2026-11-06,OVHcloud Public Cloud,postgresql,Managed PostgreSQL as a service | OVHcloud Worldwide,0,4,35,200,,https://www.ovhcloud.com/en/public-cloud/postgresql/
+2026-11-06,Scaleway,broad,,0,6,6,200,,https://api.github.com/repos/scaleway/docs-content/contents/pages
+2026-11-06,Scaleway,mysql,,0,2,2,200,,https://raw.githubusercontent.com/scaleway/docs-content/main/pages/managed-databases-for-postgresql-and-mysql/index.mdx
+2026-11-06,Scaleway,postgresql,,0,2,2,200,,https://raw.githubusercontent.com/scaleway/docs-content/main/pages/managed-databases-for-postgresql-and-mysql/index.mdx
+2026-11-06,Exoscale,broad,Managed Database as a Service (DBaaS) in Europe | Exoscale,0,5,9,200,,https://www.exoscale.com/dbaas/
+2026-11-06,Exoscale,mysql,Managed MySQL Hosting in Europe | Exoscale,0,88,11,200,,https://www.exoscale.com/dbaas/mysql/
+2026-11-06,Exoscale,postgresql,Managed PostgreSQL In Europe | Exoscale,0,5,61,200,,https://www.exoscale.com/dbaas/postgresql/
+2026-11-06,Clever Cloud,broad,Databases – Clever Cloud Documentation,0,15,22,200,,https://www.clever.cloud/developers/doc/deploy/databases/
+2026-11-06,Clever Cloud,mysql,MySQL – Clever Cloud Documentation,0,29,20,200,,https://www.clever.cloud/developers/doc/deploy/databases/mysql/
+2026-11-06,Clever Cloud,postgresql,PostgreSQL – Clever Cloud Documentation,0,14,51,200,,https://www.clever.cloud/developers/doc/deploy/databases/postgresql/
+2026-11-06,Upsun,broad,Add services - Upsun Developer,39,36,37,200,,https://developer.upsun.com/docs/add-services
+2026-11-06,Upsun,mariadb,MariaDB/MySQL (database service) - Upsun Developer,240,156,13,200,,https://developer.upsun.com/docs/add-services/mysql
+2026-11-06,Upsun,mysql,MariaDB/MySQL (database service) - Upsun Developer,240,156,13,200,,https://developer.upsun.com/docs/add-services/mysql
+2026-11-06,Upsun,postgresql,PostgreSQL (Database service) - Upsun Developer,9,11,265,200,,https://developer.upsun.com/docs/add-services/postgresql
+2026-11-06,Elestio,broad,Deploy Fully Managed Open-Source Software on Any Cloud | Elestio,0,1,6,200,,https://elest.io/
+2026-11-06,Elestio,mariadb,Managed MariaDB as a Service | Elestio,29,5,1,200,,https://elest.io/open-source/mariadb
+2026-11-06,Elestio,mysql,Managed MySQL as a Service | Elestio,0,25,1,200,,https://elest.io/open-source/mysql
+2026-11-06,Elestio,postgresql,Managed PostgreSQL as a Service | Elestio,0,1,21,200,,https://elest.io/open-source/postgresql
+2026-11-06,MariaDB Cloud,broad,MariaDB Cloud | MariaDB,74,3,1,200,"mysql, postgresql",https://mariadb.com/products/cloud/
+2026-11-06,MariaDB Cloud,mariadb,MariaDB Server Version Support | Cloud | MariaDB Documentation,34,0,0,200,"mysql, postgresql",https://mariadb.com/docs/mariadb-cloud/reference/mariadb-server-versions
+2026-11-06,Severalnines CCX,broad,Self-Hosted DBaaS Platform | CCX by Severalnines,5,5,5,200,,https://severalnines.com/ccx/
+2026-11-06,Severalnines CCX,mariadb,Sovereign MariaDB as a Service | CCX | Severalnines,11,2,2,200,,https://severalnines.com/ccx/mariadb/
+2026-11-06,Severalnines CCX,mysql,Sovereign MySQL as a Service | CCX | Severalnines,2,14,2,200,,https://severalnines.com/ccx/mysql/
+2026-11-06,Severalnines CCX,postgresql,Sovereign PostgreSQL as a Service | CCX | Severalnines,2,2,14,200,,https://severalnines.com/ccx/postgresql/
+2026-11-06,Aiven,broad,Services | Aiven docs,0,3,3,200,,https://aiven.io/docs/products/services
+2026-11-06,Aiven,mysql,Managed MySQL | Aiven,0,23,3,200,,https://aiven.io/mysql
+2026-11-06,Aiven,postgresql,Managed PostgreSQL as a service | Aiven,0,2,78,200,,https://aiven.io/postgresql
+2026-11-06,DigitalOcean,broad,Worry-Free Managed Database Hosting | DigitalOcean,0,2,2,200,,https://www.digitalocean.com/products/managed-databases
+2026-11-06,DigitalOcean,mysql,Worry-Free Managed MySQL Hosting | DigitalOcean,0,29,2,200,,https://www.digitalocean.com/products/managed-databases-mysql
+2026-11-06,DigitalOcean,postgresql,Worry-Free Managed PostgreSQL Hosting | DigitalOcean,0,2,26,200,,https://www.digitalocean.com/products/managed-databases-postgresql
+2026-11-06,Vultr,broad,Database Engines Supported by Vultr Managed Databases | Vultr Docs,0,11,6,200,,https://docs.vultr.com/support/products/managed-databases/what-databases-are-supported-by-vultr-managed-databases
+2026-11-06,Akamai,broad,Managed database clusters,0,6,2,200,,https://techdocs.akamai.com/cloud-computing/docs/aiven-database-clusters
+2026-11-06,Akamai,mysql,MySQL,1,52,2,200,,https://techdocs.akamai.com/cloud-computing/docs/aiven-mysql
+2026-11-06,Akamai,postgresql,PostgreSQL,0,3,38,200,,https://techdocs.akamai.com/cloud-computing/docs/aiven-postgresql
+2026-11-06,Render,broad,Pricing | Render,0,0,10,200,mysql,https://render.com/pricing
+2026-11-06,Render,mysql,Deploy MySQL – Render Docs,0,36,2,200,mysql,https://render.com/docs/deploy-mysql
+2026-11-06,Render,postgresql,Render Postgres – Render Docs,0,0,8,200,mysql,https://render.com/docs/postgresql
+2026-11-06,Northflank,broad,Deploy a database | App resources | Databases & storage | Northflank Application docs,0,6,7,200,,https://northflank.com/docs/v1/application/databases-and-persistence/deploy-a-database
+2026-11-06,Northflank,mysql,Managed MySQL — Northflank,0,48,1,200,,https://northflank.com/dbaas/managed-mysql
+2026-11-06,Northflank,postgresql,Managed PostgreSQL — Northflank,0,1,52,200,,https://northflank.com/dbaas/managed-postgresql
+2026-11-06,Railway,broad,Databases | Railway Docs,0,10,18,200,mariadb,https://docs.railway.com/databases
+2026-11-06,Railway,mariadb,Deploy & Host MariaDB | Railway,25,20,1,200,mariadb,https://railway.com/deploy/mariadb
+2026-11-06,Railway,mysql,MySQL | Railway Docs,0,22,6,200,mariadb,https://docs.railway.com/databases/mysql
+2026-11-06,Railway,postgresql,PostgreSQL | Railway Docs,0,2,30,200,mariadb,https://docs.railway.com/databases/postgresql
+2026-11-06,STACKIT,broad,STACKIT Data & AI: GenAI models and sovereign data platform,1,0,1,200,,https://stackit.com/en/products/data-ai
+2026-11-06,STACKIT,mariadb,MariaDB | Docs,21,4,0,200,,https://docs.stackit.cloud/products/databases/mariadb/
+2026-11-06,STACKIT,postgresql,PostgreSQL Flex | Docs,0,0,27,200,,https://docs.stackit.cloud/products/databases/postgresql-flex/
+2026-11-06,Layerbase,broad,Serverless and Managed Databases for 19 Engines | Layerbase,8,14,47,200,,https://layerbase.com/
+2026-11-06,Layerbase,mariadb,"Free MariaDB Hosting, MySQL-Compatible Database | Layerbase",83,38,9,200,,https://layerbase.com/db/mariadb
+2026-11-06,Layerbase,mysql,"Serverless MySQL, Managed MySQL Database Hosting | Layerbase",25,96,4,200,,https://layerbase.com/db/mysql
+2026-11-06,Layerbase,postgresql,"Serverless PostgreSQL, Free Hosted Postgres Database | Layerbase",2,3,75,200,,https://layerbase.com/db/postgresql
+2026-11-06,Coolify,broad,Databases | Coolify Docs,6,8,9,200,,https://coolify.io/docs/databases/
+2026-11-06,Coolify,mariadb,MariaDB | Coolify Docs,44,7,1,200,,https://coolify.io/docs/databases/mariadb
+2026-11-06,Coolify,mysql,MySQL | Coolify Docs,3,45,3,200,,https://coolify.io/docs/databases/mysql
+2026-11-06,Coolify,postgresql,PostgreSQL | Coolify Docs,1,3,58,200,,https://coolify.io/docs/databases/postgresql
+2026-11-06,Koyeb,broad,Databases | Koyeb,0,0,56,200,,https://www.koyeb.com/docs/databases
+2026-11-06,Koyeb,postgresql,Databases | Koyeb,0,0,56,200,,https://www.koyeb.com/docs/databases
+2026-11-06,Open Telekom Cloud,broad,Relational Database Service (RDS) | T Cloud Public,0,33,33,200,,https://www.t-cloud-public.com/en/products-services/core-services/relational-database-service
+2026-11-06,Oracle Cloud,broad,AI Database | Oracle,,,,200,,https://www.oracle.com/database/
+2026-11-06,Oracle Cloud,mysql,MySQL HeatWave | Oracle,0,78,0,200,,https://www.oracle.com/mysql/
+2026-11-06,Oracle Cloud,postgresql,Database with PostgreSQL | Oracle,0,0,76,200,,https://www.oracle.com/cloud/postgresql/
+2026-11-06,IBM Cloud,broad,Cloud Databases Solutions | IBM,0,2,1,200,,https://www.ibm.com/cloud/databases
+2026-11-06,IBM Cloud,mysql,IBM Cloud Databases for MySQL,0,20,0,200,,https://www.ibm.com/products/databases-for-mysql
+2026-11-06,IBM Cloud,postgresql,IBM Cloud Databases for PostgreSQL,0,0,21,200,,https://www.ibm.com/products/databases-for-postgresql
+2026-11-06,Cloudflare,broad,Cloudflare Developer Platform | Build applications | Cloudflare,,,,200,,https://www.cloudflare.com/developer-platform/
+2026-11-06,Hetzner,broad,"Dedicated Servers, Cloud & Hosting from Germany | Hetzner",,,,200,,https://www.hetzner.com/
+2026-11-06,Kamatera,broad,"Fast, Flexible Cloud Solutions | VMs, VPS, IaaS | Kamatera",,,,200,"mariadb, mysql, postgresql",https://www.kamatera.com/
+2026-11-06,Kamatera,mariadb,Reliable MariaDB Hosting | 30-Day Free Trial | Kamatera,26,9,1,200,"mariadb, mysql, postgresql",https://www.kamatera.com/products/mariadb
+2026-11-06,Kamatera,mysql,High-Performance MySQL Cloud Hosting | Kamatera,1,41,1,200,"mariadb, mysql, postgresql",https://www.kamatera.com/services/mysql
+2026-11-06,Kamatera,postgresql,Scalable PostgreSQL Hosting | Kamatera,1,1,46,200,"mariadb, mysql, postgresql",https://www.kamatera.com/services/postgresql
+2026-11-06,UpCloud,broad,Cloud Databases | UpCloud,3,20,25,200,mariadb,https://upcloud.com/products/managed-databases/
+2026-11-06,UpCloud,mysql,MySQL Managed Databases - UpCloud,0,32,18,200,mariadb,https://upcloud.com/mysql-managed-databases
+2026-11-06,UpCloud,postgresql,PostgreSQL Managed Databases - UpCloud,0,18,47,200,mariadb,https://upcloud.com/postgresql-managed-databases
+2026-11-06,Infomaniak,broad,"Use database management systems, MySQL libraries, etc.",5,16,5,200,,https://www.infomaniak.com/en/support/faq/418/using-dbms-mysql-libraries-etc
+2026-11-06,plusserver,broad,Databases | plusserver Documentation,2,2,3,200,,https://docs.plusserver.com/en/databases/
+2026-11-06,plusserver,mariadb,MariaDB | plusserver Documentation,8,1,2,200,,https://docs.plusserver.com/en/databases/mariadb
+2026-11-06,plusserver,mysql,MySQL | plusserver Documentation,1,8,2,200,,https://docs.plusserver.com/en/databases/mysql
+2026-11-06,plusserver,postgresql,PostgreSQL | plusserver Documentation,1,1,9,200,,https://docs.plusserver.com/en/databases/postgresql
+2026-11-06,CloudFerro,broad,Managed Databases - CloudFerro,6,5,7,200,,https://www.cloudferro.com/products/managed-databases/
+2026-11-06,Gcore,broad,Fully provision your PostgreSQL databases in minutes | Gcore,0,0,15,200,,https://gcore.com/cloud/managed-database-postgresql
+2026-11-06,Gcore,postgresql,Fully provision your PostgreSQL databases in minutes | Gcore,0,0,15,200,,https://gcore.com/cloud/managed-database-postgresql
+2026-11-06,SysEleven,broad,secunet cloud – Souveräne Cloud aus Deutschland,,,,200,,https://www.syseleven.de/
+2026-11-06,Aruba Cloud,broad,"Database as a Service (DBaaS): MySQL, SQL Server & MongoDB | Cloud",0,3,1,200,,https://www.arubacloud.com/database-as-a-service
+2026-11-06,NumSpot,broad,"Plateforme cloud souveraine, portable et réversible | Numspot",0,0,2,200,,https://numspot.com/
+2026-11-06,NumSpot,postgresql,PostgreSQL Managé - Numspot,0,0,7,200,,https://numspot.com/products/postgresql
+2026-11-06,OUTSCALE (Dassault Systèmes),broad,OUTSCALE | Secure and sovereign Cloud,,,,200,,https://www.outscale.com/
+2026-11-06,evroc,broad,evroc | The European Cloud,,,,200,,https://evroc.com/
+2026-11-06,Civo,broad,Civo - Sovereign Cloud and AI Platform | Built for More,,,,200,"mariadb, mysql, postgresql",https://www.civo.com/
+2026-11-06,Civo,mariadb,MariaDB - Civo.com,13,5,0,200,"mariadb, mysql, postgresql",https://www.civo.com/marketplace/mariadb
+2026-11-06,Civo,mysql,Percona MySQL - Civo.com,0,8,0,200,"mariadb, mysql, postgresql",https://www.civo.com/marketplace/percona-mysql
+2026-11-06,Civo,postgresql,PostgreSQL - Civo.com,0,0,18,200,"mariadb, mysql, postgresql",https://www.civo.com/marketplace/postgresql
+2026-11-06,Cleura,broad,,,,,200,,https://cleura.com/
+2026-11-06,Elastx,broad,Elastx - Swedish Cloud Provider,1,1,1,200,,https://elastx.se/
+2026-11-06,Elastx,mariadb,MariaDB | Elastx,3,2,0,200,,https://elastx.se/en/mariadb
+2026-11-06,Elastx,mysql,MySQL | Elastx,0,3,0,200,,https://elastx.se/en/mysql
+2026-11-06,Elastx,postgresql,PostgreSQL | Elastx,0,0,4,200,,https://elastx.se/en/postgresql
+2026-11-06,Leaseweb,broad,Leaseweb,,,,200,,https://www.leaseweb.com/
+2026-11-06,gridscale,broad,gridscale - Your cloud in 5 minutes: Private & public cloud,,,,200,,https://gridscale.io/en/
+2026-11-06,CloudSigma,broad,CloudSigma — The Sovereign Cloud Platform for Service Providers,,,,200,,https://www.cloudsigma.com/
+2026-11-06,Virtuozzo Application Platform (Jelastic),broad,,,,,403,,https://www.virtuozzo.com/application-platform/
+2026-11-06,Hidora,broad,Infogérance DevOps & Kubernetes managé à Genève,,,,200,,https://hidora.io/
+2026-11-06,Platform.sh,broad,Add services | Upsun Fixed Docs,22,16,16,200,,https://fixed.docs.upsun.com/add-services.html
+2026-11-06,Platform.sh,mariadb,MariaDB/MySQL (database service) | Upsun Fixed Docs,82,53,5,200,,https://fixed.docs.upsun.com/add-services/mysql.html
+2026-11-06,Platform.sh,mysql,MariaDB/MySQL (database service) | Upsun Fixed Docs,82,53,5,200,,https://fixed.docs.upsun.com/add-services/mysql.html
+2026-11-06,Platform.sh,postgresql,PostgreSQL (Database service) | Upsun Fixed Docs,4,4,90,200,,https://fixed.docs.upsun.com/add-services/postgresql.html
+2026-11-06,Fly.io,broad,"Fly.io | Deploy apps and agents on fast, hardware-isolated VMs",0,0,3,200,,https://fly.io/
+2026-11-06,Fly.io,mysql,Fly Managed MySQL · Fly,0,4,2,200,,https://fly.io/mysql
+2026-11-06,Fly.io,postgresql,Managed Postgres - Fly.io,0,4,197,200,,https://docs.fly.io/postgres
+2026-11-06,Heroku,broad,Heroku | The Cloud Application Platform For Developers,0,0,7,200,,https://www.heroku.com/
+2026-11-06,Heroku,postgresql,Fully Managed PostgreSQL as a Service | Heroku,0,0,62,200,,https://www.heroku.com/postgres
+2026-11-06,Qovery,broad,Qovery - The infrastructure control plane for humans and AI agents,,,,200,,https://www.qovery.com/
+2026-11-06,Scalingo,broad,European DBaaS Platform for Managed Databases | Scalingo,0,8,13,200,,https://scalingo.com/dbaas
+2026-11-06,Scalingo,mysql,Managed MySQL® Database | Scalable & Secure Cloud Hosting | Scalingo,0,15,9,200,,https://scalingo.com/databases/mysql
+2026-11-06,Scalingo,postgresql,Managed PostgreSQL® Database | Scalable & Secure Cloud Hosting | Scalingo,0,6,18,200,,https://scalingo.com/databases/postgresql
+2026-11-06,Porter,broad,"Porter | Platform as a Service, Reimagined.",0,0,1,200,,https://www.porter.run/
+2026-11-06,ScaleGrid,broad,Database Hosting: Fully Managed Cloud Services | ScaleGrid,0,6,11,200,,https://scalegrid.io/
+2026-11-06,ScaleGrid,mysql,Fully Managed Hosting For MySQL™: Features & Pricing | ScaleGrid,0,40,7,200,,https://scalegrid.io/mysql
+2026-11-06,ScaleGrid,postgresql,Fully Managed PostgreSQL® Hosting: Features & Pricing,0,4,67,200,,https://scalegrid.io/postgresql
+2026-11-06,Cloud 66,broad,Cloud 66 - Deploy Your Applications to Any Cloud,0,0,2,200,,https://www.cloud66.com/
+2026-11-06,team.blue,broad,team.blue | Pan-European digital partner for SMBs in 23 countries,,,,200,,https://team.blue/
+2026-11-06,Rackspace Technology,broad,Rackspace Technology | Where Enterprise AI runs and outcomes scale,,,,200,,https://www.rackspace.com/
+2026-11-06,Miss Group,broad,Fastest growing digital solutions provider company | Miss Group,,,,200,,https://missgroup.com/
+2026-11-06,Kinsta,broad,Database Hosting - Sevalla,2,2,2,200,,https://kinsta.com/database-hosting/
+2026-11-06,WebPros,broad,The Global Standard in Web Enablement - WebPros,,,,200,,https://webpros.com/
+2026-11-06,group.one,broad,group.one,,,,200,,https://group.one/
+2026-11-06,Hostinger,broad,Hostinger - Bring Your Idea Online With a Website,,,,200,,https://www.hostinger.com/
+2026-11-06,Hostinger,mariadb,MariaDB VPS Docker Hosting | One-Click Deployment,10,5,2,200,,https://www.hostinger.com/applications/mariadb
+2026-11-06,Hostinger,mysql,MySQL VPS Docker Hosting | One-Click Database,0,11,2,200,,https://www.hostinger.com/applications/mysql
+2026-11-06,Hostinger,postgresql,PostgreSQL VPS Docker Hosting | One-Click Database,0,0,11,200,,https://www.hostinger.com/applications/postgresql
+2026-11-06,HOSTAFRICA,broad,"Web Hosting, Domains and Email in Africa | HostAfrica",0,0,1,200,,https://hostafrica.com/
+2026-11-06,Newfold Digital,broad,Home | Newfold Digital,,,,200,,https://newfold.com/
+2026-11-06,Liquid Web,broad,Managed Database Hosting | Secure & High-Performance Solutions,2,2,2,200,,https://www.liquidweb.com/managed-databases
+2026-11-06,20i,broad,20i® – Expect More From Your Hosting,,,,200,,https://www.20i.com/
+2026-11-06,ChemiCloud,broad,Get Worry-Free Web Hosting From ChemiCloud,,,,200,,https://chemicloud.com/
+2026-11-06,DreamHost,broad,Web Hosting Built for Growth - DreamHost,,,,200,,https://www.dreamhost.com/
+2026-11-06,DreamHost,mysql,MySQL VPS Hosting - DreamHost,1,47,0,200,,https://www.dreamhost.com/hosting/managed-vps/mysql
+2026-11-06,DreamHost,postgresql,"PostgreSQL VPS Hosting, Full Root + pgvector - DreamHost",1,0,16,200,,https://www.dreamhost.com/postgresql
+2026-11-06,FastComet,broad,FastComet - Managed Cloud Hosting with 24/7 Support,,,,200,,https://www.fastcomet.com/
+2026-11-06,FastComet,mysql,Managed MySQL Hosting » Best Speed & Security - FastComet,1,27,0,200,,https://www.fastcomet.com/mysql-hosting
+2026-11-06,GoDaddy,broad,,,,,403,,https://www.godaddy.com/hosting
+2026-11-06,GreenGeeks,broad,"Web Hosting: Fast, Scalable & Eco-friendly",,,,200,,https://www.greengeeks.com/
+2026-11-06,GreenGeeks,postgresql,PostgreSQL VPS Docker Hosting | GreenGeeks,0,3,39,200,,https://www.greengeeks.com/vps-hosting/postgresql
+2026-11-06,HostDime,broad,HostDime: Premier Global Data Centers,,,,200,,https://www.hostdime.com/
+2026-11-06,HostPapa,broad,"Web Hosting, Domains, Website Builder, Email, & More | HostPapa",,,,200,,https://www.hostpapa.com/
+2026-11-06,HostPapa,postgresql,PostgreSQL Hosting | VPS with Full Root Access | HostPapa,2,2,31,200,,https://www.hostpapa.com/apps/postgresql
+2026-11-06,Hosting.com (A2 Hosting),broad,Web Hosting Built to Grow With You | hosting.com,,,,200,,https://hosting.com/
+2026-11-06,InMotion Hosting,broad,"Best Web Hosting, VPS, Dedicated Servers for Business 2026 | InMotion Hosting",,,,200,,https://www.inmotionhosting.com/
+2026-11-06,InMotion Hosting,postgresql,Best PostgreSQL Hosting | InMotion Hosting,0,2,13,200,,https://www.inmotionhosting.com/postgresql-hosting
+2026-11-06,KnownHost,broad,"KnownHost - Managed Hosting, Done Right",,,,200,,https://www.knownhost.com/
+2026-11-06,KnownHost,mysql,MySQL Database Hosting: Reliable Database Solutions | KnownHost,0,3,0,200,,https://www.knownhost.com/mysql-hosting
+2026-11-06,Krystal,broad,UK web hosting that's fair to you and the planet | Krystal Hosting,,,,200,,https://krystal.uk/
+2026-11-06,Namecheap,broad,,,,,403,,https://www.namecheap.com/hosting/
+2026-11-06,SiteGround,broad,Web Hosting Perfected - SiteGround,,,,200,,https://www.siteground.com/
+2026-11-06,Truehost Cloud,broad,Cheap Managed Database | MySQL Hosting | 24/7 Expert Support,0,1,0,200,,https://truehost.cloud/managed-database
+2026-11-06,Truehost Cloud,mysql,Cheap MySQL Database Hosting: The #1 Provider Now,0,34,0,200,,https://truehost.cloud/cheap-mysql-database-hosting
+2026-11-06,WP Engine,broad,Trusted Website Hosting Platform | WP Engine®,,,,200,,https://wpengine.com/
+2026-11-06,xneelo,broad,xneelo - Trusted in Hosting,,,,200,,https://xneelo.co.za/
+2026-11-06,Hypernode,broad,Hosting Provider for eCommerce & Online stores - Hypernode,,,,200,,https://www.hypernode.com/
+2026-11-06,ScalaHosting,broad,Cloud Hosting Services That Adapt to Your Needs | ScalaHosting,,,,200,,https://www.scalahosting.com/
+2026-11-06,HostArmada,broad,"HostArmada - Fast, Reliable and Stable Web Hosting",,,,200,,https://hostarmada.com/
+2026-11-06,Seravo,broad,Seravo,,,,200,,https://seravo.com/
+2026-11-06,Servebolt,broad,Servebolt® – Blazingly fast hosting & beyond.,1,0,0,200,,https://servebolt.com/
+2026-11-06,Nexcess,broad,"Fully Managed Hosting Services | Fast, Reliable, & Secure",,,,200,,https://www.nexcess.net/
+2026-11-06,Pantheon,broad,WebOps Platform for Building High Impact Websites | Pantheon.io,,,,200,,https://pantheon.io/
+2026-11-06,WordPress VIP (Automattic),broad,WordPress VIP | Enterprise Content Platform & Managed WordPress,,,,200,,https://wpvip.com/
+2026-11-06,Sonassi,broad,MySQL Administration with PHPMyAdmin | Magento Hosting by Sonassi,0,3,0,200,,https://www.sonassi.com/products/database
+2026-11-06,Webscale,broad,Webscale Commerce Infrastructure and Agentic AI Platform,,,,200,,https://www.webscale.com/
+2026-11-06,JetRails,broad,Fully Managed eCommerce Hosting & AWS Solutions | JetRails,,,,200,,https://jetrails.com/
+2026-11-06,MGT-Commerce,broad,Managed AWS Hosting for Magento Stores 2026,0,3,0,200,,https://www.mgt-commerce.com/
+2026-11-06,Acquia,broad,Open Digital Command Center for Drupal | Acquia,,,,200,,https://www.acquia.com/products/drupal-cloud
+2026-11-06,Cloudways,broad,Managed Cloud Hosting Platform Simplified | Cloudways,,,,200,,https://www.cloudways.com/
+2026-11-06,Cloudways,mariadb,Robust MariaDB Cloud Hosting for all your applications,18,1,0,200,,https://www.cloudways.com/mariadb-hosting
+2026-11-06,Cloudways,mysql,"Managed MySQL Hosting: Fast, Scalable & Production-Ready",3,20,0,200,,https://www.cloudways.com/mysql-hosting
+2026-11-06,Pressable (Automattic),broad,Truly Incredible WordPress Hosting By Pressable,,,,200,,https://pressable.com/
+2026-11-06,Rumahweb,broad,Rumahweb Indonesia – Web Hosting terbaik di Indonesia,0,2,0,200,,https://www.rumahweb.com/
+2026-11-06,Rumahweb,mysql,RDS Mysql Alibaba Cloud,2,30,1,200,,https://www.rumahweb.com/rds-mysql
+2026-11-06,SuperHosting.bg,broad,Хостинг и домейни от СуперХостинг.БГ,,,,200,,https://www.superhosting.bg/
+2026-11-06,Catalyst Cloud,broad,The only cloud computing provider that’s made of NZ | IaaS and PaaS,,,,200,,https://catalystcloud.nz/
+2026-11-06,CtrlS Datacenters,broad,Asia's Largest Rated-4 Data Center Network | CtrlS,,,,200,,https://www.ctrls.com/
+2026-11-06,E2E Networks,broad,DBaaS | E2E Cloud docs,3,3,6,200,,https://docs.e2enetworks.com/myaccount/database/
+2026-11-06,GMO Internet / ConoHa,broad,ConoHa WING【公式】月額968円〜のレンタルサーバー,0,1,0,200,,https://www.conoha.jp/
+2026-11-06,Locaweb,broad,DBaaS - Database as a Service | Servidor de Banco de dados,0,2,0,200,,https://www.locaweb.com.br/dbaas
+2026-11-06,NAVER Cloud,broad,NAVER CLOUD PLATFORM 네이버 클라우드 플랫폼,0,3,3,200,,https://www.ncloud.com/product/database
+2026-11-06,NHN Cloud,broad,서비스 : NHN Cloud,9,10,15,200,,https://www.nhncloud.com/kr/service
+2026-11-06,NHN Cloud,mariadb,RDS for MariaDB : NHN Cloud,10,8,14,200,,https://www.nhncloud.com/kr/service/database/rds-for-mariadb
+2026-11-06,NHN Cloud,mysql,RDS for MySQL : NHN Cloud,7,11,14,200,,https://www.nhncloud.com/kr/service/database/rds-for-mysql
+2026-11-06,NHN Cloud,postgresql,RDS for PostgreSQL : NHN Cloud,7,8,17,200,,https://www.nhncloud.com/kr/service/database/rds-for-postgresql
+2026-11-06,Sakura Internet,broad,データベース | さくらのクラウド マニュアル,3,0,3,200,,https://manual.sakura.ad.jp/cloud/appliance/database/
+2026-11-06,cyber_Folks,broad,cyber_Folks - hosting | domeny | e-marketing | certyfikaty ssl,,,,200,,https://cyberfolks.pl/
+2026-11-06,Biznet Gio,broad,"Biznet Gio Cloud | Cloud Modern untuk Website, Aplikasi & AI",,,,200,,https://www.biznetgio.com/
+2026-11-06,Dewaweb,broad,Dewaweb: Layanan Web Hosting Terbaik Bersertifikat ISO 27001,,,,200,,https://www.dewaweb.com/
+2026-11-06,Digital Pacific,broad,Digital Pacific Australia | Buy Domain and Hosting in Australia: Reliable Solutions for Your Website,,,,200,,https://www.digitalpacific.com.au/
+2026-11-06,Domeneshop,broad,Domeneshop,,,,200,,https://domene.shop/
+2026-11-06,Exabytes,broad,Hosting - Exabytes COM,,,,200,,https://www.exabytes.com/hosting
+2026-11-06,Hostpoint,broad,"Hostpoint | Domains, Webhosting, Managed Server, E-Mail und mehr!",,,,200,,https://www.hostpoint.ch/
+2026-11-06,IDCloudHost,broad,Managed Database - IDCloudHost,31,0,33,200,,https://idcloudhost.com/managed-database
+2026-11-06,IDCloudHost,mariadb,Managed MariaDB - IDCloudHost,6,0,0,200,,https://idcloudhost.com/managed-mariadb
+2026-11-06,KT Cloud,broad,kt cloud (케이티클라우드),,,,200,,https://www.ktcloud.com/
+2026-11-06,KingHost,broad,KingHost na Black Friday: Hospedagem com até 80% OFF,,,,200,,https://king.host/
+2026-11-06,Loopia,broad,Loopia - Hemsida | Domän | Webbhotell | WordPress,,,,200,,https://www.loopia.se/
+2026-11-06,MilesWeb,broad,,,,,403,,https://www.milesweb.com/
+2026-11-06,Oderland,broad,"Oderland | Webbhotell, Server, Domän, WordPress & Hosting",0,1,0,200,,https://www.oderland.se/
+2026-11-06,Shinjiru,broad,Offshore Dedicated Server Offshore Web Hosting Bitcoin Hosting - Shinjiru,,,,200,,https://www.shinjiru.com/
+2026-11-06,SiteHost,broad,"SiteHost - Cloud Containers, Hosting, Servers, VPS – SiteHost",,,,200,,https://sitehost.nz/
+2026-11-06,UOL Host,broad,Hospedagem de sites com domínio GRÁTIS! | UOL HOST,0,1,0,200,,https://uolhost.uol.com.br/
+2026-11-06,UOL Host,mysql,Banco de Dados MySQL UOL HOST - Hospedagem MySQL,0,12,0,200,,https://uolhost.uol.com.br/banco-de-dados/mysql
+2026-11-06,UOL Host,postgresql,Banco de Dados PostgreSQL UOL HOST - Hospedagem PostgreSQL,0,1,10,200,,https://uolhost.uol.com.br/banco-de-dados/postgresql
+2026-11-06,VentraIP,broad,VentraIP | Join Australia's #1 Digital Service Provider*,,,,200,,https://ventraip.com.au/
+2026-11-06,Websupport,broad,Websupport | Registrácia domén a najspoľahlivejší hosting,,,,200,,https://www.websupport.sk/
+2026-11-06,XServer,broad,レンタルサーバー国内シェアNo.1のエックスサーバー WordPressが超高速,,,,200,,https://www.xserver.ne.jp/
+2026-11-06,e& enterprise / cloud,broad,e& enterprise | Digital Transformation Experts,,,,200,,https://www.eandenterprise.com/
+2026-11-06,home.pl,broad,"home.pl: Nr 1 w Polsce. Domeny, Hosting, Serwery WWW, Strony, Sklepy",,,,200,,https://home.pl/
+2026-11-06,home.pl,mysql,Wsparcie MySQL – aktualizuj MySQL na hostingu | home.pl,0,24,0,200,,https://home.pl/wsparcie-mysql
+2026-11-06,stc cloud,broad,,,,,URLError,,https://stccloud.com.sa/
+2026-11-06,CloudLinux,broad,CloudLinux OS: The Platform for Linux Web Hosting - CloudLinux,2,0,0,200,mariadb,https://www.cloudlinux.com/
+2026-11-06,CloudLinux,mariadb,MariaDB 10.6 EOL Support: Ongoing Security Patches | CloudLinux,25,0,0,200,mariadb,https://cloudlinux.com/endless-lifecycle-support-for-hosting/mariadb
+2026-11-06,Plesk (WebPros),broad,Web Hosting & Server Management Platform | Plesk,,,,200,,https://www.plesk.com/
+2026-11-06,cPanel (WebPros),broad,Web Hosting Control Panel & Server Management Tools | cPanel,,,,200,,https://cpanel.net/
+2026-11-06,CloudPanel,broad,Hosting Control Panel - CloudPanel,,,,200,,https://www.cloudpanel.io/
+2026-11-06,RunCloud,broad,RunCloud - PHP Cloud Server Management Panel,,,,200,,https://runcloud.io/
+2026-11-06,Enhance,broad,Hosting Control Panel | Enhance,1,1,1,200,"mariadb, mysql, postgresql",https://enhance.com/
+2026-11-06,SpinupWP,broad,SpinupWP,0,1,0,200,,https://spinupwp.com/
+2026-11-06,GridPane,broad,GridPane | Self-Managed Hosting for WordPress,,,,200,,https://gridpane.com/
+2026-11-06,Cleavr,broad,Home - Cleavr Server Management,1,1,1,200,"mariadb, mysql, postgresql",https://cleavr.io/
+2026-11-06,ServerPilot,broad,Cloud server management,,,,200,,https://serverpilot.io/
