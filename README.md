@@ -43,6 +43,7 @@ The table below shows how a particular source is updated. "key" means the source
 | Zulip total users                      | curl, daily           | key  | daily2monthly.py  |
 | Zulip active users 15d                 | curl, daily           | key  | daily2monthly.py  |
 | DB-engines                             | curl scrape, daily    |      | daily2monthly.py  |
+| Ecosystem Hub entries                  | fetch.py, daily       |      | daily2monthly.py  |
 | Google trends                          | fetch.py, historic    |      | fetch.py          |
 | Wikipedia views all langs              | fetch.py, historic    |      | fetch.py          |
 | Reddit subscribers                     | fetch.py, daily       | key  | daily2monthly.py  |

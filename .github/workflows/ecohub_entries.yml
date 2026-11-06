@@ -1,0 +1,50 @@
+name: Ecosystem Hub Entries
+
+on:
+  schedule:
+    - cron: '57 2 * * *'  # Runs once daily at 02:57 UTC
+  workflow_dispatch:  # Allows manual trigger from the GitHub Actions UI
+
+jobs:
+  fetch-entries:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Fetch Ecosystem Hub Entries and Append to CSV
+        run: |
+          DATE=$(date +%F)
+          VALUE=$(python data/ecohub_entries/fetch.py)
+
+          PATH_TO_CSV="data/ecohub_entries/daily.csv"
+
+          # Ensure the CSV file exists with the header
+          if [ ! -f $PATH_TO_CSV ]; then
+            echo "date,ecohub_entries" > $PATH_TO_CSV
+          fi
+
+          # Ensure file ends with newline
+          [ -f $PATH_TO_CSV ] && [ "$(tail -c1 $PATH_TO_CSV)" != "" ] && echo "" >> $PATH_TO_CSV
+
+          # Check if the date already exists in the CSV file
+          if ! grep -q "$DATE" $PATH_TO_CSV; then
+            echo "$DATE,$VALUE" >> $PATH_TO_CSV
+          fi
+
+      - name: Install Python dependencies
+        run: pip install pandas
+
+      - name: Update monthly.csv with scripts/daily2monthly.py
+        run: python scripts/daily2monthly.py ecohub_entries
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          timestamp=$(date -I)
+          git commit -m "ecohub entries ${timestamp}" || exit 0
+          git pull --rebase origin main
+          git push
