@@ -5,6 +5,8 @@ everything into **one** number, v2 groups the signals into the adoption-strategy
 layers and reports a **separate sub-index per layer**, so you can see *which kind*
 of adoption is moving.
 
+![Adoption Index v2 by layer](index_v2_layers.png)
+
 Layers (from `MariaDB_Adoption_Strategy_2026-2027`). Order follows the
 strategy's own funnel — **Running → Available → Chosen → Visible** (A–D,
 "usage → mindshare → perception"), shown on the top row of the chart.
