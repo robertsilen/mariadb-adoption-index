@@ -39,6 +39,27 @@ jobs:
             echo "$DATE,$VALUE" >> $PATH_TO_CSV
           fi
 
+      - name: Fetch r/mysql and r/PostgreSQL subscribers and append to their own CSVs
+        continue-on-error: true  # These comparison series aren't in the index, so a failure must not stop r/mariadb
+        run: |
+          DATE=$(date +%F)
+          for PAIR in mysql:mysql postgresql:PostgreSQL; do
+            NAME=${PAIR%%:*}
+            SUBREDDIT=${PAIR##*:}
+            PATH_TO_CSV="data/reddit_subscribers/${NAME}_daily.csv"
+            VALUE=$(python data/reddit_subscribers/fetch.py --subscribers "$SUBREDDIT") || continue
+
+            # Ensure the CSV file exists with the header
+            if [ ! -f $PATH_TO_CSV ]; then
+              echo "date,reddit_subscribers" > $PATH_TO_CSV
+            fi
+
+            # Check if the date already exists in the CSV file
+            if ! grep -q "$DATE" $PATH_TO_CSV; then
+              echo "$DATE,$VALUE" >> $PATH_TO_CSV
+            fi
+          done
+
       - name: Install Python dependencies
         run: pip install pandas
 

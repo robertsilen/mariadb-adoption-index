@@ -31,14 +31,14 @@ def get_auth_token():
 
     return response.json().get("access_token")
 
-def get_subscriber_count(token):
+def get_subscriber_count(token, subreddit="mariadb"):
     headers = {
         "Authorization": f"bearer {token}",
         "User-Agent": USER_AGENT
     }
     
     response = requests.get(
-        "https://oauth.reddit.com/r/mariadb/about.json",
+        f"https://oauth.reddit.com/r/{subreddit}/about.json",
         headers=headers
     )
     
@@ -62,7 +62,8 @@ def get_subscriber_count(token):
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "--subscribers":
         token = get_auth_token()
-        subscribers = get_subscriber_count(token)
+        subreddit = sys.argv[2] if len(sys.argv) > 2 else "mariadb"
+        subscribers = get_subscriber_count(token, subreddit)
         print(subscribers)
     else:
         # Default behavior: just print the token
