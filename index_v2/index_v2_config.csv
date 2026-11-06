@@ -1,0 +1,25 @@
+label,path,weight,layer
+"MariaDB.org Downloads",mariadborg_downloads,20,Running
+"Debian Popcon",debian_popcon,10,Running
+"Docker Official Image Pulls",docker_official_image_pulls,10,Running
+"GitHub New PRs External",github_new_prs_external,5,Participation
+"Github New PRs Unique Contributors",github_new_prs_unique_contributors,2,Participation
+"Github Returning Contributors",github_returning_contributors,3,Participation
+"Zulip Total Users",zulip_total_users,2,Participation
+"Zulip Users 15-day active",zulip_users_active_15d,1,Participation
+"GitHub Stars",github_stars,3,Visible
+"Github repo README mariadb",github_repo_readme,3,Visible
+"DB Engines Score",db_engines_score,10,Visible
+"Google Trends",google_trends,5,Visible
+"Wikipedia Views All Langs",wikipedia_views_all_langs,5,Visible
+"Reddit Subscribers (MariaDB)",reddit_subscribers,3,Visible
+"Hackernews",hackernews,3,Visible
+"Stackexchange new mariadb questions",stackexchange_new_questions,3,Visible
+"LinkedIn Followers Foundation",linkedin_followers_foundation,2,Visible
+"LinkedIn Followers PLC",linkedin_followers_plc,2,Visible
+"YouTube Subscribers Foundation",youtube_subscribers_foundation,2,Visible
+"YouTube Subscribers plc",youtube_subscribers_plc,2,Visible
+"Fosstodon Followers Foundation",fosstodon_followers_foundation,1,Visible
+"Instagram Followers Foundation",instagram_followers_foundation,1,Visible
+"X (Twitter) Foundation Followers",x_followers_foundation,1,Visible
+"X (Twitter) plc Followers",x_followers_plc,1,Visible
