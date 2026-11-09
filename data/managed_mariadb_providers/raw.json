@@ -2326,5 +2326,2333 @@
     "url": "https://xneelo.co.za/"
    }
   }
+ },
+ "2026-11-09": {
+  "20i": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "20i\u00ae \u2013 Expect More From Your Hosting",
+    "url": "https://www.20i.com/"
+   }
+  },
+  "Acquia": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Open Digital Command Center for Drupal | Acquia",
+    "url": "https://www.acquia.com/products/drupal-cloud"
+   }
+  },
+  "Aiven": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 3,
+    "status": 200,
+    "title": "Services | Aiven docs",
+    "url": "https://aiven.io/docs/products/services"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 23,
+    "postgresql": 3,
+    "status": 200,
+    "title": "Managed MySQL | Aiven",
+    "url": "https://aiven.io/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 78,
+    "status": 200,
+    "title": "Managed PostgreSQL as a service | Aiven",
+    "url": "https://aiven.io/postgresql"
+   }
+  },
+  "Akamai": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 6,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Managed database clusters",
+    "url": "https://techdocs.akamai.com/cloud-computing/docs/aiven-database-clusters"
+   },
+   "mysql_page": {
+    "mariadb": 1,
+    "mysql": 52,
+    "postgresql": 2,
+    "status": 200,
+    "title": "MySQL",
+    "url": "https://techdocs.akamai.com/cloud-computing/docs/aiven-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 38,
+    "status": 200,
+    "title": "PostgreSQL",
+    "url": "https://techdocs.akamai.com/cloud-computing/docs/aiven-postgresql"
+   }
+  },
+  "Alibaba Cloud": {
+   "broad_page": {
+    "mariadb": 4,
+    "mysql": 77,
+    "postgresql": 50,
+    "status": 200,
+    "title": "Alibaba Cloud Database Services Empower Your Business",
+    "url": "https://www.alibabacloud.com/en/product/databases"
+   },
+   "mariadb_page": {
+    "mariadb": 20,
+    "mysql": 3,
+    "postgresql": 0,
+    "status": 200,
+    "title": "ApsaraDB RDS for MariaDB: Designed with Multiple Enterprise Database - Alibaba Cloud",
+    "url": "https://www.alibabacloud.com/product/apsaradb-for-rds-mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 99,
+    "postgresql": 1,
+    "status": 200,
+    "title": "ApsaraDB RDS for MySQL: MySQL/SQL/PostgreSQL Database Hosting - Alibaba Cloud",
+    "url": "https://www.alibabacloud.com/product/apsaradb-for-rds-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 70,
+    "status": 200,
+    "title": "ApsaraDB RDS for PostgreSQL: Enables Seamless In-DB AI Integration - Alibaba Cloud",
+    "url": "https://www.alibabacloud.com/product/apsaradb-for-rds-postgresql"
+   }
+  },
+  "Amazon RDS": {
+   "broad_page": {
+    "mariadb": 1,
+    "mysql": 3,
+    "postgresql": 5,
+    "status": 200,
+    "title": "Fully Managed Relational Database \u2013 Amazon RDS \u2013 AWS",
+    "url": "https://aws.amazon.com/rds/"
+   },
+   "mariadb_page": {
+    "mariadb": 21,
+    "mysql": 2,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Amazon RDS for MariaDB \u2013 Amazon Web Services (AWS)",
+    "url": "https://aws.amazon.com/rds/mariadb/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 22,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Hosted MySQL - Amazon RDS for MySQL - AWS",
+    "url": "https://aws.amazon.com/rds/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 27,
+    "status": 200,
+    "title": "Hosted PostgreSQL - Amazon RDS for PostgreSQL - AWS",
+    "url": "https://aws.amazon.com/rds/postgresql/"
+   }
+  },
+  "Aruba Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Database as a Service (DBaaS): MySQL, SQL Server & MongoDB | Cloud",
+    "url": "https://www.arubacloud.com/database-as-a-service"
+   }
+  },
+  "Biznet Gio": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Biznet Gio Cloud | Cloud Modern untuk Website, Aplikasi & AI",
+    "url": "https://www.biznetgio.com/"
+   }
+  },
+  "Catalyst Cloud": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "The only cloud computing provider that\u2019s made of NZ | IaaS and PaaS",
+    "url": "https://catalystcloud.nz/"
+   }
+  },
+  "ChemiCloud": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Get Worry-Free Web Hosting From ChemiCloud",
+    "url": "https://chemicloud.com/"
+   }
+  },
+  "Civo": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Civo - Sovereign Cloud and AI Platform | Built for More",
+    "url": "https://www.civo.com/"
+   },
+   "mariadb_page": {
+    "mariadb": 13,
+    "mysql": 5,
+    "postgresql": 0,
+    "status": 200,
+    "title": "MariaDB - Civo.com",
+    "url": "https://www.civo.com/marketplace/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 8,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Percona MySQL - Civo.com",
+    "url": "https://www.civo.com/marketplace/percona-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 18,
+    "status": 200,
+    "title": "PostgreSQL - Civo.com",
+    "url": "https://www.civo.com/marketplace/postgresql"
+   }
+  },
+  "Cleavr": {
+   "broad_page": {
+    "mariadb": 1,
+    "mysql": 1,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Home - Cleavr Server Management",
+    "url": "https://cleavr.io/"
+   }
+  },
+  "Cleura": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": null,
+    "url": "https://cleura.com/"
+   }
+  },
+  "Clever Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 15,
+    "postgresql": 24,
+    "status": 200,
+    "title": "Databases \u2013 Clever Cloud Documentation",
+    "url": "https://www.clever.cloud/developers/doc/deploy/databases/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 29,
+    "postgresql": 20,
+    "status": 200,
+    "title": "MySQL \u2013 Clever Cloud Documentation",
+    "url": "https://www.clever.cloud/developers/doc/deploy/databases/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 14,
+    "postgresql": 51,
+    "status": 200,
+    "title": "PostgreSQL \u2013 Clever Cloud Documentation",
+    "url": "https://www.clever.cloud/developers/doc/deploy/databases/postgresql/"
+   }
+  },
+  "Cloud 66": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Cloud 66 - Deploy Your Applications to Any Cloud",
+    "url": "https://www.cloud66.com/"
+   }
+  },
+  "CloudFerro": {
+   "broad_page": {
+    "mariadb": 6,
+    "mysql": 5,
+    "postgresql": 7,
+    "status": 200,
+    "title": "Managed Databases - CloudFerro",
+    "url": "https://www.cloudferro.com/products/managed-databases/"
+   }
+  },
+  "CloudLinux": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "One Platform Underneath Every Website You Host or Manage | CloudLinux",
+    "url": "https://www.cloudlinux.com/"
+   },
+   "mariadb_page": {
+    "mariadb": 22,
+    "mysql": 0,
+    "postgresql": 0,
+    "status": 200,
+    "title": "MariaDB 10.6 EOL Support: Ongoing Security Patches",
+    "url": "https://cloudlinux.com/endless-lifecycle-support-for-hosting/mariadb"
+   }
+  },
+  "CloudPanel": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Hosting Control Panel - CloudPanel",
+    "url": "https://www.cloudpanel.io/"
+   }
+  },
+  "CloudSigma": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "CloudSigma \u2014 The Sovereign Cloud Platform for Service Providers",
+    "url": "https://www.cloudsigma.com/"
+   }
+  },
+  "Cloudflare": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Cloudflare Developer Platform | Build applications | Cloudflare",
+    "url": "https://www.cloudflare.com/developer-platform/"
+   }
+  },
+  "Cloudways": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Managed Cloud Hosting Platform Simplified | Cloudways",
+    "url": "https://www.cloudways.com/"
+   },
+   "mariadb_page": {
+    "mariadb": 18,
+    "mysql": 1,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Robust MariaDB Cloud Hosting for all your applications",
+    "url": "https://www.cloudways.com/mariadb-hosting"
+   },
+   "mysql_page": {
+    "mariadb": 3,
+    "mysql": 20,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Managed MySQL Hosting: Fast, Scalable & Production-Ready",
+    "url": "https://www.cloudways.com/mysql-hosting"
+   }
+  },
+  "Coolify": {
+   "broad_page": {
+    "mariadb": 6,
+    "mysql": 8,
+    "postgresql": 9,
+    "status": 200,
+    "title": "Databases | Coolify Docs",
+    "url": "https://coolify.io/docs/databases/"
+   },
+   "mariadb_page": {
+    "mariadb": 44,
+    "mysql": 7,
+    "postgresql": 1,
+    "status": 200,
+    "title": "MariaDB | Coolify Docs",
+    "url": "https://coolify.io/docs/databases/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 3,
+    "mysql": 45,
+    "postgresql": 3,
+    "status": 200,
+    "title": "MySQL | Coolify Docs",
+    "url": "https://coolify.io/docs/databases/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 1,
+    "mysql": 3,
+    "postgresql": 58,
+    "status": 200,
+    "title": "PostgreSQL | Coolify Docs",
+    "url": "https://coolify.io/docs/databases/postgresql"
+   }
+  },
+  "CtrlS Datacenters": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Asia's Largest Rated-4 Data Center Network | CtrlS",
+    "url": "https://www.ctrls.com/"
+   }
+  },
+  "Dewaweb": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://www.dewaweb.com/"
+   }
+  },
+  "Digital Pacific": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Digital Pacific Australia | Buy Domain and Hosting in Australia: Reliable Solutions for Your Website",
+    "url": "https://www.digitalpacific.com.au/"
+   }
+  },
+  "DigitalOcean": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Worry-Free Managed Database Hosting | DigitalOcean",
+    "url": "https://www.digitalocean.com/products/managed-databases"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 29,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Worry-Free Managed MySQL Hosting | DigitalOcean",
+    "url": "https://www.digitalocean.com/products/managed-databases-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 26,
+    "status": 200,
+    "title": "Worry-Free Managed PostgreSQL Hosting | DigitalOcean",
+    "url": "https://www.digitalocean.com/products/managed-databases-postgresql"
+   }
+  },
+  "Domeneshop": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Domeneshop",
+    "url": "https://domene.shop/"
+   }
+  },
+  "DreamHost": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Web Hosting Built for Growth - DreamHost",
+    "url": "https://www.dreamhost.com/"
+   },
+   "mysql_page": {
+    "mariadb": 1,
+    "mysql": 47,
+    "postgresql": 0,
+    "status": 200,
+    "title": "MySQL VPS Hosting - DreamHost",
+    "url": "https://www.dreamhost.com/hosting/managed-vps/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 1,
+    "mysql": 0,
+    "postgresql": 16,
+    "status": 200,
+    "title": "PostgreSQL VPS Hosting, Full Root + pgvector - DreamHost",
+    "url": "https://www.dreamhost.com/postgresql"
+   }
+  },
+  "E2E Networks": {
+   "broad_page": {
+    "mariadb": 3,
+    "mysql": 3,
+    "postgresql": 6,
+    "status": 200,
+    "title": "DBaaS | E2E Cloud docs",
+    "url": "https://docs.e2enetworks.com/myaccount/database/"
+   }
+  },
+  "Elastx": {
+   "broad_page": {
+    "mariadb": 1,
+    "mysql": 1,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Elastx - Swedish Cloud Provider",
+    "url": "https://elastx.se/"
+   },
+   "mariadb_page": {
+    "mariadb": 3,
+    "mysql": 2,
+    "postgresql": 0,
+    "status": 200,
+    "title": "MariaDB | Elastx",
+    "url": "https://elastx.se/en/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 0,
+    "status": 200,
+    "title": "MySQL | Elastx",
+    "url": "https://elastx.se/en/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 4,
+    "status": 200,
+    "title": "PostgreSQL | Elastx",
+    "url": "https://elastx.se/en/postgresql"
+   }
+  },
+  "Elestio": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 6,
+    "status": 200,
+    "title": "Deploy Fully Managed Open-Source Software on Any Cloud | Elestio",
+    "url": "https://elest.io/"
+   },
+   "mariadb_page": {
+    "mariadb": 29,
+    "mysql": 5,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Managed MariaDB as a Service | Elestio",
+    "url": "https://elest.io/open-source/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 25,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Managed MySQL as a Service | Elestio",
+    "url": "https://elest.io/open-source/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 21,
+    "status": 200,
+    "title": "Managed PostgreSQL as a Service | Elestio",
+    "url": "https://elest.io/open-source/postgresql"
+   }
+  },
+  "Enhance": {
+   "broad_page": {
+    "mariadb": 1,
+    "mysql": 1,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Hosting Control Panel | Enhance",
+    "url": "https://enhance.com/"
+   }
+  },
+  "Exabytes": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Hosting - Exabytes COM",
+    "url": "https://www.exabytes.com/hosting"
+   }
+  },
+  "Exoscale": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 5,
+    "postgresql": 9,
+    "status": 200,
+    "title": "Managed Database as a Service (DBaaS) in Europe | Exoscale",
+    "url": "https://www.exoscale.com/dbaas/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 88,
+    "postgresql": 11,
+    "status": 200,
+    "title": "Managed MySQL Hosting in Europe | Exoscale",
+    "url": "https://www.exoscale.com/dbaas/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 5,
+    "postgresql": 61,
+    "status": 200,
+    "title": "Managed PostgreSQL In Europe | Exoscale",
+    "url": "https://www.exoscale.com/dbaas/postgresql/"
+   }
+  },
+  "FastComet": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "FastComet - Managed Cloud Hosting with 24/7 Support",
+    "url": "https://www.fastcomet.com/"
+   },
+   "mysql_page": {
+    "mariadb": 1,
+    "mysql": 27,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Managed MySQL Hosting \u00bb Best Speed & Security - FastComet",
+    "url": "https://www.fastcomet.com/mysql-hosting"
+   }
+  },
+  "Fly.io": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 4,
+    "status": 200,
+    "title": "Fly.io | Deploy apps and agents on hardware-isolated VMs",
+    "url": "https://fly.io/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 4,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Fly Managed MySQL \u00b7 Fly",
+    "url": "https://fly.io/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 4,
+    "postgresql": 197,
+    "status": 200,
+    "title": "Managed Postgres - Fly.io",
+    "url": "https://docs.fly.io/postgres"
+   }
+  },
+  "GMO Internet / ConoHa": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://www.conoha.jp/"
+   }
+  },
+  "Gcore": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 15,
+    "status": 200,
+    "title": "Fully provision your PostgreSQL databases in minutes | Gcore",
+    "url": "https://gcore.com/cloud/managed-database-postgresql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 15,
+    "status": 200,
+    "title": "Fully provision your PostgreSQL databases in minutes | Gcore",
+    "url": "https://gcore.com/cloud/managed-database-postgresql"
+   }
+  },
+  "GoDaddy": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://www.godaddy.com/hosting"
+   }
+  },
+  "Google Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 13,
+    "postgresql": 30,
+    "status": 200,
+    "title": "Google Cloud databases | Google Cloud",
+    "url": "https://cloud.google.com/products/databases"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 58,
+    "postgresql": 5,
+    "status": 200,
+    "title": "Cloud SQL for MySQL | Google Cloud",
+    "url": "https://cloud.google.com/sql/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 5,
+    "postgresql": 54,
+    "status": 200,
+    "title": "Cloud SQL for PostgreSQL Managed Database | Google Cloud",
+    "url": "https://cloud.google.com/sql/postgresql"
+   }
+  },
+  "GreenGeeks": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Web Hosting: Fast, Scalable & Eco-friendly",
+    "url": "https://www.greengeeks.com/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 39,
+    "status": 200,
+    "title": "PostgreSQL VPS Docker Hosting | GreenGeeks",
+    "url": "https://www.greengeeks.com/vps-hosting/postgresql"
+   }
+  },
+  "GridPane": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "GridPane | Self-Managed Hosting for WordPress",
+    "url": "https://gridpane.com/"
+   }
+  },
+  "HOSTAFRICA": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Web Hosting, Domains and Email in Africa | HostAfrica",
+    "url": "https://hostafrica.com/"
+   }
+  },
+  "Heroku": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 7,
+    "status": 200,
+    "title": "Heroku | The Cloud Application Platform For Developers",
+    "url": "https://www.heroku.com/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 61,
+    "status": 200,
+    "title": "Fully Managed PostgreSQL as a Service | Heroku",
+    "url": "https://www.heroku.com/postgres"
+   }
+  },
+  "Hetzner": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Dedicated Servers, Cloud & Hosting from Germany | Hetzner",
+    "url": "https://www.hetzner.com/"
+   }
+  },
+  "Hidora": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Infog\u00e9rance DevOps & Kubernetes manag\u00e9 \u00e0 Gen\u00e8ve",
+    "url": "https://hidora.io/"
+   }
+  },
+  "HostArmada": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "HostArmada - Fast, Reliable and Stable Web Hosting",
+    "url": "https://hostarmada.com/"
+   }
+  },
+  "HostDime": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "HostDime: Premier Global Data Centers",
+    "url": "https://www.hostdime.com/"
+   }
+  },
+  "HostPapa": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Web Hosting, Domains, Website Builder, Email, & More | HostPapa",
+    "url": "https://www.hostpapa.com/"
+   },
+   "postgresql_page": {
+    "mariadb": 2,
+    "mysql": 2,
+    "postgresql": 31,
+    "status": 200,
+    "title": "PostgreSQL Hosting | VPS with Full Root Access | HostPapa",
+    "url": "https://www.hostpapa.com/apps/postgresql"
+   }
+  },
+  "Hosting.com (A2 Hosting)": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Web Hosting Built to Grow With You | hosting.com",
+    "url": "https://hosting.com/"
+   }
+  },
+  "Hostinger": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Hostinger - Bring Your Idea Online With a Website",
+    "url": "https://www.hostinger.com/"
+   },
+   "mariadb_page": {
+    "mariadb": 10,
+    "mysql": 5,
+    "postgresql": 2,
+    "status": 200,
+    "title": "MariaDB VPS Docker Hosting | One-Click Deployment",
+    "url": "https://www.hostinger.com/applications/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 11,
+    "postgresql": 2,
+    "status": 200,
+    "title": "MySQL VPS Docker Hosting | One-Click Database",
+    "url": "https://www.hostinger.com/applications/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 11,
+    "status": 200,
+    "title": "PostgreSQL VPS Docker Hosting | One-Click Database",
+    "url": "https://www.hostinger.com/applications/postgresql"
+   }
+  },
+  "Hostpoint": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Hostpoint | Domains, Webhosting, Managed Server, E-Mail und mehr!",
+    "url": "https://www.hostpoint.ch/"
+   }
+  },
+  "Huawei Cloud": {
+   "broad_page": {
+    "mariadb": 7,
+    "mysql": 27,
+    "postgresql": 3,
+    "status": 200,
+    "title": "Database-Huawei Cloud",
+    "url": "https://www.huaweicloud.com/intl/en-us/product/database.html"
+   },
+   "mariadb_page": {
+    "mariadb": 7,
+    "mysql": 1,
+    "postgresql": 0,
+    "status": 200,
+    "title": "DB Engines and Versions_DB Instance Description_Service Overview_Relational Database Service_RDS for MariaDB-Huawei Cloud",
+    "url": "https://support.huaweicloud.com/intl/en-us/productdesc-rds-mariadb/en-us_topic_0043898356.html"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 59,
+    "postgresql": 0,
+    "status": 200,
+    "title": "RDS for MySQL - Fully Managed Database | Huawei Cloud",
+    "url": "https://www.huaweicloud.com/intl/en-us/product/mysql.html"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 33,
+    "status": 200,
+    "title": "RDS for PostgreSQL - PostgreSQL Hosting | Huawei Cloud",
+    "url": "https://www.huaweicloud.com/intl/en-us/product/pg.html"
+   }
+  },
+  "Hypernode": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Hosting Provider for eCommerce & Online stores - Hypernode",
+    "url": "https://www.hypernode.com/"
+   }
+  },
+  "IBM Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Cloud Databases Solutions | IBM",
+    "url": "https://www.ibm.com/cloud/databases"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 20,
+    "postgresql": 0,
+    "status": 200,
+    "title": "IBM Cloud Databases for MySQL",
+    "url": "https://www.ibm.com/products/databases-for-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 21,
+    "status": 200,
+    "title": "IBM Cloud Databases for PostgreSQL",
+    "url": "https://www.ibm.com/products/databases-for-postgresql"
+   }
+  },
+  "IDCloudHost": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://idcloudhost.com/managed-database"
+   },
+   "mariadb_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://idcloudhost.com/managed-mariadb"
+   }
+  },
+  "IONOS Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Database as a Service (DBaaS) | IONOS CLOUD",
+    "url": "https://cloud.ionos.com/managed/dbaas"
+   },
+   "mariadb_page": {
+    "mariadb": 24,
+    "mysql": 0,
+    "postgresql": 1,
+    "status": 200,
+    "title": "MariaDB | Products",
+    "url": "https://docs.ionos.com/cloud/databases/mariadb"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 18,
+    "status": 200,
+    "title": "PostgreSQL Hosting | Managed Database Service by IONOS",
+    "url": "https://cloud.ionos.com/managed/dbaas/postgresql"
+   }
+  },
+  "InMotion Hosting": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Best Web Hosting, VPS, Dedicated Servers for Business 2026 | InMotion Hosting",
+    "url": "https://www.inmotionhosting.com/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 13,
+    "status": 200,
+    "title": "Best PostgreSQL Hosting | InMotion Hosting",
+    "url": "https://www.inmotionhosting.com/postgresql-hosting"
+   }
+  },
+  "Infomaniak": {
+   "broad_page": {
+    "mariadb": 5,
+    "mysql": 16,
+    "postgresql": 5,
+    "status": 200,
+    "title": "Use database management systems, MySQL libraries, etc.",
+    "url": "https://www.infomaniak.com/en/support/faq/418/using-dbms-mysql-libraries-etc"
+   }
+  },
+  "JetRails": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Fully Managed eCommerce Hosting & AWS Solutions | JetRails",
+    "url": "https://jetrails.com/"
+   }
+  },
+  "KT Cloud": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "kt cloud (\ucf00\uc774\ud2f0\ud074\ub77c\uc6b0\ub4dc)",
+    "url": "https://www.ktcloud.com/"
+   }
+  },
+  "Kamatera": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://www.kamatera.com/"
+   },
+   "mariadb_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://www.kamatera.com/products/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://www.kamatera.com/services/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://www.kamatera.com/services/postgresql"
+   }
+  },
+  "KingHost": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "KingHost na Black Friday: Hospedagem com at\u00e9 80% OFF",
+    "url": "https://king.host/"
+   }
+  },
+  "Kinsta": {
+   "broad_page": {
+    "mariadb": 2,
+    "mysql": 2,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Database Hosting - Sevalla",
+    "url": "https://kinsta.com/database-hosting/"
+   }
+  },
+  "KnownHost": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "KnownHost - Managed Hosting, Done Right",
+    "url": "https://www.knownhost.com/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 0,
+    "status": 200,
+    "title": "MySQL Database Hosting: Reliable Database Solutions | KnownHost",
+    "url": "https://www.knownhost.com/mysql-hosting"
+   }
+  },
+  "Koyeb": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 56,
+    "status": 200,
+    "title": "Databases | Koyeb",
+    "url": "https://www.koyeb.com/docs/databases"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 56,
+    "status": 200,
+    "title": "Databases | Koyeb",
+    "url": "https://www.koyeb.com/docs/databases"
+   }
+  },
+  "Krystal": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "UK web hosting that's fair to you and the planet | Krystal Hosting",
+    "url": "https://krystal.uk/"
+   }
+  },
+  "Layerbase": {
+   "broad_page": {
+    "mariadb": 8,
+    "mysql": 14,
+    "postgresql": 48,
+    "status": 200,
+    "title": "Serverless and Managed Databases for 19 Engines | Layerbase",
+    "url": "https://layerbase.com/"
+   },
+   "mariadb_page": {
+    "mariadb": 83,
+    "mysql": 38,
+    "postgresql": 9,
+    "status": 200,
+    "title": "Free MariaDB Hosting, MySQL-Compatible Database | Layerbase",
+    "url": "https://layerbase.com/db/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 25,
+    "mysql": 96,
+    "postgresql": 4,
+    "status": 200,
+    "title": "Serverless MySQL, Managed MySQL Database Hosting | Layerbase",
+    "url": "https://layerbase.com/db/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 2,
+    "mysql": 2,
+    "postgresql": 75,
+    "status": 200,
+    "title": "Serverless PostgreSQL, Free Hosted Postgres Database | Layerbase",
+    "url": "https://layerbase.com/db/postgresql"
+   }
+  },
+  "Leaseweb": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Leaseweb",
+    "url": "https://www.leaseweb.com/"
+   }
+  },
+  "Liquid Web": {
+   "broad_page": {
+    "mariadb": 2,
+    "mysql": 2,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Managed Database Hosting | Secure & High-Performance Solutions",
+    "url": "https://www.liquidweb.com/managed-databases"
+   }
+  },
+  "Locaweb": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 0,
+    "status": 200,
+    "title": "DBaaS - Database as a Service | Servidor de Banco de dados",
+    "url": "https://www.locaweb.com.br/dbaas"
+   }
+  },
+  "Loopia": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Loopia - Hemsida | Dom\u00e4n | Webbhotell | WordPress",
+    "url": "https://www.loopia.se/"
+   }
+  },
+  "MGT-Commerce": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Managed AWS Hosting for Magento Stores 2026",
+    "url": "https://www.mgt-commerce.com/"
+   }
+  },
+  "MariaDB Cloud": {
+   "broad_page": {
+    "mariadb": 74,
+    "mysql": 3,
+    "postgresql": 1,
+    "status": 200,
+    "title": "MariaDB Cloud | MariaDB",
+    "url": "https://mariadb.com/products/cloud/"
+   },
+   "mariadb_page": {
+    "mariadb": 34,
+    "mysql": 0,
+    "postgresql": 0,
+    "status": 200,
+    "title": "MariaDB Server Version Support | Cloud | MariaDB Documentation",
+    "url": "https://mariadb.com/docs/mariadb-cloud/reference/mariadb-server-versions"
+   }
+  },
+  "Microsoft Azure": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 11,
+    "postgresql": 19,
+    "status": 200,
+    "title": "Cloud Databases | Microsoft Azure",
+    "url": "https://azure.microsoft.com/en-us/products/category/databases"
+   },
+   "mariadb_page": {
+    "mariadb": 4,
+    "mysql": 0,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Azure Database for MariaDB - Microsoft Lifecycle | Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/lifecycle/products/azure-database-for-mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 72,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Azure Database for MySQL flexible server - Azure Database for MySQL | Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 30,
+    "status": 200,
+    "title": "What Is Azure Database for PostgreSQL flexible server? - Azure Database for PostgreSQL | Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/azure/postgresql/overview"
+   }
+  },
+  "MilesWeb": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://www.milesweb.com/"
+   }
+  },
+  "Miss Group": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Fastest growing digital solutions provider company | Miss Group",
+    "url": "https://missgroup.com/"
+   }
+  },
+  "NAVER Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 3,
+    "status": 200,
+    "title": "NAVER CLOUD PLATFORM \ub124\uc774\ubc84 \ud074\ub77c\uc6b0\ub4dc \ud50c\ub7ab\ud3fc",
+    "url": "https://www.ncloud.com/product/database"
+   }
+  },
+  "NHN Cloud": {
+   "broad_page": {
+    "mariadb": 9,
+    "mysql": 10,
+    "postgresql": 15,
+    "status": 200,
+    "title": "\uc11c\ube44\uc2a4 : NHN Cloud",
+    "url": "https://www.nhncloud.com/kr/service"
+   },
+   "mariadb_page": {
+    "mariadb": 10,
+    "mysql": 8,
+    "postgresql": 14,
+    "status": 200,
+    "title": "RDS for MariaDB : NHN Cloud",
+    "url": "https://www.nhncloud.com/kr/service/database/rds-for-mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 7,
+    "mysql": 11,
+    "postgresql": 14,
+    "status": 200,
+    "title": "RDS for MySQL : NHN Cloud",
+    "url": "https://www.nhncloud.com/kr/service/database/rds-for-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 7,
+    "mysql": 8,
+    "postgresql": 17,
+    "status": 200,
+    "title": "RDS for PostgreSQL : NHN Cloud",
+    "url": "https://www.nhncloud.com/kr/service/database/rds-for-postgresql"
+   }
+  },
+  "Namecheap": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://www.namecheap.com/hosting/"
+   }
+  },
+  "Newfold Digital": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://newfold.com/"
+   }
+  },
+  "Nexcess": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Fully Managed Hosting Services | Fast, Reliable, & Secure",
+    "url": "https://www.nexcess.net/"
+   }
+  },
+  "Northflank": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 6,
+    "postgresql": 7,
+    "status": 200,
+    "title": "Deploy a database | App resources | Databases & storage | Northflank Application docs",
+    "url": "https://northflank.com/docs/v1/application/databases-and-persistence/deploy-a-database"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 48,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Managed MySQL \u2014 Northflank",
+    "url": "https://northflank.com/dbaas/managed-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 52,
+    "status": 200,
+    "title": "Managed PostgreSQL \u2014 Northflank",
+    "url": "https://northflank.com/dbaas/managed-postgresql"
+   }
+  },
+  "NumSpot": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Plateforme cloud souveraine, portable et r\u00e9versible | Numspot",
+    "url": "https://numspot.com/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 7,
+    "status": 200,
+    "title": "PostgreSQL Manag\u00e9 - Numspot",
+    "url": "https://numspot.com/products/postgresql"
+   }
+  },
+  "OUTSCALE (Dassault Syst\u00e8mes)": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "OUTSCALE | Secure and sovereign Cloud",
+    "url": "https://www.outscale.com/"
+   }
+  },
+  "OVHcloud Public Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 8,
+    "postgresql": 10,
+    "status": 200,
+    "title": "Managed cloud databases solutions | OVHcloud Worldwide",
+    "url": "https://www.ovhcloud.com/en/public-cloud/databases/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 35,
+    "postgresql": 7,
+    "status": 200,
+    "title": "Managed MySQL as a service | OVHcloud Worldwide",
+    "url": "https://www.ovhcloud.com/en/public-cloud/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 4,
+    "postgresql": 35,
+    "status": 200,
+    "title": "Managed PostgreSQL as a service | OVHcloud Worldwide",
+    "url": "https://www.ovhcloud.com/en/public-cloud/postgresql/"
+   }
+  },
+  "OVHcloud Web Cloud": {
+   "broad_page": {
+    "mariadb": 4,
+    "mysql": 6,
+    "postgresql": 7,
+    "status": 200,
+    "title": "Database Hosting | Web Cloud Database | OVHcloud Worldwide",
+    "url": "https://www.ovhcloud.com/en/web-cloud/databases/"
+   },
+   "mariadb_page": {
+    "mariadb": 4,
+    "mysql": 19,
+    "postgresql": 28,
+    "status": 200,
+    "title": "Web Cloud Databases EOS and EOL announcements - OVHcloud Documentation",
+    "url": "https://docs.ovhcloud.com/en/guides/web-cloud/databases/db-eos-eol"
+   }
+  },
+  "Oderland": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Oderland | Webbhotell, Server, Dom\u00e4n, WordPress & Hosting",
+    "url": "https://www.oderland.se/"
+   }
+  },
+  "Open Telekom Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 33,
+    "postgresql": 33,
+    "status": 200,
+    "title": "Relational Database Service (RDS) | T Cloud Public",
+    "url": "https://www.t-cloud-public.com/en/products-services/core-services/relational-database-service"
+   }
+  },
+  "Oracle Cloud": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "AI Database | Oracle",
+    "url": "https://www.oracle.com/database/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 78,
+    "postgresql": 0,
+    "status": 200,
+    "title": "MySQL HeatWave | Oracle",
+    "url": "https://www.oracle.com/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 76,
+    "status": 200,
+    "title": "Database with PostgreSQL | Oracle",
+    "url": "https://www.oracle.com/cloud/postgresql/"
+   }
+  },
+  "Pantheon": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "WebOps Platform for Building High Impact Websites | Pantheon.io",
+    "url": "https://pantheon.io/"
+   }
+  },
+  "Platform.sh": {
+   "broad_page": {
+    "mariadb": 22,
+    "mysql": 16,
+    "postgresql": 16,
+    "status": 200,
+    "title": "Add services | Upsun Fixed Docs",
+    "url": "https://fixed.docs.upsun.com/add-services.html"
+   },
+   "mariadb_page": {
+    "mariadb": 82,
+    "mysql": 53,
+    "postgresql": 5,
+    "status": 200,
+    "title": "MariaDB/MySQL (database service) | Upsun Fixed Docs",
+    "url": "https://fixed.docs.upsun.com/add-services/mysql.html"
+   },
+   "mysql_page": {
+    "mariadb": 82,
+    "mysql": 53,
+    "postgresql": 5,
+    "status": 200,
+    "title": "MariaDB/MySQL (database service) | Upsun Fixed Docs",
+    "url": "https://fixed.docs.upsun.com/add-services/mysql.html"
+   },
+   "postgresql_page": {
+    "mariadb": 4,
+    "mysql": 4,
+    "postgresql": 90,
+    "status": 200,
+    "title": "PostgreSQL (Database service) | Upsun Fixed Docs",
+    "url": "https://fixed.docs.upsun.com/add-services/postgresql.html"
+   }
+  },
+  "Plesk (WebPros)": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Web Hosting & Server Management Platform | Plesk",
+    "url": "https://www.plesk.com/"
+   }
+  },
+  "Porter": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Porter | Platform as a Service, Reimagined.",
+    "url": "https://www.porter.run/"
+   }
+  },
+  "Pressable (Automattic)": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Truly Incredible WordPress Hosting By Pressable",
+    "url": "https://pressable.com/"
+   }
+  },
+  "Qovery": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Qovery - The infrastructure control plane for humans and AI agents",
+    "url": "https://www.qovery.com/"
+   }
+  },
+  "Rackspace Technology": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Rackspace",
+    "url": "https://www.rackspace.com/"
+   }
+  },
+  "Railway": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 10,
+    "postgresql": 18,
+    "status": 200,
+    "title": "Databases | Railway Docs",
+    "url": "https://docs.railway.com/databases"
+   },
+   "mariadb_page": {
+    "mariadb": 25,
+    "mysql": 20,
+    "postgresql": 1,
+    "status": 200,
+    "title": "Deploy & Host MariaDB | Railway",
+    "url": "https://railway.com/deploy/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 22,
+    "postgresql": 6,
+    "status": 200,
+    "title": "MySQL | Railway Docs",
+    "url": "https://docs.railway.com/databases/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 30,
+    "status": 200,
+    "title": "PostgreSQL | Railway Docs",
+    "url": "https://docs.railway.com/databases/postgresql"
+   }
+  },
+  "Render": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 10,
+    "status": 200,
+    "title": "Pricing | Render",
+    "url": "https://render.com/pricing"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 36,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Deploy MySQL \u2013 Render Docs",
+    "url": "https://render.com/docs/deploy-mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 8,
+    "status": 200,
+    "title": "Render Postgres \u2013 Render Docs",
+    "url": "https://render.com/docs/postgresql"
+   }
+  },
+  "Rumahweb": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Rumahweb Indonesia \u2013 Web Hosting terbaik di Indonesia",
+    "url": "https://www.rumahweb.com/"
+   },
+   "mysql_page": {
+    "mariadb": 2,
+    "mysql": 30,
+    "postgresql": 1,
+    "status": 200,
+    "title": "RDS Mysql Alibaba Cloud",
+    "url": "https://www.rumahweb.com/rds-mysql"
+   }
+  },
+  "RunCloud": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "RunCloud - PHP Cloud Server Management Panel",
+    "url": "https://runcloud.io/"
+   }
+  },
+  "STACKIT": {
+   "broad_page": {
+    "mariadb": 1,
+    "mysql": 0,
+    "postgresql": 1,
+    "status": 200,
+    "title": "STACKIT Data & AI: GenAI models and sovereign data platform",
+    "url": "https://stackit.com/en/products/data-ai"
+   },
+   "mariadb_page": {
+    "mariadb": 21,
+    "mysql": 4,
+    "postgresql": 0,
+    "status": 200,
+    "title": "MariaDB | Docs",
+    "url": "https://docs.stackit.cloud/products/databases/mariadb/"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 27,
+    "status": 200,
+    "title": "PostgreSQL Flex | Docs",
+    "url": "https://docs.stackit.cloud/products/databases/postgresql-flex/"
+   }
+  },
+  "Sakura Internet": {
+   "broad_page": {
+    "mariadb": 3,
+    "mysql": 0,
+    "postgresql": 3,
+    "status": 200,
+    "title": "\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9 | \u3055\u304f\u3089\u306e\u30af\u30e9\u30a6\u30c9 \u30de\u30cb\u30e5\u30a2\u30eb",
+    "url": "https://manual.sakura.ad.jp/cloud/appliance/database/"
+   }
+  },
+  "ScalaHosting": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Cloud Hosting Services That Adapt to Your Needs | ScalaHosting",
+    "url": "https://www.scalahosting.com/"
+   }
+  },
+  "ScaleGrid": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 6,
+    "postgresql": 11,
+    "status": 200,
+    "title": "Database Hosting: Fully Managed Cloud Services | ScaleGrid",
+    "url": "https://scalegrid.io/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 40,
+    "postgresql": 7,
+    "status": 200,
+    "title": "Fully Managed Hosting For MySQL\u2122: Features & Pricing | ScaleGrid",
+    "url": "https://scalegrid.io/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 4,
+    "postgresql": 67,
+    "status": 200,
+    "title": "Fully Managed PostgreSQL\u00ae Hosting: Features & Pricing",
+    "url": "https://scalegrid.io/postgresql"
+   }
+  },
+  "Scaleway": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 6,
+    "postgresql": 6,
+    "status": 200,
+    "title": null,
+    "url": "https://api.github.com/repos/scaleway/docs-content/contents/pages"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 2,
+    "status": 200,
+    "title": null,
+    "url": "https://raw.githubusercontent.com/scaleway/docs-content/main/pages/managed-databases-for-postgresql-and-mysql/index.mdx"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 2,
+    "postgresql": 2,
+    "status": 200,
+    "title": null,
+    "url": "https://raw.githubusercontent.com/scaleway/docs-content/main/pages/managed-databases-for-postgresql-and-mysql/index.mdx"
+   }
+  },
+  "Scalingo": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 8,
+    "postgresql": 13,
+    "status": 200,
+    "title": "European DBaaS Platform for Managed Databases | Scalingo",
+    "url": "https://scalingo.com/dbaas"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 15,
+    "postgresql": 9,
+    "status": 200,
+    "title": "Managed MySQL\u00ae Database | Scalable & Secure Cloud Hosting | Scalingo",
+    "url": "https://scalingo.com/databases/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 6,
+    "postgresql": 18,
+    "status": 200,
+    "title": "Managed PostgreSQL\u00ae Database | Scalable & Secure Cloud Hosting | Scalingo",
+    "url": "https://scalingo.com/databases/postgresql"
+   }
+  },
+  "Seravo": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Seravo",
+    "url": "https://seravo.com/"
+   }
+  },
+  "Servebolt": {
+   "broad_page": {
+    "mariadb": 1,
+    "mysql": 0,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Servebolt\u00ae \u2013 Blazingly fast hosting & beyond.",
+    "url": "https://servebolt.com/"
+   }
+  },
+  "ServerPilot": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Cloud server management",
+    "url": "https://serverpilot.io/"
+   }
+  },
+  "Severalnines CCX": {
+   "broad_page": {
+    "mariadb": 5,
+    "mysql": 5,
+    "postgresql": 5,
+    "status": 200,
+    "title": "Self-Hosted DBaaS Platform for Private & Hybrid Clouds | CCX",
+    "url": "https://severalnines.com/ccx/"
+   },
+   "mariadb_page": {
+    "mariadb": 11,
+    "mysql": 2,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Sovereign MariaDB as a Service | CCX | Severalnines",
+    "url": "https://severalnines.com/ccx/mariadb/"
+   },
+   "mysql_page": {
+    "mariadb": 2,
+    "mysql": 14,
+    "postgresql": 2,
+    "status": 200,
+    "title": "Sovereign MySQL as a Service | CCX | Severalnines",
+    "url": "https://severalnines.com/ccx/mysql/"
+   },
+   "postgresql_page": {
+    "mariadb": 2,
+    "mysql": 2,
+    "postgresql": 14,
+    "status": 200,
+    "title": "Sovereign PostgreSQL as a Service | CCX | Severalnines",
+    "url": "https://severalnines.com/ccx/postgresql/"
+   }
+  },
+  "Shinjiru": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Offshore Dedicated Server Offshore Web Hosting Bitcoin Hosting - Shinjiru",
+    "url": "https://www.shinjiru.com/"
+   }
+  },
+  "SiteGround": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Web Hosting Done Right - SiteGround UK",
+    "url": "https://www.siteground.com/"
+   }
+  },
+  "SiteHost": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "SiteHost - Cloud Containers, Hosting, Servers, VPS \u2013 SiteHost",
+    "url": "https://sitehost.nz/"
+   }
+  },
+  "Sonassi": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 3,
+    "postgresql": 0,
+    "status": 200,
+    "title": "MySQL Administration with PHPMyAdmin | Magento Hosting by Sonassi",
+    "url": "https://www.sonassi.com/products/database"
+   }
+  },
+  "SpinupWP": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 0,
+    "status": 200,
+    "title": "SpinupWP",
+    "url": "https://spinupwp.com/"
+   }
+  },
+  "SuperHosting.bg": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "\u0425\u043e\u0441\u0442\u0438\u043d\u0433 \u0438 \u0434\u043e\u043c\u0435\u0439\u043d\u0438 \u043e\u0442 \u0421\u0443\u043f\u0435\u0440\u0425\u043e\u0441\u0442\u0438\u043d\u0433.\u0411\u0413",
+    "url": "https://www.superhosting.bg/"
+   }
+  },
+  "SysEleven": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "secunet cloud \u2013 Souver\u00e4ne Cloud aus Deutschland",
+    "url": "https://www.syseleven.de/"
+   }
+  },
+  "Tencent Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 96,
+    "postgresql": 0,
+    "status": 200,
+    "title": "TencentDB for MySQL | Tencent Cloud",
+    "url": "https://www.tencentcloud.com/products/cdb"
+   },
+   "mariadb_page": {
+    "mariadb": 5,
+    "mysql": 9,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Database Version",
+    "url": "https://www.tencentcloud.com/document/product/237/69268"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 96,
+    "postgresql": 0,
+    "status": 200,
+    "title": "TencentDB for MySQL | Tencent Cloud",
+    "url": "https://www.tencentcloud.com/products/cdb"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 0,
+    "postgresql": 22,
+    "status": 200,
+    "title": "TencentDB for PostgreSQL | Tencent Cloud",
+    "url": "https://www.tencentcloud.com/products/postgres"
+   }
+  },
+  "Truehost Cloud": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Cheap Managed Database | MySQL Hosting | 24/7 Expert Support",
+    "url": "https://truehost.cloud/managed-database"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 34,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Cheap MySQL Database Hosting: The #1 Provider Now",
+    "url": "https://truehost.cloud/cheap-mysql-database-hosting"
+   }
+  },
+  "UOL Host": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Hospedagem de sites com dom\u00ednio GR\u00c1TIS! | UOL HOST",
+    "url": "https://uolhost.uol.com.br/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 12,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Banco de Dados MySQL UOL HOST - Hospedagem MySQL",
+    "url": "https://uolhost.uol.com.br/banco-de-dados/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 1,
+    "postgresql": 10,
+    "status": 200,
+    "title": "Banco de Dados PostgreSQL UOL HOST - Hospedagem PostgreSQL",
+    "url": "https://uolhost.uol.com.br/banco-de-dados/postgresql"
+   }
+  },
+  "UpCloud": {
+   "broad_page": {
+    "mariadb": 3,
+    "mysql": 20,
+    "postgresql": 25,
+    "status": 200,
+    "title": "Cloud Databases | UpCloud",
+    "url": "https://upcloud.com/products/managed-databases/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 32,
+    "postgresql": 18,
+    "status": 200,
+    "title": "MySQL Managed Databases - UpCloud",
+    "url": "https://upcloud.com/mysql-managed-databases"
+   },
+   "postgresql_page": {
+    "mariadb": 0,
+    "mysql": 18,
+    "postgresql": 47,
+    "status": 200,
+    "title": "PostgreSQL Managed Databases - UpCloud",
+    "url": "https://upcloud.com/postgresql-managed-databases"
+   }
+  },
+  "Upsun": {
+   "broad_page": {
+    "mariadb": 39,
+    "mysql": 36,
+    "postgresql": 37,
+    "status": 200,
+    "title": "Add services - Upsun Developer",
+    "url": "https://developer.upsun.com/docs/add-services"
+   },
+   "mariadb_page": {
+    "mariadb": 240,
+    "mysql": 156,
+    "postgresql": 13,
+    "status": 200,
+    "title": "MariaDB/MySQL (database service) - Upsun Developer",
+    "url": "https://developer.upsun.com/docs/add-services/mysql"
+   },
+   "mysql_page": {
+    "mariadb": 240,
+    "mysql": 156,
+    "postgresql": 13,
+    "status": 200,
+    "title": "MariaDB/MySQL (database service) - Upsun Developer",
+    "url": "https://developer.upsun.com/docs/add-services/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 9,
+    "mysql": 11,
+    "postgresql": 265,
+    "status": 200,
+    "title": "PostgreSQL (Database service) - Upsun Developer",
+    "url": "https://developer.upsun.com/docs/add-services/postgresql"
+   }
+  },
+  "VentraIP": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "VentraIP | Join Australia's #1 Digital Service Provider*",
+    "url": "https://ventraip.com.au/"
+   }
+  },
+  "Virtuozzo Application Platform (Jelastic)": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 403,
+    "title": null,
+    "url": "https://www.virtuozzo.com/application-platform/"
+   }
+  },
+  "Vultr": {
+   "broad_page": {
+    "mariadb": 0,
+    "mysql": 11,
+    "postgresql": 6,
+    "status": 200,
+    "title": "Database Engines Supported by Vultr Managed Databases | Vultr Docs",
+    "url": "https://docs.vultr.com/support/products/managed-databases/what-databases-are-supported-by-vultr-managed-databases"
+   }
+  },
+  "WP Engine": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Trusted Website Hosting Platform | WP Engine\u00ae",
+    "url": "https://wpengine.com/"
+   }
+  },
+  "WebPros": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "The Global Standard in Web Enablement - WebPros",
+    "url": "https://webpros.com/"
+   }
+  },
+  "Webscale": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Webscale Commerce Infrastructure and Agentic AI Platform",
+    "url": "https://www.webscale.com/"
+   }
+  },
+  "Websupport": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Websupport | Registr\u00e1cia dom\u00e9n a najspo\u013eahlivej\u0161\u00ed hosting",
+    "url": "https://www.websupport.sk/"
+   }
+  },
+  "WordPress VIP (Automattic)": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "WordPress VIP | Enterprise Content Platform & Managed WordPress",
+    "url": "https://wpvip.com/"
+   }
+  },
+  "XServer": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "\u30ec\u30f3\u30bf\u30eb\u30b5\u30fc\u30d0\u30fc\u56fd\u5185\u30b7\u30a7\u30a2No.1\u306e\u30a8\u30c3\u30af\u30b9\u30b5\u30fc\u30d0\u30fc WordPress\u304c\u8d85\u9ad8\u901f",
+    "url": "https://www.xserver.ne.jp/"
+   }
+  },
+  "cPanel (WebPros)": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "Web Hosting Control Panel & Server Management Tools | cPanel",
+    "url": "https://cpanel.net/"
+   }
+  },
+  "cyber_Folks": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "cyber_Folks - hosting | domeny | e-marketing | certyfikaty ssl",
+    "url": "https://cyberfolks.pl/"
+   }
+  },
+  "e& enterprise / cloud": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "e& enterprise | Digital Transformation Experts",
+    "url": "https://www.eandenterprise.com/"
+   }
+  },
+  "evroc": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "evroc | The European Cloud",
+    "url": "https://evroc.com/"
+   }
+  },
+  "gridscale": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "gridscale - Your cloud in 5 minutes: Private & public cloud",
+    "url": "https://gridscale.io/en/"
+   }
+  },
+  "group.one": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "group.one",
+    "url": "https://group.one/"
+   }
+  },
+  "home.pl": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "home.pl: Nr 1 w Polsce. Domeny, Hosting, Serwery WWW, Strony, Sklepy",
+    "url": "https://home.pl/"
+   },
+   "mysql_page": {
+    "mariadb": 0,
+    "mysql": 24,
+    "postgresql": 0,
+    "status": 200,
+    "title": "Wsparcie MySQL \u2013 aktualizuj MySQL na hostingu | home.pl",
+    "url": "https://home.pl/wsparcie-mysql"
+   }
+  },
+  "plusserver": {
+   "broad_page": {
+    "mariadb": 2,
+    "mysql": 2,
+    "postgresql": 3,
+    "status": 200,
+    "title": "Databases | plusserver Documentation",
+    "url": "https://docs.plusserver.com/en/databases/"
+   },
+   "mariadb_page": {
+    "mariadb": 8,
+    "mysql": 1,
+    "postgresql": 2,
+    "status": 200,
+    "title": "MariaDB | plusserver Documentation",
+    "url": "https://docs.plusserver.com/en/databases/mariadb"
+   },
+   "mysql_page": {
+    "mariadb": 1,
+    "mysql": 8,
+    "postgresql": 2,
+    "status": 200,
+    "title": "MySQL | plusserver Documentation",
+    "url": "https://docs.plusserver.com/en/databases/mysql"
+   },
+   "postgresql_page": {
+    "mariadb": 1,
+    "mysql": 1,
+    "postgresql": 9,
+    "status": 200,
+    "title": "PostgreSQL | plusserver Documentation",
+    "url": "https://docs.plusserver.com/en/databases/postgresql"
+   }
+  },
+  "stc cloud": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": "URLError",
+    "title": null,
+    "url": "https://stccloud.com.sa/"
+   }
+  },
+  "team.blue": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "team.blue | Pan-European digital partner for SMBs in 23 countries",
+    "url": "https://team.blue/"
+   }
+  },
+  "xneelo": {
+   "broad_page": {
+    "mariadb": null,
+    "mysql": null,
+    "postgresql": null,
+    "status": 200,
+    "title": "xneelo - Trusted in Hosting",
+    "url": "https://xneelo.co.za/"
+   }
+  }
  }
 }
